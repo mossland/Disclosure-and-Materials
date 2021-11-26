@@ -10,6 +10,7 @@ Virtual Reality, Augmented Reality, Non-fungible token 기반의 엔터테인먼
 - [moss.land](https://www.moss.land/)
 - [twitter](https://twitter.com/theMossland)
 - [cafe](https://cafe.naver.com/themossland)
+- [projects](https://github.com/mossland/Projects)
 
 ## Disclosure
 - 2021년 10월 6일 [모스랜드, AMX e스포츠 챔피언십과 e스포츠 공식 파트너십 체결](https://cafe.naver.com/themossland/9934)

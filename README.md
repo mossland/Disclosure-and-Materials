@@ -1,4 +1,9 @@
-# Mossland
+<p align="center"> <img src="/mossland_logo.png"> </p>
+<p align="center">
+  <a href="https://twitter.com/intent/follow?screen_name=TheMossLand">
+    <img src="https://img.shields.io/twitter/follow/TheMossLand.svg?style=social&label=Follow" alt="follow on Twitter">
+  </a>
+</p>
 Mossland is a blockchain-based metaverse project that connects the real and the virtual world. We are creating a new entertainment service with a virtual world based on VR, AR, and NFT.
 
 ## What is Mossland?

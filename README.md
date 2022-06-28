@@ -18,6 +18,8 @@ Virtual Reality, Augmented Reality, Non-fungible token 기반의 엔터테인먼
 - [projects](https://github.com/mossland/Projects)
 
 ## Disclosure
+- 2022년 1월 15일 [모스랜드, CyberTHUG x 픽셀아티스트 주재범 작가 콜라보레이션](http://it.chosun.com/site/data/html_dir/2022/01/18/2022011801440.html)
+- 2022년 1월 13일 [모스랜드, CyberTHUG x 엔닷라이트 파트너십 체결](https://twitter.com/CyberTHUGNFT/)
 - 2021년 10월 6일 [모스랜드, AMX e스포츠 챔피언십과 e스포츠 공식 파트너십 체결](https://cafe.naver.com/themossland/9934)
 - 2021년 9월 9일 [모스랜드, 승부예측 999 NFT 발행 안내](https://cafe.naver.com/themossland/9123)
 - 2021년 9월 9일 [모스랜드 BI(Brand Identity) 업데이트](https://cafe.naver.com/themossland/9112)

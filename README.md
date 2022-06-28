@@ -45,7 +45,7 @@ Virtual Reality, Augmented Reality, Non-fungible token 기반의 엔터테인먼
 - 2020년 2월 5일 [모스랜드, 더 헌터스 'iF 디자인 어워드 수상](http://s3.ap-northeast-2.amazonaws.com/dunamuplatform-druid-disclosure-coolprod/disclosure-160_MOC_01.pdf)
 
 ## Materials
-
+- 2022 [MOSSLAND DAO Governance Model (KOREAN, Research Purpose)](https://github.com/mossland/MossDAO)
 - 2021 [MOSSLAND Metaverse integrated with Mosscoin (KOREAN)](https://cafe.naver.com/themossland/9122)
 - 2021 [MOSSLAND, Sports Metaverse and NFT (KOREAN)](https://cafe.naver.com/themossland/7092)
 - 2020 [UDC 2020, Introduction Video of Mossland](https://www.youtube.com/watch?v=O_OqmwvwtXE)

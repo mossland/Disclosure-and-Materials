@@ -18,6 +18,12 @@ Virtual Reality, Augmented Reality, Non-fungible token 기반의 엔터테인먼
 - [projects](https://github.com/mossland/Projects)
 
 ## Disclosure
+- 2022년 6월 15일 [모스랜드, CyberTHUG 광고 영상 "원슈타인(WONSTEIN) - CyberTHUG (feat. 신구 선생님)" 공개](https://www.youtube.com/watch?v=Glp0rbleqIk)
+- 2022년 3월 16일 [모스랜드, NFT 게임 "CyberTHUG Gecko Club" 베타 출시](https://cyberthuggeckoclub.notion.site/CyberTHUG-Gecko-Club-Guidebook-2f5cb5a1b23d4257b75552d3190fdf76)
+- 2022년 2월 1일 [모스랜드, CyberTHUG x MXXR 파트너십 체결](https://twitter.com/CyberTHUGNFT/status/1488370327151280130?s=20&t=I-nPtex3GPSr7-Q8W4NdLQ)
+- 2022년 1월 31일 [모스랜드, CyberTHUG x THIS.GG 파트너십 체결](https://twitter.com/CyberTHUGNFT/status/1487995906435653634?s=20&t=I-nPtex3GPSr7-Q8W4NdLQ)
+- 2022년 1월 28일 [모스랜드, CyberTHUG 사운드트랙 Apple Music 등록](https://music.apple.com/us/album/1605350560)
+- 2022년 1월 28일 [모스랜드, CyberTHUG x AI Spera 파트너십 체결](https://twitter.com/CyberTHUGNFT/status/1486678153518993410?s=20&t=I-nPtex3GPSr7-Q8W4NdLQ)
 - 2022년 1월 15일 [모스랜드, CyberTHUG x 픽셀아티스트 주재범 작가 콜라보레이션](http://it.chosun.com/site/data/html_dir/2022/01/18/2022011801440.html)
 - 2022년 1월 13일 [모스랜드, CyberTHUG x 엔닷라이트 파트너십 체결](https://twitter.com/CyberTHUGNFT/)
 - 2021년 10월 6일 [모스랜드, AMX e스포츠 챔피언십과 e스포츠 공식 파트너십 체결](https://cafe.naver.com/themossland/9934)

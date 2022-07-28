@@ -18,6 +18,10 @@ Virtual Reality, Augmented Reality, Non-fungible token 기반의 엔터테인먼
 - [projects](https://github.com/mossland/Projects)
 
 ## Disclosure
+모스랜드 프로젝트의 공시(Disclosure) 문서와 기술 자료(Material)가 공개되는 Repository 입니다. 가장 최신의 모스랜드 프로젝트 소식을 접하실 수 있으며 모스코인 홀더 분들에게 모스랜드 프로젝트의 진행 상황을 정확하고 투명하게 공유하는데 목적이 있습니다.
+
+This is the Repository where the Disclosure documents and technical data (Material) of the Mossland project are disclosed. You can get the latest news about the Mossland project. The purpose of this repository is to accurately and transparently share the progress of the Mossland project to Moss Coin holders.
+
 - 2022년 6월 15일 [모스랜드, CyberTHUG 광고 영상 "원슈타인(WONSTEIN) - CyberTHUG (feat. 신구 선생님)" 공개](https://www.youtube.com/watch?v=Glp0rbleqIk)
 - 2022년 3월 16일 [모스랜드, NFT 게임 "CyberTHUG Gecko Club" 베타 출시](https://cyberthuggeckoclub.notion.site/CyberTHUG-Gecko-Club-Guidebook-2f5cb5a1b23d4257b75552d3190fdf76)
 - 2022년 2월 1일 [모스랜드, CyberTHUG x MXXR 파트너십 체결](https://twitter.com/CyberTHUGNFT/status/1488370327151280130?s=20&t=I-nPtex3GPSr7-Q8W4NdLQ)

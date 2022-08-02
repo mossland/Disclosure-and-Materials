@@ -4,7 +4,6 @@
     <img src="https://img.shields.io/twitter/follow/TheMossLand.svg?style=social&label=Follow" alt="follow on Twitter">
   </a>
 </p>
-Mossland is a blockchain-based metaverse project that connects the real and the virtual world. We are creating a new entertainment service with a virtual world based on VR, AR, and NFT.
 
 ## What is Mossland?
 Mossland is a blockchain-based metaverse project connecting real and virtual worlds. Mossland has been continuously releasing practical use cases of entertainment services based on virtual reality, augmented reality, and non-fungible tokens(NFTs). Mossland's metaverse features NFTs and entertainment services that reflect the real world and pursues an integrated economic system through Moss Coin(MOC).

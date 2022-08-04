@@ -22,6 +22,7 @@ Virtual Reality, Augmented Reality, Non-fungible token 기반의 엔터테인먼
 
 ## Disclosure
 
+- 2022년 8월 5일 [모스랜드, CyberTHUG DAO 투표 솔루션 출시](https://portal.thecyberthug.com/)
 - 2022년 6월 15일 [모스랜드, CyberTHUG 광고 영상 "원슈타인(WONSTEIN) - CyberTHUG (feat. 신구 선생님)" 공개](https://www.youtube.com/watch?v=Glp0rbleqIk)
 - 2022년 3월 16일 [모스랜드, NFT 게임 "CyberTHUG Gecko Club" 베타 출시](https://cyberthuggeckoclub.notion.site/CyberTHUG-Gecko-Club-Guidebook-2f5cb5a1b23d4257b75552d3190fdf76)
 - 2022년 2월 1일 [모스랜드, CyberTHUG x MXXR 파트너십 체결](https://twitter.com/CyberTHUGNFT/status/1488370327151280130?s=20&t=I-nPtex3GPSr7-Q8W4NdLQ)

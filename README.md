@@ -17,7 +17,9 @@ Virtual Reality, Augmented Reality, Non-fungible token 기반의 엔터테인먼
 - [projects](https://github.com/mossland/Projects)
 
 ## Disclosure
-
+- February 13, 2023 [Application for Mosland Partner Realty Refection Inc.](https://static.moss.land/disclosure/2023-02-13.pdf)
+- January 9, 2023 [Mossland Launches Disclosure Website](https://disclosure.moss.land/)
+- October 10, 2022 [Mossland Launches Opensource Metaverse Platform (Beta)](https://github.com/mossland/mossverse)
 - August 5, 2022 [Mossland launches CyberTHUG DAO voting solution](https://portal.thecyberthug.com/)
 - June 15, 2022 [Mossland, CyberTHUG commercial video "WONSTEIN - CyberTHUG (feat. ShinGu)" released](https://www.youtube.com/watch?v=Glp0rbleqIk)
 - March 16, 2022 [Mossland releases beta release of NFT game "CyberTHUG Gecko Club"](https://cyberthuggeckoclub.notion.site/CyberTHUG-Gecko-Club-Guidebook-2f5cb5a1b23d4257b75552d3190fdf76)
@@ -46,6 +48,9 @@ Virtual Reality, Augmented Reality, Non-fungible token 기반의 엔터테인먼
 - February 5, 2020 [Mosland, The Hunters 'iF Design Award Winner](http://s3.ap-northeast-2.amazonaws.com/dunamuplatform-druid-disclosure-coolprod/disclosure-160_MOC_01.pdf)
 
 Korean
+- 2023년 2월 13일 [모스랜드 파트너사 리얼리티리플렉션 주식회사에 대한 신청 등의 제기](https://static.moss.land/disclosure/2023-02-13.pdf)
+- 2023년 1월 9일 [모스랜드, 공시 강화를 위한 모스코인 공시 사이트 공개](https://disclosure.moss.land/)
+- 2022년 10월 10일 [모스랜드, 오픈소스 메타버스 플랫폼 베타 출시](https://github.com/mossland/mossverse)
 - 2022년 8월 5일 [모스랜드, CyberTHUG DAO 투표 솔루션 출시](https://portal.thecyberthug.com/)
 - 2022년 6월 15일 [모스랜드, CyberTHUG 광고 영상 "원슈타인(WONSTEIN) - CyberTHUG (feat. 신구 선생님)" 공개](https://www.youtube.com/watch?v=Glp0rbleqIk)
 - 2022년 3월 16일 [모스랜드, NFT 게임 "CyberTHUG Gecko Club" 베타 출시](https://cyberthuggeckoclub.notion.site/CyberTHUG-Gecko-Club-Guidebook-2f5cb5a1b23d4257b75552d3190fdf76)

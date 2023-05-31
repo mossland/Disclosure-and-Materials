@@ -17,6 +17,7 @@ Virtual Reality, Augmented Reality, Non-fungible token 기반의 엔터테인먼
 - [projects](https://github.com/mossland/Projects)
 
 ## Disclosure
+- May 25, 2023 [Mosland announces Open-source Developer Support Program](https://github.com/mossland/MosslandDeveloperSupportProgram)
 - February 13, 2023 [Application for Mosland Partner Realty Refection Inc.](https://static.moss.land/disclosure/2023-02-13.pdf)
 - January 9, 2023 [Mossland Launches Disclosure Website](https://disclosure.moss.land/)
 - October 10, 2022 [Mossland Launches Opensource Metaverse Platform (Beta)](https://github.com/mossland/mossverse)
@@ -48,6 +49,7 @@ Virtual Reality, Augmented Reality, Non-fungible token 기반의 엔터테인먼
 - February 5, 2020 [Mosland, The Hunters 'iF Design Award Winner](http://s3.ap-northeast-2.amazonaws.com/dunamuplatform-druid-disclosure-coolprod/disclosure-160_MOC_01.pdf)
 
 Korean
+- 2023년 5월 25일 [모스랜드, 오픈소스 프로젝트 활성화를 위한 개발자 지원 프로그램 공개](https://github.com/mossland/MosslandDeveloperSupportProgram)
 - 2023년 2월 13일 [모스랜드 파트너사 리얼리티리플렉션 주식회사에 대한 신청 등의 제기](https://static.moss.land/disclosure/2023-02-13.pdf)
 - 2023년 1월 9일 [모스랜드, 공시 강화를 위한 모스코인 공시 사이트 공개](https://disclosure.moss.land/)
 - 2022년 10월 10일 [모스랜드, 오픈소스 메타버스 플랫폼 베타 출시](https://github.com/mossland/mossverse)
@@ -79,6 +81,7 @@ Korean
 - 2020년 2월 5일 [모스랜드, 더 헌터스 'iF 디자인 어워드 수상](http://s3.ap-northeast-2.amazonaws.com/dunamuplatform-druid-disclosure-coolprod/disclosure-160_MOC_01.pdf)
 
 ## Materials
+- 2023 [MOSSLAND, Project Roadmap 2023-2024 (KOREAN)](https://s3.ap-northeast-2.amazonaws.com/static.moss.land/docs/mossland_roadmap_2023.pdf)
 - 2022 [MOSSLAND DAO Governance Model (Research Purpose)](https://github.com/mossland/MossDAO)
 - 2021 [MOSSLAND Metaverse integrated with Mosscoin (KOREAN)](https://github.com/mossland/mossverse/blob/main/%EB%AA%A8%EC%8A%A4%EB%9E%9C%EB%93%9C%20%EB%AA%A8%EC%8A%A4%EC%BD%94%EC%9D%B8%EC%9C%BC%EB%A1%9C%20%ED%86%B5%ED%95%A9%EB%90%9C%20%EB%A9%94%ED%83%80%EB%B2%84%EC%8A%A4%202021-09-09.pdf)
 - 2021 [MOSSLAND, Sports Metaverse and NFT (KOREAN)](https://github.com/mossland/Disclosure-and-Materials/tree/main/2021.07.15)

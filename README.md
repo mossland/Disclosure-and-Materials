@@ -17,6 +17,7 @@ Virtual Reality, Augmented Reality, Non-fungible token 기반의 엔터테인먼
 - [projects](https://github.com/mossland/Projects)
 
 ## Disclosure
+- August 7, 2023 [Mossland Launches Swap Service for Wrapped MOC (WMOC)](https://swap.moss.land)
 - June 26, 2023 [Mossland Updates Opensource Metaverse Platform (KOREAN)](https://github.com/mossland/mossverse/blob/main/MosslandMetaverse_ko_20230626.pdf)
 - May 25, 2023 [Mosland announces Open-source Developer Support Program](https://github.com/mossland/MosslandDeveloperSupportProgram)
 - February 13, 2023 [Application for Mosland Partner Realty Refection Inc.](https://static.moss.land/disclosure/2023-02-13.pdf)
@@ -50,6 +51,7 @@ Virtual Reality, Augmented Reality, Non-fungible token 기반의 엔터테인먼
 - February 5, 2020 [Mosland, The Hunters 'iF Design Award Winner](http://s3.ap-northeast-2.amazonaws.com/dunamuplatform-druid-disclosure-coolprod/disclosure-160_MOC_01.pdf)
 
 Korean
+- 2023년 8월 7일 [모스랜드, Wrapped MOC(WMOC) 스왑 베타 서비스 오픈](https://swap.moss.land)
 - 2023년 6월 26일 [모스랜드, 오픈소스 메타버스 플랫폼 업데이트](https://github.com/mossland/mossverse/blob/main/MosslandMetaverse_ko_20230626.pdf)
 - 2023년 5월 25일 [모스랜드, 오픈소스 프로젝트 활성화를 위한 개발자 지원 프로그램 공개](https://github.com/mossland/MosslandDeveloperSupportProgram)
 - 2023년 2월 13일 [모스랜드 파트너사 리얼리티리플렉션 주식회사에 대한 신청 등의 제기](https://static.moss.land/disclosure/2023-02-13.pdf)

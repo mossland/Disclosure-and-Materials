@@ -85,7 +85,8 @@ Korean
 - 2020년 2월 5일 [모스랜드, 더 헌터스 'iF 디자인 어워드 수상](http://s3.ap-northeast-2.amazonaws.com/dunamuplatform-druid-disclosure-coolprod/disclosure-160_MOC_01.pdf)
 
 ## Materials
-- 2023 [Introduction to MOSSLAND (KOREAN)](https://s3.ap-northeast-2.amazonaws.com/moss.land/whitepaper/Mossland+2023-08-08+(KOR).pdf)
+- 2023 [MOSSLAND WHITE PAPER 3.0 (KOREAN)](https://s3.ap-northeast-2.amazonaws.com/moss.land/whitepaper/Mossland+Whitepaper+KOR+2023-08-08.pdf)
+- 2023 [MOSSLAND WHITE PAPER 3.0 (ENGLISH)](https://s3.ap-northeast-2.amazonaws.com/moss.land/whitepaper/Mossland+Whitepaper+ENG+2023-08-08.pdf)
 - 2023 [MOSSLAND, Project Roadmap 2023-2024 (KOREAN)](https://s3.ap-northeast-2.amazonaws.com/static.moss.land/docs/mossland_roadmap_2023.pdf)
 - 2022 [MOSSLAND DAO Governance Model (Research Purpose)](https://github.com/mossland/MossDAO)
 - 2021 [MOSSLAND Metaverse integrated with Mosscoin (KOREAN)](https://github.com/mossland/mossverse/blob/main/%EB%AA%A8%EC%8A%A4%EB%9E%9C%EB%93%9C%20%EB%AA%A8%EC%8A%A4%EC%BD%94%EC%9D%B8%EC%9C%BC%EB%A1%9C%20%ED%86%B5%ED%95%A9%EB%90%9C%20%EB%A9%94%ED%83%80%EB%B2%84%EC%8A%A4%202021-09-09.pdf)

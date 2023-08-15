@@ -13,6 +13,7 @@ Virtual Reality, Augmented Reality, Non-fungible token 기반의 엔터테인먼
 
 - [moss.land](https://www.moss.land/)
 - [twitter](https://twitter.com/theMossland)
+- [blog](https://medium.com/mossland-blog)
 - [github](https://github.com/mossland)
 - [projects](https://github.com/mossland/Projects)
 

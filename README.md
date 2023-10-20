@@ -87,6 +87,7 @@ Korean
 
 ## Materials
 - 2023 [MOSSLAND WHITE PAPER 3.1 (KOREAN)](https://s3.ap-northeast-2.amazonaws.com/moss.land/whitepaper/Mossland+Whitepaper+KOR++2023-09-27.pdf)
+- 2023 [MOSSLAND WHITE PAPER 3.1 (ENGLISH)](https://s3.ap-northeast-2.amazonaws.com/moss.land/whitepaper/Mossland+Whitepaper+ENG+2023-10-20.pdf)
 - 2023 [MOSSLAND WHITE PAPER 3.0 (KOREAN)](https://s3.ap-northeast-2.amazonaws.com/moss.land/whitepaper/Mossland+Whitepaper+KOR+2023-08-08.pdf)
 - 2023 [MOSSLAND WHITE PAPER 3.0 (ENGLISH)](https://s3.ap-northeast-2.amazonaws.com/moss.land/whitepaper/Mossland+Whitepaper+ENG+2023-08-08.pdf)
 - 2023 [MOSSLAND, Project Roadmap 2023-2024 (KOREAN)](https://s3.ap-northeast-2.amazonaws.com/static.moss.land/docs/mossland_roadmap_2023.pdf)

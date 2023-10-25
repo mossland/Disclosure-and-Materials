@@ -52,6 +52,7 @@ Virtual Reality, Augmented Reality, Non-fungible token 기반의 엔터테인먼
 - February 5, 2020 [Mosland, The Hunters 'iF Design Award Winner](http://s3.ap-northeast-2.amazonaws.com/dunamuplatform-druid-disclosure-coolprod/disclosure-160_MOC_01.pdf)
 
 Korean
+- 2023년 8월 24일 [Wrapped MOC(WMOC), 글로벌 거래소 LATOKEN 상장](https://medium.com/mossland-blog/wmoc-%EA%B8%80%EB%A1%9C%EB%B2%8C-%EA%B1%B0%EB%9E%98%EC%86%8C-latoken-%EC%83%81%EC%9E%A5-e66610f7af24)
 - 2023년 8월 7일 [모스랜드, Wrapped MOC(WMOC) 스왑 베타 서비스 오픈](https://swap.moss.land)
 - 2023년 6월 26일 [모스랜드, 오픈소스 메타버스 플랫폼 업데이트](https://github.com/mossland/mossverse/blob/main/MosslandMetaverse_ko_20230626.pdf)
 - 2023년 5월 25일 [모스랜드, 오픈소스 프로젝트 활성화를 위한 개발자 지원 프로그램 공개](https://github.com/mossland/MosslandDeveloperSupportProgram)
@@ -86,6 +87,7 @@ Korean
 - 2020년 2월 5일 [모스랜드, 더 헌터스 'iF 디자인 어워드 수상](http://s3.ap-northeast-2.amazonaws.com/dunamuplatform-druid-disclosure-coolprod/disclosure-160_MOC_01.pdf)
 
 ## Materials
+- 2023 [MOSSLAND METAVERSE USER MANUAL](https://medium.com/mossland-blog/%EB%AA%A8%EC%8A%A4%EB%9E%9C%EB%93%9C-%EB%A9%94%ED%83%80%EB%B2%84%EC%8A%A4-%EC%82%AC%EC%9A%A9-%EC%84%A4%EB%AA%85%EC%84%9C-33ab0d93c7b4)
 - 2023 [MOSSLAND WHITE PAPER 3.1 (KOREAN)](https://s3.ap-northeast-2.amazonaws.com/moss.land/whitepaper/Mossland+Whitepaper+KOR+(v3.1).pdf)
 - 2023 [MOSSLAND WHITE PAPER 3.1 (ENGLISH)](https://s3.ap-northeast-2.amazonaws.com/moss.land/whitepaper/Mossland+Whitepaper+ENG+(v3.1).pdf)
 - 2023 [MOSSLAND WHITE PAPER 3.0 (KOREAN)](https://s3.ap-northeast-2.amazonaws.com/moss.land/whitepaper/Mossland+Whitepaper+KOR+2023-08-08.pdf)

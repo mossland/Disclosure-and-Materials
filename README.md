@@ -18,6 +18,10 @@ Virtual Reality, Augmented Reality, Non-fungible token 기반의 엔터테인먼
 - [projects](https://github.com/mossland/Projects)
 
 ## Disclosure
+- January 29, 2024 [Mosscoin Announces Circulation Plan for 2024-2026](https://static.moss.land/disclosure/2024-01-29+MOC+(Token+Supply+Schedule).pdf)
+- January 29, 2024 [Notice of Litigation Commencement (KOREAN)](https://static.moss.land/disclosure/2024-01-29.pdf)
+- November 27, 2023 [Mosscoin Listed on Korean Exchange BITHUMB (KOREAN)](https://medium.com/mossland-blog/moc-no-1-%EA%B0%80%EC%83%81%EC%9E%90%EC%82%B0-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EB%B9%97%EC%8D%B8-bithumb-%EC%83%81%EC%9E%A5-60827bf49b44)
+- August 24, 2023 [Wrapped MOC (WMOC) Listed on Global Exchange LATOKEN](https://medium.com/mossland-blog/wmoc-%EA%B8%80%EB%A1%9C%EB%B2%8C-%EA%B1%B0%EB%9E%98%EC%86%8C-latoken-%EC%83%81%EC%9E%A5-e66610f7af24)
 - August 7, 2023 [Mossland Launches Swap Service for Wrapped MOC (WMOC)](https://swap.moss.land)
 - June 26, 2023 [Mossland Updates Opensource Metaverse Platform (KOREAN)](https://github.com/mossland/mossverse/blob/main/MosslandMetaverse_ko_20230626.pdf)
 - May 25, 2023 [Mosland announces Open-source Developer Support Program](https://github.com/mossland/MosslandDeveloperSupportProgram)
@@ -52,6 +56,9 @@ Virtual Reality, Augmented Reality, Non-fungible token 기반의 엔터테인먼
 - February 5, 2020 [Mosland, The Hunters 'iF Design Award Winner](http://s3.ap-northeast-2.amazonaws.com/dunamuplatform-druid-disclosure-coolprod/disclosure-160_MOC_01.pdf)
 
 Korean
+- 2024년 1월 29일 [모스코인, 2024년~2026년 유통량 계획 공개](https://static.moss.land/disclosure/2024-01-29+MOC+(Token+Supply+Schedule).pdf)
+- 2024년 1월 29일 [소송 등의 제기](https://static.moss.land/disclosure/2024-01-29.pdf)
+- 2023년 11월 27일 [모스코인, 한국 거래소 빗썸(Bithumb) 상장](https://medium.com/mossland-blog/moc-no-1-%EA%B0%80%EC%83%81%EC%9E%90%EC%82%B0-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EB%B9%97%EC%8D%B8-bithumb-%EC%83%81%EC%9E%A5-60827bf49b44)
 - 2023년 8월 24일 [Wrapped MOC(WMOC), 글로벌 거래소 LATOKEN 상장](https://medium.com/mossland-blog/wmoc-%EA%B8%80%EB%A1%9C%EB%B2%8C-%EA%B1%B0%EB%9E%98%EC%86%8C-latoken-%EC%83%81%EC%9E%A5-e66610f7af24)
 - 2023년 8월 7일 [모스랜드, Wrapped MOC(WMOC) 스왑 베타 서비스 오픈](https://swap.moss.land)
 - 2023년 6월 26일 [모스랜드, 오픈소스 메타버스 플랫폼 업데이트](https://github.com/mossland/mossverse/blob/main/MosslandMetaverse_ko_20230626.pdf)

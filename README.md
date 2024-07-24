@@ -94,7 +94,8 @@ Korean
 - 2020년 2월 5일 [모스랜드, 더 헌터스 'iF 디자인 어워드 수상](http://s3.ap-northeast-2.amazonaws.com/dunamuplatform-druid-disclosure-coolprod/disclosure-160_MOC_01.pdf)
 
 ## Materials
-- 2024 [MOSSLAND: Progress Report for the Second Quarter of 2024 and Announcements](https://medium.com/mossland-blog/2024%EB%85%84-2%EB%B6%84%EA%B8%B0-%EC%A7%84%ED%96%89-%EC%82%AC%ED%95%AD-%EC%9A%94%EC%95%BD-%EB%B0%8F-%EC%95%88%EB%82%B4-%EC%82%AC%ED%95%AD-8c13fe4147d3)
+- 2024 [MOSSLAND: Progress Report for the Third Quarter of 2024 and Announcements](https://medium.com/mossland-blog/summary-of-progress-in-q3-2024-and-announcements-7e14deaa12c0)
+- 2024 [MOSSLAND: Progress Report for the Second Quarter of 2024 and Announcements](https://medium.com/mossland-blog/summary-of-progress-in-q2-2024-and-announcements-e0ed61934c58)
 - 2024 [MOSSLAND: Summary of key achievements in 2023 and progress in the first quarter of 2024](https://medium.com/mossland-blog/summary-of-key-achievements-in-2023-and-progress-in-the-first-quarter-of-2024-e6918fd779b0)
 - 2023 [MOSSLAND: Progress Report for the First Half of 2023 (KOREAN)](https://s3.ap-northeast-2.amazonaws.com/static.moss.land/docs/mossland_roadmap_2023-11-22.pdf)
 - 2023 [MOSSLAND METAVERSE USER MANUAL](https://medium.com/mossland-blog/%EB%AA%A8%EC%8A%A4%EB%9E%9C%EB%93%9C-%EB%A9%94%ED%83%80%EB%B2%84%EC%8A%A4-%EC%82%AC%EC%9A%A9-%EC%84%A4%EB%AA%85%EC%84%9C-33ab0d93c7b4)

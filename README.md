@@ -94,6 +94,7 @@ Korean
 - 2020년 2월 5일 [모스랜드, 더 헌터스 'iF 디자인 어워드 수상](http://s3.ap-northeast-2.amazonaws.com/dunamuplatform-druid-disclosure-coolprod/disclosure-160_MOC_01.pdf)
 
 ## Materials
+- 2024 [MOSSLAND: Progress Report for the Fourth Quarter of 2024 and Announcements](https://medium.com/mossland-blog/2024%EB%85%84-%EC%A7%84%ED%96%89-%EC%82%AC%ED%95%AD-%EC%9A%94%EC%95%BD-%EB%B0%8F-%EC%95%88%EB%82%B4-%EC%82%AC%ED%95%AD-4acd6b511898)
 - 2024 [MOSSLAND: Progress Report for the Third Quarter of 2024 and Announcements](https://medium.com/mossland-blog/summary-of-progress-in-q3-2024-and-announcements-7e14deaa12c0)
 - 2024 [MOSSLAND: Progress Report for the Second Quarter of 2024 and Announcements](https://medium.com/mossland-blog/summary-of-progress-in-q2-2024-and-announcements-e0ed61934c58)
 - 2024 [MOSSLAND: Summary of key achievements in 2023 and progress in the first quarter of 2024](https://medium.com/mossland-blog/summary-of-key-achievements-in-2023-and-progress-in-the-first-quarter-of-2024-e6918fd779b0)

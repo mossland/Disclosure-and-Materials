@@ -18,6 +18,7 @@ Virtual Reality, Augmented Reality, Non-fungible token 기반의 엔터테인먼
 - [projects](https://github.com/mossland/Projects)
 
 ## Disclosure
+- January 3, 2025 [Mossland Launches New DAO Platform 'Agora'](https://medium.com/mossland-blog/agora-officially-launched-6cb9ee65a2cf)
 - January 29, 2024 [Mosscoin Announces Circulation Plan for 2024-2026](https://static.moss.land/disclosure/2024-01-29+MOC+(Token+Supply+Schedule).pdf)
 - January 29, 2024 [Notice of Litigation Commencement (KOREAN)](https://static.moss.land/disclosure/2024-01-29.pdf)
 - November 27, 2023 [Mosscoin Listed on Korean Exchange BITHUMB (KOREAN)](https://medium.com/mossland-blog/moc-no-1-%EA%B0%80%EC%83%81%EC%9E%90%EC%82%B0-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EB%B9%97%EC%8D%B8-bithumb-%EC%83%81%EC%9E%A5-60827bf49b44)
@@ -56,6 +57,7 @@ Virtual Reality, Augmented Reality, Non-fungible token 기반의 엔터테인먼
 - February 5, 2020 [Mosland, The Hunters 'iF Design Award Winner](http://s3.ap-northeast-2.amazonaws.com/dunamuplatform-druid-disclosure-coolprod/disclosure-160_MOC_01.pdf)
 
 Korean
+- 2025년 1월 3일 [모스랜드, 새로운 DAO 플랫폼 'Agora' 정식 런칭	](https://medium.com/mossland-blog/agora-officially-launched-6cb9ee65a2cf)
 - 2024년 1월 29일 [모스코인, 2024년~2026년 유통량 계획 공개](https://static.moss.land/disclosure/2024-01-29+MOC+(Token+Supply+Schedule).pdf)
 - 2024년 1월 29일 [소송 등의 제기](https://static.moss.land/disclosure/2024-01-29.pdf)
 - 2023년 11월 27일 [모스코인, 한국 거래소 빗썸(Bithumb) 상장](https://medium.com/mossland-blog/moc-no-1-%EA%B0%80%EC%83%81%EC%9E%90%EC%82%B0-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EB%B9%97%EC%8D%B8-bithumb-%EC%83%81%EC%9E%A5-60827bf49b44)
@@ -94,6 +96,7 @@ Korean
 - 2020년 2월 5일 [모스랜드, 더 헌터스 'iF 디자인 어워드 수상](http://s3.ap-northeast-2.amazonaws.com/dunamuplatform-druid-disclosure-coolprod/disclosure-160_MOC_01.pdf)
 
 ## Materials
+- 2025 [MOSSLAND AGORA USER MANUAL](https://medium.com/mossland-blog/agora-officially-launched-6cb9ee65a2cf)
 - 2024 [MOSSLAND: Progress Report for the Fourth Quarter of 2024 and Announcements](https://medium.com/mossland-blog/summary-and-notices-on-2024-progress-ef73a9b4f5a8)
 - 2024 [MOSSLAND: Progress Report for the Third Quarter of 2024 and Announcements](https://medium.com/mossland-blog/summary-of-progress-in-q3-2024-and-announcements-7e14deaa12c0)
 - 2024 [MOSSLAND: Progress Report for the Second Quarter of 2024 and Announcements](https://medium.com/mossland-blog/summary-of-progress-in-q2-2024-and-announcements-e0ed61934c58)

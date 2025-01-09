@@ -18,6 +18,7 @@ Virtual Reality, Augmented Reality, Non-fungible token 기반의 엔터테인먼
 - [projects](https://github.com/mossland/Projects)
 
 ## Disclosure
+- January 9, 2025 [Mosscoin Announces Circulation Plan for 2027](https://static.moss.land/disclosure/2025-01-09+MOC+(Token+Supply+Schedule).pdf)
 - January 3, 2025 [Mossland Launches New DAO Platform 'Agora'](https://medium.com/mossland-blog/agora-officially-launched-6cb9ee65a2cf)
 - January 29, 2024 [Mosscoin Announces Circulation Plan for 2024-2026](https://static.moss.land/disclosure/2024-01-29+MOC+(Token+Supply+Schedule).pdf)
 - January 29, 2024 [Notice of Litigation Commencement (KOREAN)](https://static.moss.land/disclosure/2024-01-29.pdf)
@@ -57,6 +58,7 @@ Virtual Reality, Augmented Reality, Non-fungible token 기반의 엔터테인먼
 - February 5, 2020 [Mosland, The Hunters 'iF Design Award Winner](http://s3.ap-northeast-2.amazonaws.com/dunamuplatform-druid-disclosure-coolprod/disclosure-160_MOC_01.pdf)
 
 Korean
+- 2025년 1월 9일 [모스코인, 2027년 유통량 계획 공개](https://static.moss.land/disclosure/2025-01-09+MOC+(Token+Supply+Schedule).pdf)
 - 2025년 1월 3일 [모스랜드, 새로운 DAO 플랫폼 'Agora' 정식 런칭	](https://medium.com/mossland-blog/agora-officially-launched-6cb9ee65a2cf)
 - 2024년 1월 29일 [모스코인, 2024년~2026년 유통량 계획 공개](https://static.moss.land/disclosure/2024-01-29+MOC+(Token+Supply+Schedule).pdf)
 - 2024년 1월 29일 [소송 등의 제기](https://static.moss.land/disclosure/2024-01-29.pdf)

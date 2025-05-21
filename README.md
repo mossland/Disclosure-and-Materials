@@ -18,6 +18,7 @@ Virtual Reality, Augmented Reality, Non-fungible token 기반의 엔터테인먼
 - [projects](https://github.com/mossland/Projects)
 
 ## Disclosure
+- May 21, 2005 [Investment in Alterim AI, a Web3-based AI Platform](https://static.moss.land/disclosure/2025-05-21.pdf)
 - January 9, 2025 [Mosscoin Announces Circulation Plan for 2027](https://static.moss.land/disclosure/2025-01-09+MOC+(Token+Supply+Schedule).pdf)
 - January 3, 2025 [Mossland Launches New DAO Platform 'Agora'](https://medium.com/mossland-blog/agora-officially-launched-6cb9ee65a2cf)
 - January 29, 2024 [Mosscoin Announces Circulation Plan for 2024-2026](https://static.moss.land/disclosure/2024-01-29+MOC+(Token+Supply+Schedule).pdf)

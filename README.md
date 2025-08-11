@@ -18,7 +18,8 @@ Virtual Reality, Augmented Reality, Non-fungible token 기반의 엔터테인먼
 - [projects](https://github.com/mossland/Projects)
 
 ## Disclosure
-- May 21, 2005 [Investment in Alterim AI, a Web3-based AI Platform](https://static.moss.land/disclosure/2025-05-21.pdf)
+- AUG 11, 2025 [Ethereum Mainnet Migration DAO Vote: Conclusion & Results](https://agora.moss.land/forum/68881a427d3ee1bb1f129b54)
+- May 21, 2025 [Investment in Alterim AI, a Web3-based AI Platform](https://static.moss.land/disclosure/2025-05-21.pdf)
 - January 9, 2025 [Mosscoin Announces Circulation Plan for 2027](https://static.moss.land/disclosure/2025-01-09+MOC+(Token+Supply+Schedule).pdf)
 - January 3, 2025 [Mossland Launches New DAO Platform 'Agora'](https://medium.com/mossland-blog/agora-officially-launched-6cb9ee65a2cf)
 - January 29, 2024 [Mosscoin Announces Circulation Plan for 2024-2026](https://static.moss.land/disclosure/2024-01-29+MOC+(Token+Supply+Schedule).pdf)
@@ -59,6 +60,8 @@ Virtual Reality, Augmented Reality, Non-fungible token 기반의 엔터테인먼
 - February 5, 2020 [Mosland, The Hunters 'iF Design Award Winner](http://s3.ap-northeast-2.amazonaws.com/dunamuplatform-druid-disclosure-coolprod/disclosure-160_MOC_01.pdf)
 
 Korean
+- 2025년 8월 11일 [이더리움 메인넷 전환 DAO 투표 종료 및 결과 안내](https://agora.moss.land/forum/68881a837d3ee1bb1f129b73)
+- 2025년 5월 21일 [모스랜드, Web3 기반 AI 플랫폼 Alterim AI 투자 집행](https://static.moss.land/disclosure/2025-05-21.pdf)
 - 2025년 1월 9일 [모스코인, 2027년 유통량 계획 공개](https://static.moss.land/disclosure/2025-01-09+MOC+(Token+Supply+Schedule).pdf)
 - 2025년 1월 3일 [모스랜드, 새로운 DAO 플랫폼 'Agora' 정식 런칭	](https://medium.com/mossland-blog/agora-officially-launched-6cb9ee65a2cf)
 - 2024년 1월 29일 [모스코인, 2024년~2026년 유통량 계획 공개](https://static.moss.land/disclosure/2024-01-29+MOC+(Token+Supply+Schedule).pdf)

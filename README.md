@@ -18,8 +18,11 @@ Virtual Reality, Augmented Reality, Non-fungible token 기반의 엔터테인먼
 - [projects](https://github.com/mossland/Projects)
 
 ## Disclosure
-- AUG 12, 2025 [Mosscoin Listed on Korean Exchange COINONE](https://medium.com/mossland-blog/moc-listed-on-coinone-krw-market-beaf71684bab)
-- AUG 11, 2025 [Ethereum Mainnet Migration DAO Vote: Conclusion & Results](https://agora.moss.land/forum/68881a427d3ee1bb1f129b54)
+- November 25, 2025 [Mosscoin Listed on Korean Exchange GOPAX](https://mosscoin.medium.com/2f7657d8addd)
+- November 25, 2025 [Mossland, Official Sponsor – Seoul:ution 2025 Hackathon](https://medium.com/mossland-blog/mossland-official-sponsor-and-judge-for-the-seoul-ution-2025-hackathon-438e2a17a72a)
+- November 5, 2025 [Mosscoin LMT → ERC-20 Network Swap](https://medium.com/mossland-blog/mosscoin-moc-lmt-%EF%B8%8F-erc-20-upcoming-swap-notice-5c3b8b878e13)
+- August 12, 2025 [Mosscoin Listed on Korean Exchange COINONE](https://medium.com/mossland-blog/moc-listed-on-coinone-krw-market-beaf71684bab)
+- August 11, 2025 [Ethereum Mainnet Migration DAO Vote: Conclusion & Results](https://agora.moss.land/forum/68881a427d3ee1bb1f129b54)
 - May 21, 2025 [Investment in Alterim AI, a Web3-based AI Platform](https://static.moss.land/disclosure/2025-05-21.pdf)
 - January 9, 2025 [Mosscoin Announces Circulation Plan for 2027](https://static.moss.land/disclosure/2025-01-09+MOC+(Token+Supply+Schedule).pdf)
 - January 3, 2025 [Mossland Launches New DAO Platform 'Agora'](https://medium.com/mossland-blog/agora-officially-launched-6cb9ee65a2cf)
@@ -61,6 +64,9 @@ Virtual Reality, Augmented Reality, Non-fungible token 기반의 엔터테인먼
 - February 5, 2020 [Mosland, The Hunters 'iF Design Award Winner](http://s3.ap-northeast-2.amazonaws.com/dunamuplatform-druid-disclosure-coolprod/disclosure-160_MOC_01.pdf)
 
 Korean
+- 2025년 11월 25일 [모스코인, 한국 거래소 고팍스(GOPAX) 상장](https://medium.com/mossland-blog/moc-%EA%B3%A0%ED%8C%8D%EC%8A%A4-gopax-%EC%9B%90%ED%99%94%EB%A7%88%EC%BC%93-%EC%83%81%EC%9E%A5-da8c7df5be07)
+- 2025년 11월 25일 [모스랜드, 해커톤 ‘Seoul:ution 2025’ 공식 후원 및 심사위원 참여](https://medium.com/mossland-blog/%EB%AA%A8%EC%8A%A4%EB%9E%9C%EB%93%9C-%ED%95%B4%EC%BB%A4%ED%86%A4-seoul-ution-2025-%EA%B3%B5%EC%8B%9D-%ED%9B%84%EC%9B%90-%EB%B0%8F-%EC%8B%AC%EC%82%AC%EC%9C%84%EC%9B%90-%EC%B0%B8%EC%97%AC-3be504fb3611)
+- 2025년 11월 5일 [모스코인 LMT → ERC-20 네트워크 스왑](https://medium.com/mossland-blog/%EB%AA%A8%EC%8A%A4%EC%BD%94%EC%9D%B8-moc-lmt-%EF%B8%8F-erc-20-%EC%8A%A4%EC%99%91-%EC%98%88%EC%A0%95-%EC%95%88%EB%82%B4-32bfb4d7d75a)
 - 2025년 8월 12일 [모스코인, 한국 거래소 코인원(Coinone) 상장](https://medium.com/mossland-blog/moc-%EC%BD%94%EC%9D%B8%EC%9B%90-coinone-%EC%9B%90%ED%99%94%EB%A7%88%EC%BC%93-%EC%83%81%EC%9E%A5-655b00350683)
 - 2025년 8월 11일 [이더리움 메인넷 전환 DAO 투표 및 결과 안내](https://agora.moss.land/forum/68881a837d3ee1bb1f129b73)
 - 2025년 5월 21일 [모스랜드, Web3 기반 AI 플랫폼 Alterim AI 투자 집행](https://static.moss.land/disclosure/2025-05-21.pdf)

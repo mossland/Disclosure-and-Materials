@@ -110,6 +110,7 @@ Korean
 - 2020년 2월 5일 [모스랜드, 더 헌터스 'iF 디자인 어워드 수상](http://s3.ap-northeast-2.amazonaws.com/dunamuplatform-druid-disclosure-coolprod/disclosure-160_MOC_01.pdf)
 
 ## Materials
+- 2025 [MOSSLAND: Digital Twins and Blockchain](https://static.moss.land/docs/digital_twins_and_blockchain_2025-12-02.pdf)
 - 2025 [MOSSLAND: Progress Report for the Third Quarter of 2025 and Announcements](https://static.moss.land/docs/mossland_q3_report_2025-10-17.pdf)
 - 2025 [MOSSLAND: Progress Report for the Second Quarter of 2025 and Announcements](https://static.moss.land/docs/mossland_q2_report_2025-07-11.pdf)
 - 2025 [MOSSLAND: Progress Report for the First Quarter of 2025 and Announcements](https://static.moss.land/docs/mossland_q1_report_2025-04-02.pdf)

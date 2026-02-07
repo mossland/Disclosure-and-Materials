@@ -18,6 +18,7 @@ Virtual Reality, Augmented Reality, Non-fungible token 기반의 엔터테인먼
 - [projects](https://github.com/mossland/Projects)
 
 ## Disclosure
+- February 7, 2026 [Follow-up Judgment Result to the January 29, 2024 Notice of Litigation Commencement (KOREAN)](disclosures/2026/2026-02-07_follow-up-judgment-result_to_2024-01-29_litigation-disclosure.md)
 - December 11, 2025 [Mosscoin Luniverse MOC Burn Completed](https://medium.com/mossland-blog/luniverse-moss-coin-moc-burn-completion-notice-5cff58637bdc)
 - November 25, 2025 [Mosscoin Listed on Korean Exchange GOPAX](https://mosscoin.medium.com/2f7657d8addd)
 - November 25, 2025 [Mossland, Official Sponsor – Seoul:ution 2025 Hackathon](https://medium.com/mossland-blog/mossland-official-sponsor-and-judge-for-the-seoul-ution-2025-hackathon-438e2a17a72a)
@@ -65,6 +66,7 @@ Virtual Reality, Augmented Reality, Non-fungible token 기반의 엔터테인먼
 - February 5, 2020 [Mosland, The Hunters 'iF Design Award Winner](http://s3.ap-northeast-2.amazonaws.com/dunamuplatform-druid-disclosure-coolprod/disclosure-160_MOC_01.pdf)
 
 Korean
+- 2026년 2월 7일 [2024-01-29 「소송 등의 제기」 공시 후속 판결 결과 공시](disclosures/2026/2026-02-07_follow-up-judgment-result_to_2024-01-29_litigation-disclosure.md)
 - 2025년 12월 11일 [모스코인, Luniverse MOC 소각 완료](https://medium.com/mossland-blog/luniverse-%EB%AA%A8%EC%8A%A4%EC%BD%94%EC%9D%B8-moc-%EC%86%8C%EA%B0%81-%EC%99%84%EB%A3%8C-%EA%B3%B5%EC%8B%9C-9fa735a38fa4)
 - 2025년 11월 25일 [모스코인, 한국 거래소 고팍스(GOPAX) 상장](https://medium.com/mossland-blog/moc-%EA%B3%A0%ED%8C%8D%EC%8A%A4-gopax-%EC%9B%90%ED%99%94%EB%A7%88%EC%BC%93-%EC%83%81%EC%9E%A5-da8c7df5be07)
 - 2025년 11월 25일 [모스랜드, 해커톤 ‘Seoul:ution 2025’ 공식 후원 및 심사위원 참여](https://medium.com/mossland-blog/%EB%AA%A8%EC%8A%A4%EB%9E%9C%EB%93%9C-%ED%95%B4%EC%BB%A4%ED%86%A4-seoul-ution-2025-%EA%B3%B5%EC%8B%9D-%ED%9B%84%EC%9B%90-%EB%B0%8F-%EC%8B%AC%EC%82%AC%EC%9C%84%EC%9B%90-%EC%B0%B8%EC%97%AC-3be504fb3611)

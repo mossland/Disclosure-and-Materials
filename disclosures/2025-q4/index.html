@@ -1,0 +1,3087 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mossland — 2025 Q4 Report</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Space+Mono:wght@400;700&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      :root {
+        --bg: #0a0a0f;
+        --bg2: #12121a;
+        --bg3: #1a1a26;
+        --surface: #1e1e2e;
+        --border: #2a2a3a;
+        --text: #e8e6e3;
+        --text2: #9a98a0;
+        --text3: #6a6870;
+        --accent: #00d4aa;
+        --accent2: #00b894;
+        --accent-glow: rgba(0, 212, 170, 0.15);
+        --coral: #ff6b6b;
+        --amber: #ffd93d;
+        --blue: #6c5ce7;
+        --purple: #a29bfe;
+        --font-display: "Instrument Serif", Georgia, serif;
+        --font-body: "DM Sans", system-ui, sans-serif;
+        --font-mono: "Space Mono", monospace;
+      }
+      html {
+        scroll-behavior: smooth;
+        font-size: 16px;
+      }
+      body {
+        background: var(--bg);
+        color: var(--text);
+        font-family: var(--font-body);
+        line-height: 1.7;
+        overflow-x: hidden;
+      }
+      .nowrap {
+        white-space: nowrap;
+      }
+      ::selection {
+        background: var(--accent);
+        color: var(--bg);
+      }
+      ::-webkit-scrollbar {
+        width: 1px;
+      }
+      ::-webkit-scrollbar-track {
+        background: var(--bg);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: var(--border);
+        border-radius: 3px;
+      }
+
+      /* ===== NAV ===== */
+      .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        padding: 0.75rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        backdrop-filter: blur(24px);
+        background: rgba(10, 10, 15, 0.85);
+        border-bottom: 1px solid transparent;
+        transition: border-color 0.3s;
+      }
+      .nav-spacer {
+        height: 72px;
+      }
+      @media (min-width: 1025px) {
+        .nav {
+          padding-left: 3rem;
+          padding-right: 3rem;
+        }
+        .nav-center {
+          margin: 0 20px;
+        }
+      }
+      .nav.scrolled {
+        border-color: var(--border);
+      }
+      .nav-logo {
+        font-family: var(--font-mono);
+        font-size: 0.8rem;
+        letter-spacing: 0.1em;
+        color: var(--accent);
+        font-weight: 700;
+        text-transform: uppercase;
+        white-space: nowrap;
+      }
+      .nav-logo span {
+        color: var(--text3);
+        font-weight: 400;
+      }
+      .nav-center {
+        display: flex;
+        gap: 0.15rem;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding: 0 1.25rem;
+        scroll-behavior: smooth;
+      }
+      .nav-center {
+        scrollbar-width: auto;
+      }
+      .nav-center::-webkit-scrollbar {
+        height: 3px;
+      }
+      .nav-center::-webkit-scrollbar-track {
+        background: var(--bg);
+      }
+      .nav-center::-webkit-scrollbar-thumb {
+        background: var(--border);
+        border-radius: 3px;
+      }
+      .nav-center a {
+        color: var(--text3);
+        text-decoration: none;
+        font-size: 0.7rem;
+        font-family: var(--font-mono);
+        padding: 0.35rem 0.6rem;
+        border-radius: 4px;
+        transition: all 0.2s;
+        letter-spacing: 0.02em;
+        white-space: nowrap;
+      }
+      .nav-center a:hover,
+      .nav-center a.active {
+        color: var(--accent);
+        background: var(--accent-glow);
+      }
+      .nav-right {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      .lang-btn {
+        font-size: 0.7rem;
+        font-family: var(--font-mono);
+        color: var(--text2);
+        border: 1px solid var(--border);
+        background: transparent;
+        padding: 0.35rem 0.7rem;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.2s;
+        white-space: nowrap;
+      }
+      .lang-btn:hover,
+      .lang-btn.active {
+        color: var(--accent);
+        border-color: var(--accent);
+      }
+      .nav-dl {
+        font-size: 0.7rem;
+        font-family: var(--font-mono);
+        color: var(--accent);
+        border: 1px solid var(--accent);
+        padding: 0.35rem 0.8rem;
+        border-radius: 4px;
+        text-decoration: none;
+        transition: all 0.2s;
+        white-space: nowrap;
+      }
+      .nav-dl:hover {
+        background: var(--accent);
+        color: var(--bg);
+      }
+
+      /* ===== HERO ===== */
+      .hero {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 8rem 3rem 4rem;
+        position: relative;
+        overflow: hidden;
+      }
+      .hero::before {
+        content: "";
+        position: absolute;
+        top: -200px;
+        right: -200px;
+        width: 600px;
+        height: 600px;
+        background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+        pointer-events: none;
+        animation: pulse 6s ease-in-out infinite;
+      }
+      .hero::after {
+        content: "";
+        position: absolute;
+        bottom: -100px;
+        left: -100px;
+        width: 400px;
+        height: 400px;
+        background: radial-gradient(circle, rgba(108, 92, 231, 0.08) 0%, transparent 70%);
+        pointer-events: none;
+      }
+      @keyframes pulse {
+        0%,
+        100% {
+          opacity: 0.6;
+          transform: scale(1);
+        }
+        50% {
+          opacity: 1;
+          transform: scale(1.1);
+        }
+      }
+      .hero-label {
+        font-family: var(--font-mono);
+        font-size: 0.72rem;
+        color: var(--accent);
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        margin-bottom: 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+      }
+      .hero-label::before {
+        content: "";
+        width: 32px;
+        height: 1px;
+        background: var(--accent);
+      }
+      .hero h1 {
+        font-family: var(--font-display);
+        font-size: clamp(2.5rem, 6.5vw, 5.2rem);
+        font-weight: 400;
+        line-height: 1.08;
+        color: var(--text);
+        margin-bottom: 1.5rem;
+        max-width: 880px;
+      }
+      .hero h1 em {
+        font-style: italic;
+        color: var(--accent);
+      }
+      .hero-sub {
+        font-size: 1.1rem;
+        color: var(--text2);
+        max-width: 620px;
+        margin-bottom: 3rem;
+        line-height: 1.85;
+      }
+      .hero-meta {
+        display: flex;
+        gap: 2.5rem;
+        font-family: var(--font-mono);
+        font-size: 0.72rem;
+        color: var(--text3);
+        flex-wrap: wrap;
+      }
+      .hero-meta span {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+      }
+      .hero-meta strong {
+        color: var(--text);
+        font-size: 0.82rem;
+      }
+
+      /* ===== STATS BANNER ===== */
+      .stats-banner {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 1px;
+        background: var(--border);
+        border-top: 1px solid var(--border);
+        border-bottom: 1px solid var(--border);
+      }
+      .stat-card {
+        background: var(--bg2);
+        padding: 2.2rem 1.5rem;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+      .stat-card::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40px;
+        height: 2px;
+        background: var(--accent);
+        opacity: 0;
+        transition: opacity 0.4s;
+      }
+      .stat-card:hover::after {
+        opacity: 1;
+      }
+      .stat-num {
+        font-family: var(--font-display);
+        font-size: 2.4rem;
+        color: var(--text);
+        display: block;
+        margin-bottom: 0.2rem;
+      }
+      .stat-num .unit {
+        font-size: 1rem;
+        color: var(--accent);
+        font-family: var(--font-mono);
+      }
+      .stat-label {
+        font-size: 0.65rem;
+        color: var(--text3);
+        font-family: var(--font-mono);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .stat-sub {
+        font-size: 0.7rem;
+        color: var(--text2);
+        margin-top: 0.3rem;
+      }
+
+      /* ===== SECTION ===== */
+      .section {
+        padding: 5rem 3rem;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .section-wide {
+        max-width: 1400px;
+      }
+      .section-divider {
+        border: none;
+        border-top: 1px solid var(--border);
+        margin: 0;
+      }
+      .section-label {
+        font-family: var(--font-mono);
+        font-size: 0.68rem;
+        color: var(--accent);
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+      }
+      .section-label::before {
+        content: attr(data-num);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 22px;
+        height: 22px;
+        border: 1px solid var(--accent);
+        border-radius: 50%;
+        font-size: 0.58rem;
+      }
+      .section h2 {
+        font-family: var(--font-display);
+        font-size: clamp(1.8rem, 3.8vw, 3rem);
+        font-weight: 400;
+        line-height: 1.15;
+        margin-bottom: 1rem;
+        max-width: 720px;
+      }
+      .section h2 em {
+        font-style: italic;
+        color: var(--accent);
+      }
+      .section-desc {
+        color: var(--text2);
+        font-size: 1rem;
+        max-width: 620px;
+        margin-bottom: 2.5rem;
+        line-height: 1.85;
+      }
+
+      /* ===== ACHIEVEMENT TABLE ===== */
+      .achieve-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1.5rem;
+        font-size: 0.85rem;
+      }
+      .achieve-table th {
+        text-align: left;
+        padding: 0.7rem 1rem;
+        font-family: var(--font-mono);
+        font-size: 0.6rem;
+        color: var(--text3);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        border-bottom: 1px solid var(--border);
+        font-weight: 400;
+        white-space: nowrap;
+      }
+      .achieve-table td {
+        padding: 0.7rem 1rem;
+        border-bottom: 1px solid rgba(42, 42, 58, 0.4);
+        vertical-align: top;
+      }
+      .achieve-table tr:hover td {
+        background: rgba(0, 212, 170, 0.02);
+      }
+      .achieve-cat {
+        font-weight: 500;
+        color: var(--text);
+        white-space: nowrap;
+      }
+      .achieve-status {
+        font-family: var(--font-mono);
+        font-size: 0.7rem;
+        padding: 0.2rem 0.5rem;
+        border-radius: 3px;
+        display: inline-block;
+        white-space: nowrap;
+      }
+      .achieve-status.complete {
+        background: rgba(0, 212, 170, 0.12);
+        color: var(--accent);
+      }
+      .achieve-status.ongoing {
+        background: rgba(255, 217, 61, 0.1);
+        color: var(--amber);
+      }
+
+      /* ===== TAKEAWAY CARDS ===== */
+      .takeaways {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 1.25rem;
+        margin-top: 2rem;
+      }
+      .takeaway {
+        background: var(--bg2);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 1.75rem;
+        position: relative;
+        transition: all 0.3s;
+        overflow: hidden;
+      }
+      .takeaway:hover {
+        border-color: var(--accent);
+        transform: translateY(-2px);
+      }
+      .takeaway::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: linear-gradient(90deg, var(--accent), transparent);
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+      .takeaway:hover::before {
+        opacity: 1;
+      }
+      .takeaway-num {
+        font-family: var(--font-mono);
+        font-size: 0.6rem;
+        color: var(--accent);
+        letter-spacing: 0.08em;
+        margin-bottom: 0.6rem;
+      }
+      .takeaway h3 {
+        font-family: var(--font-display);
+        font-size: 1.3rem;
+        font-weight: 400;
+        margin-bottom: 0.6rem;
+        line-height: 1.3;
+      }
+      .takeaway p {
+        color: var(--text2);
+        font-size: 0.85rem;
+        line-height: 1.7;
+      }
+
+      /* ===== TIMELINE ===== */
+      .timeline {
+        position: relative;
+        padding-left: 3rem;
+        margin-top: 2rem;
+      }
+      .timeline::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 1px;
+        background: linear-gradient(to bottom, var(--accent), var(--border) 30%, var(--border) 70%, var(--accent));
+      }
+      .tl-item {
+        padding: 0 0 2.5rem 2rem;
+        position: relative;
+      }
+      .tl-item:last-child {
+        padding-bottom: 0;
+      }
+      .tl-item::before {
+        content: "";
+        position: absolute;
+        left: -3.35rem;
+        top: 0.5rem;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--accent);
+        box-shadow: 0 0 12px var(--accent-glow);
+      }
+      .tl-quarter {
+        font-family: var(--font-mono);
+        font-size: 0.68rem;
+        color: var(--accent);
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        margin-bottom: 0.4rem;
+      }
+      .tl-title {
+        font-family: var(--font-display);
+        font-size: 1.4rem;
+        font-weight: 400;
+        margin-bottom: 0.4rem;
+      }
+      .tl-desc {
+        color: var(--text2);
+        font-size: 0.88rem;
+        line-height: 1.75;
+        margin-bottom: 0.6rem;
+      }
+      .tl-details {
+        list-style: none;
+        margin: 0.5rem 0;
+      }
+      .tl-details li {
+        color: var(--text2);
+        font-size: 0.82rem;
+        line-height: 1.65;
+        padding-left: 1rem;
+        position: relative;
+      }
+      .tl-details li::before {
+        content: "→";
+        position: absolute;
+        left: 0;
+        color: var(--accent);
+        font-size: 0.75rem;
+      }
+      .tl-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+        margin-top: 0.6rem;
+      }
+      .tl-tag {
+        font-size: 0.7rem;
+        color: var(--text2);
+        background: var(--bg3);
+        border: 1px solid var(--border);
+        padding: 0.3rem 0.65rem;
+        border-radius: 20px;
+        font-family: var(--font-mono);
+      }
+
+      /* ===== TOKEN ===== */
+      .token-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+        margin-top: 2rem;
+      }
+      .token-card {
+        background: var(--bg2);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 1.75rem;
+        position: relative;
+      }
+      .token-card.hl {
+        border-color: rgba(0, 212, 170, 0.3);
+        background: linear-gradient(135deg, rgba(0, 212, 170, 0.04), var(--bg2));
+      }
+      .token-card h4 {
+        font-family: var(--font-mono);
+        font-size: 0.65rem;
+        color: var(--text3);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 0.8rem;
+      }
+      .token-big {
+        font-family: var(--font-display);
+        font-size: 2rem;
+        color: var(--text);
+        margin-bottom: 0.5rem;
+      }
+      .token-big .ac {
+        color: var(--accent);
+      }
+      .token-detail {
+        color: var(--text2);
+        font-size: 0.85rem;
+        line-height: 1.7;
+      }
+      .token-detail ul {
+        margin: 0.5rem 0;
+        padding-left: 1.2rem;
+      }
+      .token-detail li {
+        margin-bottom: 0.3rem;
+        font-size: 0.82rem;
+      }
+      .burn-bar {
+        margin-top: 1.2rem;
+      }
+      .burn-track {
+        width: 100%;
+        height: 8px;
+        background: var(--bg3);
+        border-radius: 4px;
+        overflow: hidden;
+      }
+      .burn-fill {
+        height: 100%;
+        background: linear-gradient(90deg, var(--coral), var(--amber));
+        border-radius: 4px;
+        transition: width 1.5s ease-out;
+      }
+      .burn-labels {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0.4rem;
+        font-size: 0.65rem;
+        font-family: var(--font-mono);
+        color: var(--text3);
+      }
+
+      /* Migration Process */
+      .migration-steps {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+      .mig-step {
+        background: var(--bg2);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 1.5rem;
+        text-align: center;
+        position: relative;
+      }
+      .mig-step::after {
+        content: "→";
+        position: absolute;
+        right: -0.75rem;
+        top: 50%;
+        transform: translateY(-50%);
+        color: var(--accent);
+        font-size: 1.2rem;
+        z-index: 1;
+      }
+      .mig-step:last-child::after {
+        display: none;
+      }
+      .mig-num {
+        font-family: var(--font-mono);
+        font-size: 0.6rem;
+        color: var(--accent);
+        letter-spacing: 0.1em;
+        margin-bottom: 0.5rem;
+      }
+      .mig-title {
+        font-weight: 500;
+        font-size: 0.9rem;
+        margin-bottom: 0.3rem;
+      }
+      .mig-desc {
+        font-size: 0.75rem;
+        color: var(--text3);
+        line-height: 1.5;
+      }
+
+      /* ===== EXCHANGE TABLE ===== */
+      .ex-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1.5rem;
+        font-size: 0.82rem;
+      }
+      .ex-table th {
+        text-align: left;
+        padding: 0.65rem 0.8rem;
+        font-family: var(--font-mono);
+        font-size: 0.6rem;
+        color: var(--text3);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        border-bottom: 1px solid var(--border);
+        font-weight: 400;
+      }
+      .ex-table td {
+        padding: 0.65rem 0.8rem;
+        border-bottom: 1px solid rgba(42, 42, 58, 0.4);
+        color: var(--text2);
+      }
+      .ex-table tr:hover td {
+        background: rgba(0, 212, 170, 0.02);
+      }
+      .ex-name {
+        color: var(--text);
+        font-weight: 500;
+      }
+      .ex-vol {
+        font-family: var(--font-mono);
+        color: var(--accent);
+      }
+      .vol-wrap {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      .vol-track {
+        flex: 1;
+        max-width: 100px;
+        height: 4px;
+        background: var(--bg3);
+        border-radius: 2px;
+        overflow: hidden;
+      }
+      .vol-bar {
+        height: 100%;
+        background: var(--accent);
+        border-radius: 2px;
+      }
+      .vol-pct {
+        font-size: 0.65rem;
+        font-family: var(--font-mono);
+        color: var(--text3);
+        white-space: nowrap;
+      }
+
+      /* ===== GOVERNANCE DETAIL ===== */
+      .gov-features {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+      .gov-feat {
+        background: var(--bg2);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 1.5rem;
+        transition: border-color 0.3s;
+      }
+      .gov-feat:hover {
+        border-color: var(--accent);
+      }
+      .gov-feat-icon {
+        font-size: 1.5rem;
+        margin-bottom: 0.75rem;
+      }
+      .gov-feat h4 {
+        font-size: 0.95rem;
+        margin-bottom: 0.4rem;
+        font-weight: 500;
+      }
+      .gov-feat p {
+        font-size: 0.8rem;
+        color: var(--text2);
+        line-height: 1.65;
+      }
+
+      /* ===== GAMES ===== */
+      .games-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+      .game-item {
+        background: var(--bg2);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 1.5rem;
+        transition: all 0.3s;
+      }
+      .game-item:hover {
+        border-color: var(--accent);
+        transform: translateY(-2px);
+      }
+      .game-item.dev {
+        border-style: dashed;
+        opacity: 0.8;
+      }
+      .game-icon {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+      }
+      .game-name {
+        font-size: 0.92rem;
+        font-weight: 500;
+        margin-bottom: 0.15rem;
+      }
+      .game-q {
+        font-family: var(--font-mono);
+        font-size: 0.62rem;
+        color: var(--accent);
+        letter-spacing: 0.08em;
+        margin-bottom: 0.5rem;
+      }
+      .game-desc {
+        font-size: 0.78rem;
+        color: var(--text3);
+        line-height: 1.55;
+      }
+
+      /* ===== RESEARCH ===== */
+      .research-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+      .research-card {
+        background: var(--bg2);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 1.5rem;
+        transition: all 0.3s;
+      }
+      .research-card:hover {
+        border-color: var(--accent);
+        transform: translateY(-2px);
+      }
+      .rc-type {
+        font-family: var(--font-mono);
+        font-size: 0.58rem;
+        color: var(--bg);
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        padding: 0.18rem 0.55rem;
+        border-radius: 3px;
+        display: inline-block;
+        margin-bottom: 0.65rem;
+      }
+      .rc-type.ai {
+        background: var(--accent);
+      }
+      .rc-type.bc {
+        background: var(--blue);
+        color: #fff;
+      }
+      .rc-type.conv {
+        background: var(--amber);
+        color: var(--bg);
+      }
+      .rc-type.reg {
+        background: var(--coral);
+        color: #fff;
+      }
+      .rc-title {
+        font-family: var(--font-display);
+        font-size: 1.1rem;
+        margin-bottom: 0.4rem;
+        line-height: 1.3;
+      }
+      .rc-desc {
+        font-size: 0.78rem;
+        color: var(--text3);
+        line-height: 1.6;
+      }
+      .rc-findings {
+        margin-top: 0.6rem;
+        padding-top: 0.6rem;
+        border-top: 1px solid var(--border);
+      }
+      .rc-findings li {
+        font-size: 0.75rem;
+        color: var(--text2);
+        line-height: 1.55;
+        margin-bottom: 0.25rem;
+        list-style: none;
+        padding-left: 0.8rem;
+        position: relative;
+      }
+      .rc-findings li::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: var(--accent);
+      }
+
+      /* ===== EVENTS ===== */
+      .events-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+      .event-card {
+        background: var(--bg2);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 1.5rem;
+        transition: border-color 0.3s;
+      }
+      .event-card:hover {
+        border-color: var(--accent);
+      }
+      .ev-quarter {
+        font-family: var(--font-mono);
+        font-size: 0.6rem;
+        color: var(--accent);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 0.5rem;
+      }
+      .ev-title {
+        font-size: 1rem;
+        font-weight: 500;
+        margin-bottom: 0.4rem;
+      }
+      .ev-desc {
+        font-size: 0.8rem;
+        color: var(--text2);
+        line-height: 1.65;
+      }
+      .ev-amount {
+        font-family: var(--font-mono);
+        font-size: 1.3rem;
+        color: var(--accent);
+        margin-top: 0.5rem;
+      }
+
+      /* ===== OSS ===== */
+      .oss-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+      .oss-metric {
+        background: var(--bg2);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 1.3rem;
+        text-align: center;
+        transition: border-color 0.3s;
+      }
+      .oss-metric:hover {
+        border-color: var(--accent);
+      }
+      .oss-val {
+        font-family: var(--font-display);
+        font-size: 2.2rem;
+        color: var(--text);
+      }
+      .oss-name {
+        font-family: var(--font-mono);
+        font-size: 0.6rem;
+        color: var(--text3);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-top: 0.15rem;
+      }
+      .oss-bar-section {
+        margin-top: 2rem;
+      }
+      .oss-bar-item {
+        margin-bottom: 1rem;
+      }
+      .oss-bar-label {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.3rem;
+        font-size: 0.78rem;
+      }
+      .oss-bar-label span:first-child {
+        color: var(--text2);
+      }
+      .oss-bar-label span:last-child {
+        font-family: var(--font-mono);
+        color: var(--accent);
+        font-size: 0.72rem;
+      }
+      .oss-track {
+        width: 100%;
+        height: 5px;
+        background: var(--bg3);
+        border-radius: 3px;
+        overflow: hidden;
+      }
+      .oss-fill {
+        height: 100%;
+        border-radius: 3px;
+        transition: width 1.5s ease-out;
+      }
+
+      .oss-line-chart {
+        margin-top: 1.5rem;
+        background: var(--bg2);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 1rem 1rem 0.75rem;
+      }
+      .oss-line-chart svg {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      .oss-line-grid {
+        stroke: var(--border);
+        stroke-width: 1;
+        opacity: 0.6;
+      }
+      .oss-line-axis {
+        stroke: var(--border);
+        stroke-width: 1;
+      }
+      .oss-line-label {
+        fill: var(--text3);
+        font-size: 10px;
+        font-family: var(--font-mono);
+        letter-spacing: 0.04em;
+      }
+      .oss-line-path {
+        fill: none;
+        stroke: var(--accent);
+        stroke-width: 2.5;
+      }
+      .oss-line-area {
+        fill: url(#ossLineGradient);
+        opacity: 0.7;
+      }
+      .oss-line-point {
+        fill: var(--accent);
+        stroke: var(--bg1);
+        stroke-width: 2;
+      }
+      .pr-stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+      .pr-stat {
+        background: var(--bg2);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 1.2rem;
+        text-align: center;
+      }
+      .pr-val {
+        font-family: var(--font-display);
+        font-size: 1.6rem;
+      }
+      .pr-label {
+        font-size: 0.7rem;
+        color: var(--text3);
+        font-family: var(--font-mono);
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        margin-top: 0.2rem;
+      }
+
+      /* ===== OUTLOOK ===== */
+      .outlook-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+        margin-top: 2rem;
+      }
+      .outlook-item {
+        background: linear-gradient(135deg, var(--bg2), var(--bg3));
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 1.75rem;
+        position: relative;
+        overflow: hidden;
+        transition: border-color 0.3s;
+      }
+      .outlook-item:hover {
+        border-color: var(--accent);
+      }
+      .outlook-item::before {
+        content: "";
+        position: absolute;
+        top: -20px;
+        right: -20px;
+        width: 80px;
+        height: 80px;
+        background: radial-gradient(circle, var(--accent-glow), transparent);
+        pointer-events: none;
+      }
+      .outlook-item h4 {
+        font-family: var(--font-display);
+        font-size: 1.25rem;
+        margin-bottom: 0.6rem;
+      }
+      .outlook-item p {
+        color: var(--text2);
+        font-size: 0.88rem;
+        line-height: 1.75;
+      }
+      .outlook-item ul {
+        margin-top: 0.5rem;
+        padding-left: 1rem;
+      }
+      .outlook-item li {
+        color: var(--text2);
+        font-size: 0.82rem;
+        line-height: 1.55;
+        margin-bottom: 0.2rem;
+      }
+
+      /* ===== CONFERENCE ===== */
+      .conf-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+      .conf-card {
+        background: var(--bg2);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 1.3rem;
+        transition: border-color 0.3s;
+      }
+      .conf-card:hover {
+        border-color: var(--accent);
+      }
+      .conf-name {
+        font-weight: 500;
+        font-size: 0.92rem;
+        margin-bottom: 0.3rem;
+      }
+      .conf-desc {
+        font-size: 0.75rem;
+        color: var(--text3);
+        line-height: 1.55;
+      }
+
+      /* ===== FOOTER ===== */
+      .footer {
+        border-top: 1px solid var(--border);
+        padding: 3rem;
+        text-align: center;
+      }
+      .footer-logo {
+        font-family: var(--font-mono);
+        font-size: 0.8rem;
+        color: var(--accent);
+        letter-spacing: 0.1em;
+        margin-bottom: 0.4rem;
+      }
+      .footer p {
+        color: var(--text3);
+        font-size: 0.72rem;
+        line-height: 1.6;
+      }
+
+      /* ===== ANIMATIONS ===== */
+      .fade-up {
+        opacity: 0;
+        transform: translateY(28px);
+        transition:
+          opacity 0.65s ease-out,
+          transform 0.65s ease-out;
+      }
+      .fade-up.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .fd1 {
+        transition-delay: 0.1s;
+      }
+      .fd2 {
+        transition-delay: 0.2s;
+      }
+      .fd3 {
+        transition-delay: 0.3s;
+      }
+      .stagger > * {
+        opacity: 0;
+        transform: translateY(18px);
+        transition:
+          opacity 0.45s ease-out,
+          transform 0.45s ease-out;
+      }
+      .stagger.visible > * {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .stagger.visible > *:nth-child(1) {
+        transition-delay: 0.04s;
+      }
+      .stagger.visible > *:nth-child(2) {
+        transition-delay: 0.08s;
+      }
+      .stagger.visible > *:nth-child(3) {
+        transition-delay: 0.12s;
+      }
+      .stagger.visible > *:nth-child(4) {
+        transition-delay: 0.16s;
+      }
+      .stagger.visible > *:nth-child(5) {
+        transition-delay: 0.2s;
+      }
+      .stagger.visible > *:nth-child(6) {
+        transition-delay: 0.24s;
+      }
+      .stagger.visible > *:nth-child(7) {
+        transition-delay: 0.28s;
+      }
+      .stagger.visible > *:nth-child(8) {
+        transition-delay: 0.32s;
+      }
+      .stagger.visible > *:nth-child(9) {
+        transition-delay: 0.36s;
+      }
+
+      /* ===== LANG TOGGLE ===== */
+      [data-lang="ko"] {
+        display: none;
+      }
+      body.ko [data-lang="ko"] {
+        display: block;
+      }
+      body.ko [data-lang="en"] {
+        display: none;
+      }
+      body.ko [data-lang-inline="ko"] {
+        display: inline;
+      }
+      body.ko [data-lang-inline="en"] {
+        display: none;
+      }
+      body:not(.ko) [data-lang-inline="ko"] {
+        display: none;
+      }
+      body:not(.ko) [data-lang-inline="en"] {
+        display: inline;
+      }
+
+      /* Inline spans for dual-language */
+      .i18n-ko {
+        display: none;
+      }
+      body.ko .i18n-ko {
+        display: inline;
+      }
+      body.ko .i18n-en {
+        display: none;
+      }
+
+      /* ===== MOBILE ===== */
+      @media (max-width: 1024px) {
+        .stats-banner {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        .migration-steps {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .mig-step:nth-child(2)::after {
+          display: none;
+        }
+        .gov-features {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (max-width: 768px) {
+        .nav-spacer {
+          height: 88px;
+        }
+        .nav {
+          padding: 0.6rem 1rem;
+        }
+        .nav-center {
+          display: none;
+        }
+        .section {
+          padding: 3rem 1.25rem;
+        }
+        .hero {
+          padding: 5.5rem 1.25rem 2.5rem;
+          min-height: auto;
+        }
+        .hero h1 {
+          font-size: 2.2rem;
+        }
+        .hero-sub {
+          font-size: 0.95rem;
+        }
+        .hero-meta {
+          gap: 1.5rem;
+        }
+        .stats-banner {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .stat-card {
+          padding: 1.5rem 1rem;
+        }
+        .stat-num {
+          font-size: 1.8rem;
+        }
+        .token-grid,
+        .outlook-items,
+        .events-grid {
+          grid-template-columns: 1fr;
+        }
+        .migration-steps {
+          grid-template-columns: 1fr;
+        }
+        .mig-step::after {
+          display: none;
+        }
+        .games-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .gov-features,
+        .oss-grid,
+        .pr-stats {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .timeline {
+          padding-left: 2rem;
+        }
+        .tl-item::before {
+          left: -2.35rem;
+        }
+        .achieve-table {
+          font-size: 0.75rem;
+        }
+        .achieve-table th,
+        .achieve-table td {
+          padding: 0.5rem 0.4rem;
+        }
+        .ex-table {
+          font-size: 0.72rem;
+        }
+        .ex-table th,
+        .ex-table td {
+          padding: 0.5rem 0.4rem;
+        }
+        .vol-track {
+          max-width: 60px;
+        }
+      }
+      @media (max-width: 480px) {
+        .stats-banner {
+          grid-template-columns: 1fr;
+        }
+        .games-grid,
+        .oss-grid,
+        .gov-features,
+        .pr-stats,
+        .conf-grid {
+          grid-template-columns: 1fr;
+        }
+        .takeaways,
+        .research-cards {
+          grid-template-columns: 1fr;
+        }
+        .hero-meta {
+          flex-direction: column;
+          gap: 0.75rem;
+        }
+        .section h2 {
+          font-size: 1.6rem;
+        }
+      }
+
+      /* Mobile nav menu */
+      .mobile-menu-btn {
+        display: none;
+        background: none;
+        border: 1px solid var(--border);
+        color: var(--text2);
+        padding: 0.3rem 0.5rem;
+        border-radius: 4px;
+        cursor: pointer;
+        font-family: var(--font-mono);
+        font-size: 0.7rem;
+      }
+      @media (max-width: 768px) {
+        .mobile-menu-btn {
+          display: block;
+        }
+      }
+      .mobile-nav {
+        display: none;
+        position: fixed;
+        top: 48px;
+        left: 0;
+        right: 0;
+        background: var(--bg2);
+        border-bottom: 1px solid var(--border);
+        padding: 1rem;
+        z-index: 99;
+        flex-wrap: wrap;
+        gap: 0.3rem;
+      }
+      .mobile-nav.open {
+        display: flex;
+      }
+      .mobile-nav a {
+        color: var(--text3);
+        text-decoration: none;
+        font-size: 0.72rem;
+        font-family: var(--font-mono);
+        padding: 0.4rem 0.65rem;
+        border-radius: 4px;
+        transition: all 0.2s;
+      }
+      .mobile-nav a:hover,
+      .mobile-nav a.active {
+        color: var(--accent);
+        background: var(--accent-glow);
+      }
+
+      .note {
+        font-size: 0.72rem;
+        color: var(--text3);
+        margin-top: 0.75rem;
+        font-style: italic;
+      }
+      .subsection-title {
+        font-family: var(--font-mono);
+        font-size: 0.68rem;
+        color: var(--text3);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-top: 3rem;
+        margin-bottom: 0.8rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ===== NAV ===== -->
+    <nav class="nav" id="nav">
+      <div class="nav-logo">MOSSLAND <span>/ Q4 2025</span></div>
+      <div class="nav-center">
+        <a href="#overview" class="active">Overview</a>
+        <a href="#key-achievements">Key Achievements</a>
+        <a href="#q1-activities" data-nav="q1-activities">Q1 Details</a>
+        <a href="#q2-activities" data-nav="q2-activities">Q2 Details</a>
+        <a href="#q3-activities" data-nav="q3-activities">Q3 Details</a>
+        <a href="#q4-network-transition" data-nav="q4-network-transition">Q4 Transition</a>
+        <a href="#token-ecosystem">Token Ecosystem</a>
+        <a href="#moc-market-performance">MOC Market Performance</a>
+        <a href="#governance-platform">Governance Platform</a>
+        <a href="#dao-ai-tools">DAO AI Tools</a>
+        <a href="#games">Metaverse Games</a>
+        <a href="#research">Research Center</a>
+        <a href="#events">Community Events</a>
+        <a href="#oss">Open Source</a>
+        <a href="#outlook">2026 Outlook</a>
+      </div>
+      <div class="nav-right">
+        <button class="mobile-menu-btn" id="mobileMenuBtn">☰ Menu</button>
+        <button class="lang-btn" id="langBtn">한국어</button>
+        <a href="Mossland_Q4_2025_Report.pdf" class="nav-dl" download target="_blank" rel="noopener">↓ PDF</a>
+      </div>
+    </nav>
+    <div class="nav-spacer" aria-hidden="true"></div>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#overview">Overview</a><a href="#key-achievements">Key Achievements</a
+      ><a href="#q1-activities" data-nav="q1-activities">Q1 Details</a> <a href="#q2-activities" data-nav="q2-activities">Q2 Details</a
+      ><a href="#q3-activities" data-nav="q3-activities">Q3 Details</a
+      ><a href="#q4-network-transition" data-nav="q4-network-transition">Q4 Transition</a> <a href="#token-ecosystem">Token Ecosystem</a
+      ><a href="#moc-market-performance">MOC Market Performance</a><a href="#governance-platform">Governance Platform</a>
+      <a href="#dao-ai-tools">DAO AI Tools</a><a href="#games">Metaverse Games</a><a href="#research">Research Center</a
+      ><a href="#events">Community Events</a> <a href="#oss">Open Source</a><a href="#outlook">2026 Outlook</a>
+    </div>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero nav-target" id="overview">
+      <div class="hero-label"><span class="i18n-en">State of Mossland</span><span class="i18n-ko">모스랜드 현황 보고서</span></div>
+      <h1 class="fade-up" data-lang="en">2025 was the year Mossland went <em>on-chain</em></h1>
+      <h1 class="fade-up" data-lang="ko">2025년, 모스랜드가 <em><span class="nowrap">온체인</span></em>으로 전환한 해</h1>
+      <p class="hero-sub fade-up fd1" data-lang="en">
+        From launching DAO governance and AI tooling to completing the full migration of MOC to Ethereum ERC-20 — a comprehensive look at
+        the ecosystem's transformation across four quarters of sustained building.
+      </p>
+      <p class="hero-sub fade-up fd1" data-lang="ko">
+        DAO 거버넌스와 AI 도구 출시부터 MOC의 이더리움 ERC-20 완전 마이그레이션까지 — 4개 분기에 걸친 모스랜드 생태계의 전면적 전환을
+        종합적으로 조망합니다.
+      </p>
+      <div class="hero-meta fade-up fd2">
+        <span>
+          <span data-lang-inline="en">Published</span><span data-lang-inline="ko">&#48156;&#54665;&#51068;</span>
+          <strong
+            ><span data-lang-inline="en">30 Jan 2026</span><span data-lang-inline="ko">2026&#45380; 1&#50900; 30&#51068;</span></strong
+          >
+        </span>
+        <span>
+          <span data-lang-inline="en">Author</span><span data-lang-inline="ko">&#51088;&#49457;</span>
+          <strong><span data-lang-inline="en">Mossland Team</span><span data-lang-inline="ko">Mossland Team</span></strong>
+        </span>
+        <span>
+          <span data-lang-inline="en">Sections</span><span data-lang-inline="ko">&#49464;&#49440;</span>
+          <strong>14 <span data-lang-inline="en">Topics</span><span data-lang-inline="ko">&#51452;&#51228;</span></strong>
+        </span>
+        <span>
+          <span data-lang-inline="en">Original</span><span data-lang-inline="ko">&#50896;&#48376;</span>
+          <strong>108 <span data-lang-inline="en">Slides</span><span data-lang-inline="ko">&#49836;&#46972;&#51060;&#46300;</span></strong>
+        </span>
+      </div>
+    </section>
+
+    <!-- ===== STATS ===== -->
+    <div class="stats-banner" id="stats">
+      <div class="stat-card fade-up">
+        <span class="stat-num"><span class="counter" data-target="500" data-suffix="M">0</span><span class="unit">M</span></span>
+        <span class="stat-label"><span class="i18n-en">New ERC-20 MOC</span><span class="i18n-ko">신규 ERC-20 MOC</span></span>
+        <div class="stat-sub"><span class="i18n-en">Issued on Ethereum</span><span class="i18n-ko">이더리움에서 발행</span></div>
+      </div>
+      <div class="stat-card fade-up">
+        <span class="stat-num"><span class="counter" data-target="408">0</span><span class="unit">M</span></span>
+        <span class="stat-label"><span class="i18n-en">Legacy MOC Burned</span><span class="i18n-ko">레거시 MOC 소각</span></span>
+        <div class="stat-sub">81.6% <span class="i18n-en">of supply retired</span><span class="i18n-ko">공급량 소각 완료</span></div>
+      </div>
+      <div class="stat-card fade-up">
+        <span class="stat-num">₩<span class="counter" data-target="4.34">0</span><span class="unit">T</span></span>
+        <span class="stat-label"><span class="i18n-en">Annual Volume</span><span class="i18n-ko">연간 거래량</span></span>
+        <div class="stat-sub"><span class="i18n-en">Across 4 exchanges</span><span class="i18n-ko">4개 거래소 합산</span></div>
+      </div>
+      <div class="stat-card fade-up">
+        <span class="stat-num"><span class="counter" data-target="1175">0</span></span>
+        <span class="stat-label"><span class="i18n-en">GitHub Commits</span><span class="i18n-ko">GitHub 커밋</span></span>
+        <div class="stat-sub"><span class="i18n-en">11 active repos</span><span class="i18n-ko">11개 활성 저장소</span></div>
+      </div>
+      <div class="stat-card fade-up">
+        <span class="stat-num"><span class="counter" data-target="9">0</span></span>
+        <span class="stat-label"><span class="i18n-en">Live Game Titles</span><span class="i18n-ko">라이브 게임</span></span>
+        <div class="stat-sub">+3 <span class="i18n-en">in development</span><span class="i18n-ko">개발 중</span></div>
+      </div>
+    </div>
+
+    <!-- ===== KEY ACHIEVEMENTS TABLE ===== -->
+    <hr class="section-divider" />
+    <section class="section nav-target" id="key-achievements">
+      <div class="section-label fade-up" data-num="01">
+        <span class="i18n-en">Key Achievements</span><span class="i18n-ko">주요 성과</span>
+      </div>
+      <h2 class="fade-up" data-lang="en">2025 at a glance — <em>8 milestones</em> that mattered</h2>
+      <h2 class="fade-up" data-lang="ko">2025 한눈에 보기 — 중요한 <em>8가지 마일스톤</em></h2>
+      <p class="section-desc fade-up" data-lang="en">
+        The biggest year in Mossland's history — spanning governance, AI tooling, network migration, exchange expansion, and sustained
+        research output.
+      </p>
+      <p class="section-desc fade-up" data-lang="ko">
+        모스랜드 역사상 가장 큰 전환의 해 — 거버넌스, AI 도구, 네트워크 마이그레이션, 거래소 확장, 지속적인 리서치 산출물을 아우릅니다.
+      </p>
+
+      <table class="achieve-table fade-up" data-lang="en">
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Item</th>
+            <th>Status</th>
+            <th>Summary</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="achieve-cat">Governance</td>
+            <td>Agora launch & upgrades</td>
+            <td><span class="achieve-status complete">Complete</span></td>
+            <td>Launched DAO platform, iterated through 3 major UX upgrades including AI-assisted drafting</td>
+          </tr>
+          <tr>
+            <td class="achieve-cat">AI Tooling</td>
+            <td>MAIT launch</td>
+            <td><span class="achieve-status complete">Complete</span></td>
+            <td>Released AI toolkit for proposal drafting, summarization, sentiment analysis with multilingual support</td>
+          </tr>
+          <tr>
+            <td class="achieve-cat">Research</td>
+            <td>AI Research Center</td>
+            <td><span class="achieve-status ongoing">Ongoing</span></td>
+            <td>Published 6 reports: Character AI, KRW Stablecoin, Digital Twin, Luniverse Network, BaaS Migration, and more</td>
+          </tr>
+          <tr>
+            <td class="achieve-cat">Games</td>
+            <td>Metaverse Game Center</td>
+            <td><span class="achieve-status ongoing">Ongoing</span></td>
+            <td>9 live titles (3 from 2024, 6 new in 2025) with play guides. 3 additional titles in development</td>
+          </tr>
+          <tr>
+            <td class="achieve-cat">Exchange</td>
+            <td>KRW market expansion</td>
+            <td><span class="achieve-status complete">Complete</span></td>
+            <td>Completed listings on Coinone (Aug) and GOPAX (Nov), joining Upbit and Bithumb</td>
+          </tr>
+          <tr>
+            <td class="achieve-cat">Network</td>
+            <td>ERC-20 migration + burn</td>
+            <td><span class="achieve-status complete">Complete</span></td>
+            <td>Luniverse → Ethereum. 500M new tokens issued. 408M legacy tokens burned. Community-voted via Agora</td>
+          </tr>
+          <tr>
+            <td class="achieve-cat">Ecosystem</td>
+            <td>Seoul:ution 2025</td>
+            <td><span class="achieve-status complete">Complete</span></td>
+            <td>Hackathon sponsorship and CEO judging participation. 9 teams presented real-world prototypes</td>
+          </tr>
+          <tr>
+            <td class="achieve-cat">Internal</td>
+            <td>AI Hackathons (×2)</td>
+            <td><span class="achieve-status complete">Complete</span></td>
+            <td>All-employee hackathons covering prompt design, model comparison, and real-world AI application</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="achieve-table fade-up" data-lang="ko">
+        <thead>
+          <tr>
+            <th>분류</th>
+            <th>항목</th>
+            <th>상태</th>
+            <th>요약</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="achieve-cat">거버넌스</td>
+            <td>Agora 출시 및 업그레이드</td>
+            <td><span class="achieve-status complete">완료</span></td>
+            <td>DAO 플랫폼 출시, AI 지원 초안 작성을 포함한 3회 주요 UX 개선</td>
+          </tr>
+          <tr>
+            <td class="achieve-cat">AI 도구</td>
+            <td>MAIT 출시</td>
+            <td><span class="achieve-status complete">완료</span></td>
+            <td>제안 초안 작성, 요약, 감성 분석 AI 툴킷 출시, 다국어 지원</td>
+          </tr>
+          <tr>
+            <td class="achieve-cat">리서치</td>
+            <td>AI 리서치센터</td>
+            <td><span class="achieve-status ongoing">진행중</span></td>
+            <td>6건 리포트 발행: 캐릭터 AI, 원화 스테이블코인, 디지털 트윈, 루니버스 네트워크 등</td>
+          </tr>
+          <tr>
+            <td class="achieve-cat">게임</td>
+            <td>메타버스 게임센터</td>
+            <td><span class="achieve-status ongoing">진행중</span></td>
+            <td>라이브 9종 (2024년 3종 + 2025년 6종), 플레이 가이드 포함. 추가 3종 개발 중</td>
+          </tr>
+          <tr>
+            <td class="achieve-cat">거래소</td>
+            <td>KRW 마켓 확장</td>
+            <td><span class="achieve-status complete">완료</span></td>
+            <td>코인원 (8월), 고팍스 (11월) 상장 완료. 업비트, 빗썸과 함께 4대 거래소 커버리지 달성</td>
+          </tr>
+          <tr>
+            <td class="achieve-cat">네트워크</td>
+            <td>ERC-20 마이그레이션 + 소각</td>
+            <td><span class="achieve-status complete">완료</span></td>
+            <td>Luniverse → Ethereum. 5억 신규 토큰 발행. 4.08억 레거시 토큰 소각. Agora 커뮤니티 투표 승인</td>
+          </tr>
+          <tr>
+            <td class="achieve-cat">생태계</td>
+            <td>Seoul:ution 2025</td>
+            <td><span class="achieve-status complete">완료</span></td>
+            <td>해커톤 스폰서십 및 CEO 심사위원 참여. 9개 팀 실제 프로토타입 발표</td>
+          </tr>
+          <tr>
+            <td class="achieve-cat">내부역량</td>
+            <td>AI 해커톤 (2회)</td>
+            <td><span class="achieve-status complete">완료</span></td>
+            <td>전 직원 참여 해커톤. 프롬프트 설계, 모델 비교, 실무 AI 활용 사례 발굴</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- 7 Takeaway cards -->
+      <div class="subsection-title fade-up" data-lang="en">7 Key Takeaways</div>
+      <div class="subsection-title fade-up" data-lang="ko">7가지 핵심 요약</div>
+      <div class="takeaways stagger" data-lang="en">
+        <div class="takeaway">
+          <div class="takeaway-num">01 — GOVERNANCE</div>
+          <h3>Agora DAO launched and matured across 3 iterations</h3>
+          <p>
+            Mossland launched its on-chain governance platform in Q1, then delivered three major upgrades: full UI redesign (Q2),
+            AI-assisted drafting with Apply/Copy features (Q3), and governance data dashboard with CSV export. All voting processes and
+            outcomes are immutably recorded on-chain.
+          </p>
+        </div>
+        <div class="takeaway">
+          <div class="takeaway-num">02 — AI TOOLING</div>
+          <h3>MAIT brought AI-powered participation to DAO</h3>
+          <p>
+            The Mossland DAO AI Toolkit launched in Q2 with AI-driven proposal drafting, automatic language detection (KO/EN), sentiment
+            analysis, and decision support. Tightly integrated with Agora, it lets community members generate structured proposals from
+            simple inputs.
+          </p>
+        </div>
+        <div class="takeaway">
+          <div class="takeaway-num">03 — NETWORK MIGRATION</div>
+          <h3>MOC migrated to Ethereum ERC-20 — community voted</h3>
+          <p>
+            The community approved migration from Luniverse to Ethereum via Agora DAO vote. New ERC-20 contract deployed Aug 4 with 500M
+            MOC. Built-in Burn/Permit/Governance functions. Ownerless design with Multisig. 408M legacy tokens burned. Exchanges completed
+            1:1 automatic conversion.
+          </p>
+        </div>
+        <div class="takeaway">
+          <div class="takeaway-num">04 — EXCHANGE EXPANSION</div>
+          <h3>Top 4 Korean exchanges now list MOC</h3>
+          <p>
+            MOC completed KRW market listings on Coinone (Aug 14) and GOPAX (Nov), joining existing Upbit and Bithumb listings. Launch
+            events included 100% winning random boxes for Coinone and trading reward campaigns for GOPAX — collectively distributing 1.5M+
+            MOC to users.
+          </p>
+        </div>
+        <div class="takeaway">
+          <div class="takeaway-num">05 — METAVERSE GAMES</div>
+          <h3>9 live titles and growing</h3>
+          <p>
+            Six new games launched across Q1–Q2 (GemQuest, DoubleDice, Diamond & Bomb, 1-2-3, Keno, HorseRace), joining three 2024 titles.
+            Three more in Q3 development. Short sessions, instant settlement, and an enhanced fairness engine drive retention.
+          </p>
+        </div>
+        <div class="takeaway">
+          <div class="takeaway-num">06 — RESEARCH</div>
+          <h3>6 research reports across 3 domains</h3>
+          <p>
+            The Mossland AI Research Center published structured reports spanning AI (Character AI Chatbot, 2x AI Hackathon), Blockchain
+            (Luniverse Network, BaaS→Public Chain, KRW Stablecoin), and Converged Tech (Digital Twin with Revit/Tandem/IoT integration).
+          </p>
+        </div>
+        <div class="takeaway">
+          <div class="takeaway-num">07 — COMMUNITY</div>
+          <h3>4M+ MOC distributed through events</h3>
+          <p>
+            Bithumb airdrop (2.31M MOC), Agora launch rewards (215K), Coinone random box, GOPAX listing campaign (1.5M), and network
+            migration quiz events — a sustained engagement strategy across all quarters.
+          </p>
+        </div>
+      </div>
+      <div class="takeaways stagger" data-lang="ko">
+        <div class="takeaway">
+          <div class="takeaway-num">01 — 거버넌스</div>
+          <h3>Agora DAO 출시 및 3차 반복 개선</h3>
+          <p>
+            Q1에 온체인 거버넌스 플랫폼을 출시한 후, 전면 UI 재설계(Q2), AI 지원 초안 작성 및 Apply/Copy 기능(Q3), 거버넌스 데이터
+            대시보드와 CSV 내보내기까지 세 차례 주요 업그레이드를 진행했습니다. 모든 투표 과정과 결과는 온체인에 불변 기록됩니다.
+          </p>
+        </div>
+        <div class="takeaway">
+          <div class="takeaway-num">02 — AI 도구</div>
+          <h3>MAIT로 AI 기반 DAO 참여 실현</h3>
+          <p>
+            Q2에 출시된 MAIT는 AI 기반 제안서 초안 작성, 자동 언어 감지(한/영), 감성 분석, 의사결정 지원을 제공합니다. Agora와 긴밀히
+            연동되어 간단한 입력만으로 구조화된 제안서를 생성할 수 있습니다.
+          </p>
+        </div>
+        <div class="takeaway">
+          <div class="takeaway-num">03 — 네트워크 마이그레이션</div>
+          <h3>커뮤니티 투표로 MOC의 이더리움 ERC-20 전환</h3>
+          <p>
+            Agora DAO 투표를 통해 Luniverse에서 이더리움으로의 마이그레이션을 승인했습니다. 8월 4일 신규 ERC-20 컨트랙트 배포, 5억 MOC 발행.
+            Burn/Permit/Governance 내장. 오너리스 설계 + 멀티시그. 레거시 4.08억 토큰 소각 완료. 거래소 1:1 자동 전환.
+          </p>
+        </div>
+        <div class="takeaway">
+          <div class="takeaway-num">04 — 거래소 확장</div>
+          <h3>한국 4대 거래소 상장 완료</h3>
+          <p>
+            코인원(8/14) 및 고팍스(11월) KRW 마켓 상장 완료. 기존 업비트·빗썸과 합하여 4대 거래소 커버리지 달성. 코인원 100% 당첨 랜덤박스,
+            고팍스 거래 보상 캠페인 등 150만+ MOC 배포.
+          </p>
+        </div>
+        <div class="takeaway">
+          <div class="takeaway-num">05 — 메타버스 게임</div>
+          <h3>라이브 9종, 개발중 3종</h3>
+          <p>
+            Q1~Q2에 6종 신규 게임 출시(GemQuest, DoubleDice, Diamond & Bomb, 1-2-3, Keno, HorseRace). 2024년 3종 포함 총 9종 라이브. Q3에
+            3종 추가 개발 중. 빠른 세션, 즉시 정산, 강화된 공정성 엔진으로 리텐션 강화.
+          </p>
+        </div>
+        <div class="takeaway">
+          <div class="takeaway-num">06 — 리서치</div>
+          <h3>3개 도메인에 걸친 6건의 연구보고서</h3>
+          <p>
+            AI(캐릭터 AI 챗봇, AI 해커톤 2회), 블록체인(루니버스 네트워크, BaaS→퍼블릭체인, 원화 스테이블코인), 융합기술(디지털 트윈:
+            Revit/Tandem/IoT 연계) 분야에 걸쳐 총 6건의 구조화된 보고서를 발행했습니다.
+          </p>
+        </div>
+        <div class="takeaway">
+          <div class="takeaway-num">07 — 커뮤니티</div>
+          <h3>이벤트를 통해 400만+ MOC 배포</h3>
+          <p>
+            빗썸 에어드랍(231만 MOC), Agora 출시 보상(21.5만), 코인원 랜덤박스, 고팍스 상장 캠페인(150만), 네트워크 마이그레이션 퀴즈 이벤트
+            — 전 분기에 걸친 지속적 참여 전략을 운영했습니다.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== QUARTERLY TIMELINE ===== -->
+    <hr class="section-divider" />
+    <section class="section" id="quarterly">
+      <div class="section-label fade-up" data-num="02">
+        <span class="i18n-en">Quarterly Timeline</span><span class="i18n-ko">분기별 타임라인</span>
+      </div>
+      <h2 class="fade-up" data-lang="en">Four quarters of <em>sustained building</em></h2>
+      <h2 class="fade-up" data-lang="ko"><em>지속적인 구축</em>의 4분기</h2>
+      <p class="section-desc fade-up" data-lang="en">
+        A detailed chronological view of what shipped each quarter — from platform launches to network migration.
+      </p>
+      <p class="section-desc fade-up" data-lang="ko">
+        플랫폼 출시부터 네트워크 마이그레이션까지, 각 분기별 출시 내역을 시간순으로 상세히 정리합니다.
+      </p>
+
+      <div class="timeline fade-up" data-lang="en">
+        <div class="tl-item nav-target-en" id="q1-activities">
+          <div class="tl-quarter">Q1 2025</div>
+          <div class="tl-title">Q1 Activities Details — Foundation in Governance, AI, and Games</div>
+          <div class="tl-desc">
+            Agora DAO launched as the on-chain governance backbone. MAIT development began. Three metaverse games released. The AI Research
+            Center activated with defined research pillars.
+          </div>
+          <ul class="tl-details">
+            <li>Agora DAO governance platform launched — proposals, voting, on-chain recording</li>
+            <li>2,525,000 MOC airdrop (Bithumb 2.31M + Agora launch 215K)</li>
+            <li>MAIT core architecture design and AI model integration initiated</li>
+            <li>3 games launched: GemQuest, DoubleDice, Diamond & Bomb</li>
+            <li>AI Research Center activated with 3 pillars: AI trends, AI×Blockchain, AI in metaverse</li>
+            <li>AI SEOUL 2025 and Microsoft AI Tour Seoul attended</li>
+          </ul>
+          <div class="tl-tags">
+            <span class="tl-tag">Agora Launch</span><span class="tl-tag">Airdrop</span><span class="tl-tag">3 Games</span
+            ><span class="tl-tag">MAIT Dev</span><span class="tl-tag">Research Center</span>
+          </div>
+        </div>
+        <div class="tl-item nav-target-en" id="q2-activities">
+          <div class="tl-quarter">Q2 2025</div>
+          <div class="tl-title">Q2 Activities Details — MAIT Launch, UX Overhaul, and Expansion</div>
+          <div class="tl-desc">
+            MAIT officially launched. Agora received a major UX redesign with mobile-responsive UI, advanced search and filters. Three more
+            games shipped.
+          </div>
+          <ul class="tl-details">
+            <li>MAIT launched — AI-assisted proposal drafting, auto language detection (KO/EN), Agora integration</li>
+            <li>Agora UI/UX fully redesigned with step-by-step proposal flow and mobile optimization</li>
+            <li>Search/filter system and CSV export added to Agora</li>
+            <li>3 more games launched: 1-2-3, Keno, HorseRace</li>
+            <li>1st Internal AI Hackathon — all employees, prompt design, model comparisons</li>
+            <li>Research: Character AI Chatbot Platform, KRW-Based Stablecoin, Digital Twin Report</li>
+            <li>WIS 2025, Smart Tech Korea 2025, AI EXPO KOREA 2025 attended</li>
+          </ul>
+          <div class="tl-tags">
+            <span class="tl-tag">MAIT Launch</span><span class="tl-tag">UX Redesign</span><span class="tl-tag">3 More Games</span
+            ><span class="tl-tag">AI Hackathon</span><span class="tl-tag">3 Reports</span>
+          </div>
+        </div>
+        <div class="tl-item nav-target-en" id="q3-activities">
+          <div class="tl-quarter">Q3 2025</div>
+          <div class="tl-title">Q3 Activities Details — Listings, Migration Prep, and R&D</div>
+          <div class="tl-desc">
+            MOC listed on Coinone. ERC-20 contract deployed on Ethereum mainnet. Migration education events launched. AI features expanded
+            on Agora.
+          </div>
+          <ul class="tl-details">
+            <li>MOC listed on Coinone KRW market (Aug 14) with 100% winning random box promotion</li>
+            <li>New ERC-20 contract deployed on Ethereum mainnet (Aug 4) — 500M MOC</li>
+            <li>AI model optimization and Apply/Copy features added to MAIT</li>
+            <li>Migration quiz event and participation rewards (Sep 1–15)</li>
+            <li>2nd Internal AI Hackathon — autonomously planned, advanced prompt engineering</li>
+            <li>Research: Luniverse Network Report, Enterprise BaaS → Public Blockchain study</li>
+            <li>3 games in development: Range Rush, Seventh Wild, Lucky Match</li>
+          </ul>
+          <div class="tl-tags">
+            <span class="tl-tag">Coinone Listing</span><span class="tl-tag">ERC-20 Deploy</span><span class="tl-tag">Migration Prep</span
+            ><span class="tl-tag">2nd Hackathon</span>
+          </div>
+        </div>
+        <div class="tl-item nav-target-en" id="q4-network-transition">
+          <div class="tl-quarter">Q4 2025</div>
+          <div class="tl-title">Q4 Network Transition — Migration, Burns, and Completion</div>
+          <div class="tl-desc">
+            The network migration executed. Exchange deposits/withdrawals paused and resumed. Legacy MOC burned in full. GOPAX listed.
+            Seoul:ution 2025 sponsored.
+          </div>
+          <ul class="tl-details">
+            <li>Exchange D/W suspended: Coinone (Nov 11), Upbit/Bithumb (Nov 12)</li>
+            <li>1:1 automatic conversion completed across all exchanges</li>
+            <li>Main burn: 404.6M MOC (Phase 2) + Final burn: 3.3M MOC (Dec 24)</li>
+            <li>Total cumulative burn: 407,970,827 MOC — legacy supply fully retired</li>
+            <li>GOPAX KRW market listing + 1.5M MOC reward campaign (Nov 27 – Dec 4)</li>
+            <li>ERC-20 user guide published: MetaMask setup, token addition, travel rule compliance</li>
+            <li>Seoul:ution 2025 hackathon sponsorship, CEO served as judge for 9 team presentations</li>
+          </ul>
+          <div class="tl-tags">
+            <span class="tl-tag">Migration Complete</span><span class="tl-tag">408M Burned</span><span class="tl-tag">GOPAX Listing</span
+            ><span class="tl-tag">Seoul:ution</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline fade-up" data-lang="ko">
+        <div class="tl-item nav-target-ko" id="q1-activities-ko">
+          <div class="tl-quarter">Q1 2025</div>
+          <div class="tl-title">Q1 주요 활동 — 거버넌스, AI, 게임 기반 구축</div>
+          <div class="tl-desc">
+            Agora DAO가 온체인 거버넌스 핵심 인프라로 출시되었습니다. MAIT 개발이 시작되고, 메타버스 게임 3종이 출시되었으며, AI
+            리서치센터가 활성화되었습니다.
+          </div>
+          <ul class="tl-details">
+            <li>Agora DAO 거버넌스 플랫폼 출시 — 제안, 투표, 온체인 기록</li>
+            <li>2,525,000 MOC 에어드랍 (빗썸 231만 + Agora 출시 21.5만)</li>
+            <li>MAIT 핵심 아키텍처 설계 및 AI 모델 통합 시작</li>
+            <li>게임 3종 출시: GemQuest, DoubleDice, Diamond & Bomb</li>
+            <li>AI 리서치센터 활성화 — 3대 연구 축: AI 트렌드, AI×블록체인, 메타버스 AI 활용</li>
+            <li>AI SEOUL 2025, Microsoft AI Tour Seoul 참관</li>
+          </ul>
+          <div class="tl-tags">
+            <span class="tl-tag">Agora 출시</span><span class="tl-tag">에어드랍</span><span class="tl-tag">게임 3종</span
+            ><span class="tl-tag">MAIT 개발</span><span class="tl-tag">리서치센터</span>
+          </div>
+        </div>
+        <div class="tl-item nav-target-ko" id="q2-activities-ko">
+          <div class="tl-quarter">Q2 2025</div>
+          <div class="tl-title">Q2 주요 활동 — MAIT 출시, UX 개선, 확장</div>
+          <div class="tl-desc">
+            MAIT 공식 출시. Agora는 모바일 반응형 UI, 고급 검색·필터 기능을 갖춘 대규모 UX 재설계를 진행했습니다. 게임 3종 추가 출시.
+          </div>
+          <ul class="tl-details">
+            <li>MAIT 출시 — AI 제안서 초안 작성, 자동 언어 감지(한/영), Agora 연동</li>
+            <li>Agora UI/UX 전면 재설계 — 단계별 제안 흐름, 모바일 최적화</li>
+            <li>검색·필터 시스템 및 CSV 내보내기 기능 추가</li>
+            <li>게임 3종 추가 출시: 1-2-3, Keno, HorseRace</li>
+            <li>제1회 사내 AI 해커톤 — 전 직원 참여, 프롬프트 설계, 모델 비교</li>
+            <li>리서치: 캐릭터 AI 챗봇 플랫폼, 원화 스테이블코인, 디지털 트윈 보고서</li>
+            <li>WIS 2025, Smart Tech Korea 2025, AI EXPO KOREA 2025 참관</li>
+          </ul>
+          <div class="tl-tags">
+            <span class="tl-tag">MAIT 출시</span><span class="tl-tag">UX 재설계</span><span class="tl-tag">게임 3종</span
+            ><span class="tl-tag">AI 해커톤</span><span class="tl-tag">리포트 3건</span>
+          </div>
+        </div>
+        <div class="tl-item nav-target-ko" id="q3-activities-ko">
+          <div class="tl-quarter">Q3 2025</div>
+          <div class="tl-title">Q3 주요 활동 — 상장, 마이그레이션 준비, R&D</div>
+          <div class="tl-desc">
+            코인원 상장 완료. 이더리움 메인넷에 ERC-20 컨트랙트 배포. 마이그레이션 교육 이벤트 실시. Agora에 AI 기능 확장.
+          </div>
+          <ul class="tl-details">
+            <li>코인원 KRW 마켓 상장 (8/14) — 100% 당첨 랜덤박스 이벤트</li>
+            <li>이더리움 메인넷 ERC-20 컨트랙트 배포 (8/4) — 5억 MOC</li>
+            <li>MAIT AI 모델 최적화 및 Apply/Copy 기능 추가</li>
+            <li>마이그레이션 퀴즈 이벤트 및 참여 보상 (9/1–15)</li>
+            <li>제2회 사내 AI 해커톤 — 자율 기획, 고급 프롬프트 엔지니어링</li>
+            <li>리서치: 루니버스 네트워크 보고서, BaaS→퍼블릭 블록체인 연구</li>
+            <li>게임 3종 개발 중: Range Rush, Seventh Wild, Lucky Match</li>
+          </ul>
+          <div class="tl-tags">
+            <span class="tl-tag">코인원 상장</span><span class="tl-tag">ERC-20 배포</span><span class="tl-tag">마이그레이션 준비</span
+            ><span class="tl-tag">2차 해커톤</span>
+          </div>
+        </div>
+        <div class="tl-item nav-target-ko" id="q4-network-transition-ko">
+          <div class="tl-quarter">Q4 2025</div>
+          <div class="tl-title">Q4 네트워크 전환 — 마이그레이션, 소각, 완료</div>
+          <div class="tl-desc">
+            네트워크 마이그레이션 실행. 거래소 입출금 일시 중단 후 재개. 레거시 MOC 전량 소각 완료. 고팍스 상장. Seoul:ution 2025 스폰서.
+          </div>
+          <ul class="tl-details">
+            <li>거래소 입출금 일시 중단: 코인원(11/11), 업비트/빗썸(11/12)</li>
+            <li>전 거래소 1:1 자동 전환 완료</li>
+            <li>메인 소각: 4.046억 MOC (2단계) + 최종 소각: 330만 MOC (12/24)</li>
+            <li>누적 소각 합계: 407,970,827 MOC — 레거시 공급량 완전 소각</li>
+            <li>고팍스 KRW 마켓 상장 + 150만 MOC 보상 캠페인 (11/27–12/4)</li>
+            <li>ERC-20 사용자 가이드 발행: 메타마스크 설정, 토큰 추가, 트래블룰 안내</li>
+            <li>Seoul:ution 2025 해커톤 스폰서십, CEO 심사위원 참여 (9개 팀 발표)</li>
+          </ul>
+          <div class="tl-tags">
+            <span class="tl-tag">마이그레이션 완료</span><span class="tl-tag">4.08억 소각</span><span class="tl-tag">고팍스 상장</span
+            ><span class="tl-tag">Seoul:ution</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TOKEN ECOSYSTEM ===== -->
+    <hr class="section-divider" />
+    <section class="section nav-target" id="token-ecosystem">
+      <div class="section-label fade-up" data-num="03">
+        <span class="i18n-en">Token Ecosystem</span><span class="i18n-ko">토큰 생태계</span>
+      </div>
+      <h2 class="fade-up" data-lang="en">MOC's journey to <em>Ethereum</em></h2>
+      <h2 class="fade-up" data-lang="ko">MOC의 <em>이더리움</em> 여정</h2>
+      <p class="section-desc fade-up" data-lang="en">
+        The defining infrastructure event of 2025 — a full network transition from Luniverse to Ethereum ERC-20, approved by community DAO
+        vote and executed transparently.
+      </p>
+      <p class="section-desc fade-up" data-lang="ko">
+        2025년을 정의하는 인프라 이벤트 — 커뮤니티 DAO 투표로 승인되고 투명하게 실행된 Luniverse에서 이더리움 ERC-20으로의 완전한 네트워크
+        전환.
+      </p>
+
+      <div class="token-grid fade-up">
+        <div class="token-card hl">
+          <h4><span class="i18n-en">New ERC-20 Issuance</span><span class="i18n-ko">신규 ERC-20 발행</span></h4>
+          <div class="token-big"><span class="ac">500,000,000</span> MOC</div>
+          <div class="token-detail" data-lang="en">
+            <p>Contract deployed Aug 4 on Ethereum mainnet. Verified on Etherscan with full source code transparency.</p>
+            <ul>
+              <li>Built-in: Burn / Permit / Governance functions</li>
+              <li>Architecture: Ownerless design with Multisig</li>
+              <li>Security: Multisig custody model</li>
+              <li>Standard: ERC-20 — broadest global wallet & DeFi compatibility</li>
+            </ul>
+          </div>
+          <div class="token-detail" data-lang="ko">
+            <p>8월 4일 이더리움 메인넷에 컨트랙트 배포. Etherscan에서 소스코드 전체 검증 완료.</p>
+            <ul>
+              <li>내장 기능: Burn / Permit / Governance</li>
+              <li>아키텍처: 오너리스 설계 + 멀티시그</li>
+              <li>보안: 멀티시그 커스터디 모델</li>
+              <li>표준: ERC-20 — 글로벌 월렛 및 DeFi 최대 호환성</li>
+            </ul>
+          </div>
+        </div>
+        <div class="token-card">
+          <h4><span class="i18n-en">Legacy Token Burn</span><span class="i18n-ko">레거시 토큰 소각</span></h4>
+          <div class="token-big" style="font-size: 1.5rem">407,970,827 <span class="ac">MOC</span></div>
+          <div class="token-detail" data-lang="en">
+            <p>Cumulative burn across all phases, completing the retirement of the legacy supply.</p>
+            <ul>
+              <li>Test burn (Phase 1): 1 MOC</li>
+              <li>Main burn (Phase 2): 404,644,861 MOC</li>
+              <li>Final additional burn (Dec 24): 3,325,965 MOC</li>
+              <li>Result: Single-token system confirmed. No legacy recirculation possible.</li>
+            </ul>
+          </div>
+          <div class="token-detail" data-lang="ko">
+            <p>전 단계에 걸친 누적 소각으로 레거시 공급량의 소각을 완료했습니다.</p>
+            <ul>
+              <li>테스트 소각 (1단계): 1 MOC</li>
+              <li>메인 소각 (2단계): 404,644,861 MOC</li>
+              <li>최종 추가 소각 (12/24): 3,325,965 MOC</li>
+              <li>결과: 단일 토큰 시스템 확인. 레거시 토큰 재유통 불가.</li>
+            </ul>
+          </div>
+          <div class="burn-bar">
+            <div class="burn-track"><div class="burn-fill" data-width="81.6"></div></div>
+            <div class="burn-labels">
+              <span>0</span
+              ><span>81.6% <span class="i18n-en">of legacy supply burned</span><span class="i18n-ko">레거시 공급량 소각</span></span
+              ><span>500M</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Migration Rationale -->
+      <div class="subsection-title fade-up">
+        <span class="i18n-en">Why Ethereum ERC-20?</span><span class="i18n-ko">왜 이더리움 ERC-20인가?</span>
+      </div>
+      <div class="migration-steps stagger">
+        <div class="mig-step">
+          <div class="mig-num"><span class="i18n-en">RATIONALE 01</span><span class="i18n-ko">이유 01</span></div>
+          <div class="mig-title"><span class="i18n-en">Global Compatibility</span><span class="i18n-ko">글로벌 호환성</span></div>
+          <div class="mig-desc">
+            <span class="i18n-en"
+              >Native support across major wallets, DeFi protocols, dApps, cross-chain bridges, and institutional custody</span
+            ><span class="i18n-ko">주요 월렛, DeFi 프로토콜, dApp, 크로스체인 브릿지, 기관 커스터디 네이티브 지원</span>
+          </div>
+        </div>
+        <div class="mig-step">
+          <div class="mig-num"><span class="i18n-en">RATIONALE 02</span><span class="i18n-ko">이유 02</span></div>
+          <div class="mig-title"><span class="i18n-en">On-Chain Transparency</span><span class="i18n-ko">온체인 투명성</span></div>
+          <div class="mig-desc">
+            <span class="i18n-en">All transactions independently verifiable on Ethereum's public ledger via standard block explorers</span
+            ><span class="i18n-ko">이더리움 퍼블릭 원장에서 표준 블록 익스플로러를 통한 모든 거래 독립 검증 가능</span>
+          </div>
+        </div>
+        <div class="mig-step">
+          <div class="mig-num"><span class="i18n-en">RATIONALE 03</span><span class="i18n-ko">이유 03</span></div>
+          <div class="mig-title"><span class="i18n-en">Expanded Utility</span><span class="i18n-ko">확장된 활용성</span></div>
+          <div class="mig-desc">
+            <span class="i18n-en">DEX liquidity pools, staking, NFT payments, and L2 bridging for cost/speed optimization</span
+            ><span class="i18n-ko">DEX 유동성 풀, 스테이킹, NFT 결제, L2 브릿징을 통한 비용/속도 최적화</span>
+          </div>
+        </div>
+        <div class="mig-step">
+          <div class="mig-num"><span class="i18n-en">RATIONALE 04</span><span class="i18n-ko">이유 04</span></div>
+          <div class="mig-title"><span class="i18n-en">Dev Stability</span><span class="i18n-ko">개발 안정성</span></div>
+          <div class="mig-desc">
+            <span class="i18n-en">Mature developer tooling, widely adopted security standards, and a proven audit ecosystem</span
+            ><span class="i18n-ko">성숙한 개발자 도구, 보안 표준, 검증된 감사 생태계</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Exchange Performance -->
+      <div class="subsection-title fade-up nav-target" id="moc-market-performance">
+        <span class="i18n-en">MOC Market Performance Analysis</span><span class="i18n-ko">MOC 시장 성과 분석</span>
+      </div>
+      <h2 class="fade-up" data-lang="en">Market performance, liquidity, and <em>macro context</em></h2>
+      <h2 class="fade-up" data-lang="ko">시장 성과, 유동성, 그리고 <em>거시 환경</em></h2>
+      <p class="section-desc fade-up" data-lang="en">
+        Pricing trends, exchange-level concentration, and the macro backdrop that shaped 2025 trading dynamics.
+      </p>
+      <p class="section-desc fade-up" data-lang="ko">가격 흐름, 거래소별 집중도, 2025년 거래를 좌우한 거시 환경을 정리합니다.</p>
+      <div class="subsection-title fade-up">
+        <span class="i18n-en">Exchange Performance Summary (2025)</span><span class="i18n-ko">거래소 성과 요약 (2025)</span>
+      </div>
+      <table class="ex-table fade-up">
+        <thead>
+          <tr>
+            <th><span class="i18n-en">Exchange</span><span class="i18n-ko">거래소</span></th>
+            <th><span class="i18n-en">Year High</span><span class="i18n-ko">연고가</span></th>
+            <th><span class="i18n-en">Year Low</span><span class="i18n-ko">연저가</span></th>
+            <th><span class="i18n-en">Peak Monthly Vol</span><span class="i18n-ko">월간 최고 거래량</span></th>
+            <th><span class="i18n-en">Annual Volume</span><span class="i18n-ko">연간 거래량</span></th>
+            <th><span class="i18n-en">Share</span><span class="i18n-ko">비중</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="ex-name">Upbit</td>
+            <td>₩306 <small style="color: var(--text3)">Jan 10</small></td>
+            <td>₩47 <small style="color: var(--text3)">Dec 19</small></td>
+            <td>₩2.96T <small style="color: var(--text3)">Jan</small></td>
+            <td class="ex-vol">₩3.89T</td>
+            <td>
+              <div class="vol-wrap">
+                <div class="vol-track"><div class="vol-bar" data-width="100"></div></div>
+                <span class="vol-pct">~90%</span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="ex-name">Bithumb</td>
+            <td>₩304 <small style="color: var(--text3)">Jan 10</small></td>
+            <td>₩45 <small style="color: var(--text3)">Nov 5</small></td>
+            <td>₩308.6B <small style="color: var(--text3)">Jan</small></td>
+            <td class="ex-vol">₩432.4B</td>
+            <td>
+              <div class="vol-wrap">
+                <div class="vol-track"><div class="vol-bar" data-width="11"></div></div>
+                <span class="vol-pct">~10%</span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="ex-name">Coinone</td>
+            <td>₩150 <small style="color: var(--text3)">Aug 14</small></td>
+            <td>₩47 <small style="color: var(--text3)">Nov 5</small></td>
+            <td>₩9.43B <small style="color: var(--text3)">Aug</small></td>
+            <td class="ex-vol">₩9.87B</td>
+            <td>
+              <div class="vol-wrap">
+                <div class="vol-track"><div class="vol-bar" data-width="0.8"></div></div>
+                <span class="vol-pct">&lt;1%</span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="ex-name">GOPAX</td>
+            <td>₩62 <small style="color: var(--text3)">Nov 29</small></td>
+            <td>—</td>
+            <td>₩2.06B <small style="color: var(--text3)">Nov</small></td>
+            <td class="ex-vol">₩3.97B</td>
+            <td>
+              <div class="vol-wrap">
+                <div class="vol-track"><div class="vol-bar" data-width="0.3"></div></div>
+                <span class="vol-pct">&lt;1%</span>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="note" data-lang="en">
+        MOC declined ~85% from its Jan 10 peak to the annual low, driven primarily by the broader risk-off macro environment rather than
+        exchange-specific factors. Coinone and GOPAX showed post-listing concentration patterns with liquidity forming around listing dates.
+        This analysis is provided for informational purposes only.
+      </p>
+      <p class="note" data-lang="ko">
+        MOC는 1월 10일 고점 대비 연 저점까지 약 85% 하락했으며, 이는 거래소 특이 요인보다는 글로벌 매크로 리스크오프 환경에 기인한 것으로
+        분석됩니다. 코인원과 고팍스는 상장 직후 유동성이 집중되는 패턴을 보였습니다. 본 분석은 정보 제공 목적으로만 제공됩니다.
+      </p>
+    </section>
+
+    <!-- ===== GOVERNANCE ===== -->
+    <hr class="section-divider" />
+    <section class="section nav-target" id="governance-platform">
+      <div class="section-label fade-up" data-num="04">
+        <span class="i18n-en">Governance & AI</span><span class="i18n-ko">거버넌스 & AI</span>
+      </div>
+      <h2 class="fade-up" data-lang="en">Agora + MAIT: <em>DAO infrastructure</em> for everyone</h2>
+      <h2 class="fade-up" data-lang="ko">Agora + MAIT: 모두를 위한 <em>DAO 인프라</em></h2>
+      <p class="section-desc fade-up" data-lang="en">
+        Two interconnected platforms forming Mossland's governance backbone. Agora handles the on-chain lifecycle; MAIT makes it accessible
+        with AI.
+      </p>
+      <p class="section-desc fade-up" data-lang="ko">
+        모스랜드 거버넌스의 백본을 이루는 두 개의 연동 플랫폼. Agora는 온체인 라이프사이클을, MAIT는 AI로 접근성을 담당합니다.
+      </p>
+
+      <div class="subsection-title fade-up nav-target" id="dao-ai-tools">
+        <span class="i18n-en">DAO AI Tools (MAIT)</span><span class="i18n-ko">DAO AI 도구 (MAIT)</span>
+      </div>
+      <h2 class="fade-up" data-lang="en">Lowering the barrier to <em>DAO participation</em></h2>
+      <h2 class="fade-up" data-lang="ko"><em>DAO 참여</em>의 문턱을 낮추다</h2>
+      <p class="section-desc fade-up" data-lang="en">
+        MAIT adds AI drafting, multilingual support, and workflow acceleration directly inside Agora.
+      </p>
+      <p class="section-desc fade-up" data-lang="ko">MAIT는 Agora 안에서 AI 작성, 다국어 지원, 워크플로우 가속을 제공합니다.</p>
+      <div class="gov-features stagger" data-lang="en">
+        <div class="gov-feat">
+          <div class="gov-feat-icon">📋</div>
+          <h4>On-Chain Proposals</h4>
+          <p>
+            Anyone can draft and submit proposals. MOC holders vote proportionally. All outcomes recorded immutably on-chain for independent
+            verification.
+          </p>
+        </div>
+        <div class="gov-feat">
+          <div class="gov-feat-icon">🤖</div>
+          <h4>AI-Assisted Drafting</h4>
+          <p>
+            MAIT generates structured proposals from topic inputs. Auto-detects KO/EN. Apply/Copy features let users refine AI-generated
+            drafts before submission.
+          </p>
+        </div>
+        <div class="gov-feat">
+          <div class="gov-feat-icon">🔍</div>
+          <h4>Search & Filter</h4>
+          <p>
+            Browse hundreds of proposals by status, category, date. Advanced keyword search. CSV export for data analysis and reporting.
+          </p>
+        </div>
+        <div class="gov-feat">
+          <div class="gov-feat-icon">📊</div>
+          <h4>Dashboard Metrics</h4>
+          <p>Participation rates, approval/rejection ratios, and execution tracking — all visible at the governance dashboard level.</p>
+        </div>
+        <div class="gov-feat">
+          <div class="gov-feat-icon">📱</div>
+          <h4>Mobile Optimized</h4>
+          <p>Responsive design ensures seamless participation on smartphones and tablets — not just desktop.</p>
+        </div>
+        <div class="gov-feat">
+          <div class="gov-feat-icon">⚡</div>
+          <h4>Performance Tuned</h4>
+          <p>Optimized database queries and caching for faster response times. Stable service under peak concurrent traffic.</p>
+        </div>
+      </div>
+      <div class="gov-features stagger" data-lang="ko">
+        <div class="gov-feat">
+          <div class="gov-feat-icon">📋</div>
+          <h4>온체인 제안</h4>
+          <p>누구나 제안서를 작성·제출 가능. MOC 보유량에 비례한 투표권. 모든 결과가 온체인에 불변 기록되어 독립 검증 가능.</p>
+        </div>
+        <div class="gov-feat">
+          <div class="gov-feat-icon">🤖</div>
+          <h4>AI 지원 초안 작성</h4>
+          <p>MAIT가 주제 입력으로 구조화된 제안서를 생성. 한/영 자동 감지. Apply/Copy 기능으로 AI 초안을 수정 후 제출.</p>
+        </div>
+        <div class="gov-feat">
+          <div class="gov-feat-icon">🔍</div>
+          <h4>검색 & 필터</h4>
+          <p>상태, 카테고리, 날짜별로 수백 건의 제안 탐색. 고급 키워드 검색. 데이터 분석·보고용 CSV 내보내기.</p>
+        </div>
+        <div class="gov-feat">
+          <div class="gov-feat-icon">📊</div>
+          <h4>대시보드 지표</h4>
+          <p>참여율, 승인/거부 비율, 실행 추적 — 거버넌스 대시보드에서 한눈에 확인.</p>
+        </div>
+        <div class="gov-feat">
+          <div class="gov-feat-icon">📱</div>
+          <h4>모바일 최적화</h4>
+          <p>반응형 디자인으로 스마트폰·태블릿에서도 끊김 없는 참여 경험.</p>
+        </div>
+        <div class="gov-feat">
+          <div class="gov-feat-icon">⚡</div>
+          <h4>성능 최적화</h4>
+          <p>DB 쿼리 및 캐싱 최적화로 빠른 응답 속도. 동시 접속 피크 시에도 안정적 서비스.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GAMES ===== -->
+    <hr class="section-divider" />
+    <section class="section nav-target" id="games">
+      <div class="section-label fade-up" data-num="05">
+        <span class="i18n-en">Metaverse Games</span><span class="i18n-ko">메타버스 게임</span>
+      </div>
+      <h2 class="fade-up" data-lang="en">Building a <em>game ecosystem</em> — 9 live, 3 in progress</h2>
+      <h2 class="fade-up" data-lang="ko"><em>게임 생태계</em> 구축 — 라이브 9종, 개발중 3종</h2>
+      <p class="section-desc fade-up" data-lang="en">
+        Short sessions, instant settlement, fair probability. Designed for engagement and retention across the Mossland metaverse. Each
+        title features simple controls and clear rules.
+      </p>
+      <p class="section-desc fade-up" data-lang="ko">
+        빠른 세션, 즉시 정산, 공정한 확률 시스템. 간단한 조작과 명확한 규칙으로 모스랜드 메타버스 전반의 참여와 리텐션을 높입니다.
+      </p>
+
+      <div class="games-grid stagger">
+        <div class="game-item">
+          <div class="game-icon">💎</div>
+          <div class="game-name">GemQuest</div>
+          <div class="game-q">Q1 Launch</div>
+          <div class="game-desc" data-lang="en">
+            Exploration-based treasure hunting. Navigate virtual space, discover gems, earn instant rewards. 1–2 min rounds.
+          </div>
+          <div class="game-desc" data-lang="ko">탐험 기반 보물찾기. 가상공간 탐색, 보석 발견, 즉시 보상. 라운드당 1–2분.</div>
+        </div>
+        <div class="game-item">
+          <div class="game-icon">🎲</div>
+          <div class="game-name">DoubleDice</div>
+          <div class="game-q">Q1 Launch</div>
+          <div class="game-desc" data-lang="en">
+            Classic dice prediction with transparent payout structure. Fast tempo, immediate result confirmation.
+          </div>
+          <div class="game-desc" data-lang="ko">투명한 배당 구조의 클래식 주사위 예측. 빠른 템포, 즉시 결과 확인.</div>
+        </div>
+        <div class="game-item">
+          <div class="game-icon">💣</div>
+          <div class="game-name">Diamond & Bomb</div>
+          <div class="game-q">Q1 Launch</div>
+          <div class="game-desc" data-lang="en">
+            Strategic tile selection — find diamonds, avoid bombs. Stop anytime to claim rewards or risk everything.
+          </div>
+          <div class="game-desc" data-lang="ko">
+            전략적 타일 선택 — 다이아몬드를 찾고 폭탄을 피하세요. 언제든 멈춰서 보상을 획득하거나 모험.
+          </div>
+        </div>
+        <div class="game-item">
+          <div class="game-icon">🔢</div>
+          <div class="game-name">1, 2, 3</div>
+          <div class="game-q">Q2 Launch</div>
+          <div class="game-desc" data-lang="en">Number / odd-even prediction. Short sessions with instant settlement.</div>
+          <div class="game-desc" data-lang="ko">숫자/홀짝 예측. 짧은 세션과 즉시 정산.</div>
+        </div>
+        <div class="game-item">
+          <div class="game-icon">🎰</div>
+          <div class="game-name">Keno</div>
+          <div class="game-q">Q2 Launch</div>
+          <div class="game-desc" data-lang="en">Choose numbers from 1–36 with adjustable risk-reward dynamics.</div>
+          <div class="game-desc" data-lang="ko">1–36에서 숫자 선택. 조절 가능한 위험-보상 역학.</div>
+        </div>
+        <div class="game-item">
+          <div class="game-icon">🏇</div>
+          <div class="game-name">HorseRace</div>
+          <div class="game-q">Q2 Launch</div>
+          <div class="game-desc" data-lang="en">Race outcome prediction based on card distribution. Adds a deeper strategic layer.</div>
+          <div class="game-desc" data-lang="ko">카드 분배 기반 경주 결과 예측. 심화 전략 요소.</div>
+        </div>
+        <div class="game-item dev">
+          <div class="game-icon">📊</div>
+          <div class="game-name">Range Rush</div>
+          <div class="game-q">Q3 In Dev</div>
+          <div class="game-desc" data-lang="en">Range-prediction game with reward structure.</div>
+          <div class="game-desc" data-lang="ko">보상 구조의 범위 예측 게임.</div>
+        </div>
+        <div class="game-item dev">
+          <div class="game-icon">🃏</div>
+          <div class="game-name">Seventh Wild</div>
+          <div class="game-q">Q3 In Dev</div>
+          <div class="game-desc" data-lang="en">Strategy game based on 7th award-card mechanics.</div>
+          <div class="game-desc" data-lang="ko">7번째 어워드카드 메커닉 기반 전략 게임.</div>
+        </div>
+        <div class="game-item dev">
+          <div class="game-icon">🍀</div>
+          <div class="game-name">Lucky Match</div>
+          <div class="game-q">Q3 In Dev</div>
+          <div class="game-desc" data-lang="en">Simple matching game for quick play and fast outcomes.</div>
+          <div class="game-desc" data-lang="ko">빠른 플레이와 결과를 위한 간단한 매칭 게임.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== RESEARCH ===== -->
+    <hr class="section-divider" />
+    <section class="section nav-target" id="research">
+      <div class="section-label fade-up" data-num="06">
+        <span class="i18n-en">Research Center</span><span class="i18n-ko">리서치센터</span>
+      </div>
+      <h2 class="fade-up" data-lang="en"><em>6 reports</em> across AI, blockchain & converged tech</h2>
+      <h2 class="fade-up" data-lang="ko">AI, 블록체인, 융합기술 분야 <em>6건의 연구보고서</em></h2>
+      <p class="section-desc fade-up" data-lang="en">
+        The Mossland AI Research Center produced structured research designed to inform product decisions and advance the technology stack.
+      </p>
+      <p class="section-desc fade-up" data-lang="ko">
+        모스랜드 AI 리서치센터는 제품 의사결정과 기술 스택 발전을 위한 구조화된 연구를 수행했습니다.
+      </p>
+
+      <div class="research-cards stagger">
+        <div class="research-card">
+          <span class="rc-type ai">AI</span>
+          <div class="rc-title">
+            <span class="i18n-en">Character AI Chatbot Platform</span><span class="i18n-ko">캐릭터 AI 챗봇 플랫폼</span>
+          </div>
+          <div class="rc-desc">
+            <span class="i18n-en"
+              >NPC dialogue personalization for metaverse environments through persona design, NLP-based intent understanding, and emotional
+              expression.</span
+            ><span class="i18n-ko">메타버스 환경의 NPC 대화 개인화 — 페르소나 설계, NLP 기반 의도 이해, 감정 표현.</span>
+          </div>
+          <ul class="rc-findings">
+            <li>
+              <span class="i18n-en">Enhance NPC-led guidance, quests, and info delivery</span
+              ><span class="i18n-ko">NPC 기반 가이드, 퀘스트, 정보 전달 강화</span>
+            </li>
+            <li>
+              <span class="i18n-en">Increase session duration and engagement quality</span
+              ><span class="i18n-ko">세션 시간 및 참여 품질 향상</span>
+            </li>
+          </ul>
+        </div>
+        <div class="research-card">
+          <span class="rc-type bc">Blockchain</span>
+          <div class="rc-title">
+            <span class="i18n-en">KRW-Based Stablecoin</span><span class="i18n-ko">원화(KRW) 기반 스테이블코인</span>
+          </div>
+          <div class="rc-desc">
+            <span class="i18n-en"
+              >Comprehensive analysis of issuance mechanisms, domestic regulatory environment, and market feasibility for a KRW-pegged
+              stablecoin.</span
+            ><span class="i18n-ko">원화 페깅 스테이블코인의 발행 메커니즘, 국내 규제 환경, 시장 실현 가능성 종합 분석.</span>
+          </div>
+          <ul class="rc-findings">
+            <li>
+              <span class="i18n-en">1:1 KRW-reserve-backed model with real-time audit</span
+              ><span class="i18n-ko">실시간 감사 기반 1:1 원화 준비금 모델</span>
+            </li>
+            <li>
+              <span class="i18n-en">Use cases: exchange D/W, DeFi collateral, remittances, payroll</span
+              ><span class="i18n-ko">활용: 거래소 입출금, DeFi 담보, 송금, 급여 지급</span>
+            </li>
+            <li>
+              <span class="i18n-en">Government trending toward conditional authorization</span
+              ><span class="i18n-ko">정부, 조건부 허가 방향 추진 중</span>
+            </li>
+          </ul>
+        </div>
+        <div class="research-card">
+          <span class="rc-type conv">Converged</span>
+          <div class="rc-title"><span class="i18n-en">Digital Twin Research</span><span class="i18n-ko">디지털 트윈 연구</span></div>
+          <div class="rc-desc">
+            <span class="i18n-en"
+              >Methodology for building operational digital twins: Revit BIM → Autodesk Tandem with IoT/BMS integration for real-time
+              monitoring.</span
+            ><span class="i18n-ko">운영 디지털 트윈 구축 방법론: Revit BIM → Autodesk Tandem, IoT/BMS 연계 실시간 모니터링.</span>
+          </div>
+          <ul class="rc-findings">
+            <li>
+              <span class="i18n-en">5-stage process: Author → Structure → Ingest → Map → Operate</span
+              ><span class="i18n-ko">5단계 프로세스: 저작 → 구조화 → 수집 → 매핑 → 운용</span>
+            </li>
+            <li>
+              <span class="i18n-en">Heatmaps, energy KPIs, threshold alerts, predictive maintenance</span
+              ><span class="i18n-ko">히트맵, 에너지 KPI, 임계값 알림, 예측 유지보수</span>
+            </li>
+          </ul>
+        </div>
+        <div class="research-card">
+          <span class="rc-type bc">Blockchain</span>
+          <div class="rc-title">
+            <span class="i18n-en">Luniverse Network Report</span><span class="i18n-ko">루니버스 네트워크 리포트</span>
+          </div>
+          <div class="rc-desc">
+            <span class="i18n-en"
+              >In-depth analysis of BaaS structure, Luniverse 2.0/NOVA architecture, and Nodit/MCP infrastructure service options.</span
+            ><span class="i18n-ko">BaaS 구조, Luniverse 2.0/NOVA 아키텍처, Nodit/MCP 인프라 서비스 옵션 심층 분석.</span>
+          </div>
+          <ul class="rc-findings">
+            <li>
+              <span class="i18n-en">Confirmed structural limitations: restricted liquidity, centralized ops</span
+              ><span class="i18n-ko">구조적 한계 확인: 제한적 유동성, 중앙화된 운영</span>
+            </li>
+            <li>
+              <span class="i18n-en">Consolidated technical rationale for ERC-20 migration</span
+              ><span class="i18n-ko">ERC-20 마이그레이션의 기술적 근거 정리</span>
+            </li>
+          </ul>
+        </div>
+        <div class="research-card">
+          <span class="rc-type bc">Blockchain</span>
+          <div class="rc-title">
+            <span class="i18n-en">Enterprise BaaS → Public Chain</span><span class="i18n-ko">엔터프라이즈 BaaS → 퍼블릭체인</span>
+          </div>
+          <div class="rc-desc">
+            <span class="i18n-en"
+              >Comparative analysis of Luniverse (PoA) vs Ethereum (PoS) across decentralization, security, scalability, and governance
+              trade-offs.</span
+            ><span class="i18n-ko">탈중앙화, 보안, 확장성, 거버넌스 측면에서 Luniverse(PoA) vs Ethereum(PoS) 비교 분석.</span>
+          </div>
+          <ul class="rc-findings">
+            <li>
+              <span class="i18n-en">Luniverse: constrained liquidity, bridge dependency, centralized risk</span
+              ><span class="i18n-ko">Luniverse: 제한적 유동성, 브릿지 의존, 중앙화 리스크</span>
+            </li>
+            <li>
+              <span class="i18n-en">Ethereum: global ecosystem, L2 scaling, cost efficiency</span
+              ><span class="i18n-ko">Ethereum: 글로벌 생태계, L2 확장, 비용 효율성</span>
+            </li>
+          </ul>
+        </div>
+        <div class="research-card">
+          <span class="rc-type reg">Regulation</span>
+          <div class="rc-title">
+            <span class="i18n-en">Digital Asset Innovation Act</span><span class="i18n-ko">디지털 자산 혁신법</span>
+          </div>
+          <div class="rc-desc">
+            <span class="i18n-en"
+              >Analysis of Korea's proposed regulatory framework: ICO sandbox, stablecoin licensing, granular exchange/custody categories,
+              and investor protection.</span
+            ><span class="i18n-ko"
+              >한국 규제 프레임워크 분석: ICO 샌드박스, 스테이블코인 라이선싱, 거래소/커스터디 세분화, 투자자 보호.</span
+            >
+          </div>
+          <ul class="rc-findings">
+            <li><span class="i18n-en">Accelerates industry institutionalization</span><span class="i18n-ko">산업 제도화 가속</span></li>
+            <li>
+              <span class="i18n-en">Projects need stronger compliance readiness</span
+              ><span class="i18n-ko">프로젝트의 컴플라이언스 준비 강화 필요</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== COMMUNITY EVENTS ===== -->
+    <hr class="section-divider" />
+    <section class="section nav-target" id="events">
+      <div class="section-label fade-up" data-num="07">
+        <span class="i18n-en">Community & Events</span><span class="i18n-ko">커뮤니티 & 이벤트</span>
+      </div>
+      <h2 class="fade-up" data-lang="en"><em>4M+ MOC</em> distributed through sustained engagement</h2>
+      <h2 class="fade-up" data-lang="ko">지속적 참여를 통해 <em>400만+ MOC</em> 배포</h2>
+      <p class="section-desc fade-up" data-lang="en">
+        From airdrops to hackathon sponsorship — Mossland maintained community engagement across every quarter of 2025.
+      </p>
+      <p class="section-desc fade-up" data-lang="ko">
+        에어드랍부터 해커톤 스폰서십까지 — 모스랜드는 2025년 매 분기 커뮤니티 참여를 유지했습니다.
+      </p>
+
+      <div class="events-grid stagger">
+        <div class="event-card">
+          <div class="ev-quarter">Q1</div>
+          <div class="ev-title"><span class="i18n-en">Bithumb MOC Airdrop</span><span class="i18n-ko">빗썸 MOC 에어드랍</span></div>
+          <div class="ev-desc">
+            <span class="i18n-en"
+              >Large-scale airdrop in collaboration with Bithumb to expand MOC circulation and acquire new token holders.</span
+            ><span class="i18n-ko">빗썸 협력 대규모 에어드랍 — MOC 유통 확대 및 신규 토큰 보유자 확보.</span>
+          </div>
+          <div class="ev-amount">2,310,000 MOC</div>
+        </div>
+        <div class="event-card">
+          <div class="ev-quarter">Q1</div>
+          <div class="ev-title"><span class="i18n-en">Agora Launch Rewards</span><span class="i18n-ko">Agora 출시 기념 보상</span></div>
+          <div class="ev-desc">
+            <span class="i18n-en">Early participants rewarded for proposal drafting and voting to bootstrap DAO platform engagement.</span
+            ><span class="i18n-ko">제안서 작성 및 투표 참여 초기 사용자에게 보상 지급, DAO 플랫폼 활성화 촉진.</span>
+          </div>
+          <div class="ev-amount">215,000 MOC</div>
+        </div>
+        <div class="event-card">
+          <div class="ev-quarter">Q3</div>
+          <div class="ev-title">
+            <span class="i18n-en">Coinone Listing — Random Box</span><span class="i18n-ko">코인원 상장 — 랜덤박스</span>
+          </div>
+          <div class="ev-desc">
+            <span class="i18n-en"
+              >100% winning "no blanks" random box for new and existing users. New users eligible for up to ₩300,000 in benefits.</span
+            ><span class="i18n-ko">신규·기존 사용자 모두 대상 100% 당첨 랜덤박스. 신규 사용자 최대 30만원 혜택.</span>
+          </div>
+        </div>
+        <div class="event-card">
+          <div class="ev-quarter">Q3</div>
+          <div class="ev-title"><span class="i18n-en">Migration Quiz Event</span><span class="i18n-ko">마이그레이션 퀴즈 이벤트</span></div>
+          <div class="ev-desc">
+            <span class="i18n-en"
+              >Sep 1–15 on Agora. Quizzes covering migration rationale, timeline, and user precautions. Rewards for correct answers.</span
+            ><span class="i18n-ko">9/1–15 Agora에서 진행. 마이그레이션 배경·일정·주의사항 관련 퀴즈. 정답 시 보상.</span>
+          </div>
+        </div>
+        <div class="event-card">
+          <div class="ev-quarter">Q4</div>
+          <div class="ev-title"><span class="i18n-en">GOPAX Listing Campaign</span><span class="i18n-ko">고팍스 상장 캠페인</span></div>
+          <div class="ev-desc">
+            <span class="i18n-en"
+              >New users: 360 MOC for sign-up + verification + trade. Deposit campaign: 550 MOC for 1,800+ MOC deposit + trade.</span
+            ><span class="i18n-ko">신규: 가입+인증+거래 시 360 MOC. 입금 캠페인: 1,800+ MOC 입금+거래 시 550 MOC.</span>
+          </div>
+          <div class="ev-amount">1,500,000 MOC</div>
+        </div>
+        <div class="event-card">
+          <div class="ev-quarter">Q4</div>
+          <div class="ev-title">
+            <span class="i18n-en">Seoul:ution 2025 Hackathon</span><span class="i18n-ko">Seoul:ution 2025 해커톤</span>
+          </div>
+          <div class="ev-desc">
+            <span class="i18n-en"
+              >Nov 28–29 at Seoul City Hall. Mossland as official sponsor, CEO as judge. 9 teams presented real-world prototypes addressing
+              Seoul's challenges.</span
+            ><span class="i18n-ko">11/28–29 서울시청. 모스랜드 공식 스폰서, CEO 심사위원 참여. 9개 팀 서울 실제 과제 프로토타입 발표.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Conferences -->
+      <div class="subsection-title fade-up">
+        <span class="i18n-en">AI Conferences & Exhibitions Attended</span><span class="i18n-ko">참관한 AI 컨퍼런스 & 전시회</span>
+      </div>
+      <div class="conf-grid stagger">
+        <div class="conf-card">
+          <div class="conf-name">AI SEOUL 2025</div>
+          <div class="conf-desc">
+            COEX · <span class="i18n-en">AI safety, ethics, infrastructure themes</span
+            ><span class="i18n-ko">AI 안전·윤리·인프라 주제</span>
+          </div>
+        </div>
+        <div class="conf-card">
+          <div class="conf-name">Microsoft AI Tour</div>
+          <div class="conf-desc">
+            Yangjae · Satya Nadella · <span class="i18n-en">Agentic AI, Copilot Studio</span
+            ><span class="i18n-ko">에이전틱 AI, Copilot Studio</span>
+          </div>
+        </div>
+        <div class="conf-card">
+          <div class="conf-name">WIS 2025</div>
+          <div class="conf-desc">
+            <span class="i18n-en">World IT Show — AI, autonomous driving, metaverse</span
+            ><span class="i18n-ko">월드 IT쇼 — AI, 자율주행, 메타버스</span>
+          </div>
+        </div>
+        <div class="conf-card">
+          <div class="conf-name">Smart Tech Korea</div>
+          <div class="conf-desc">
+            <span class="i18n-en">IoT + AI convergence, smart buildings, digital twins</span
+            ><span class="i18n-ko">IoT+AI 융합, 스마트빌딩, 디지털 트윈</span>
+          </div>
+        </div>
+        <div class="conf-card">
+          <div class="conf-name">AI EXPO KOREA</div>
+          <div class="conf-desc">
+            <span class="i18n-en">300+ companies, 500+ booths, agentic AI focus</span
+            ><span class="i18n-ko">300+ 기업, 500+ 부스, 에이전틱 AI 집중</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== OPEN SOURCE ===== -->
+    <hr class="section-divider" />
+    <section class="section nav-target" id="oss">
+      <div class="section-label fade-up" data-num="08"><span class="i18n-en">Open Source</span><span class="i18n-ko">오픈소스</span></div>
+      <h2 class="fade-up" data-lang="en">Engineering activity across <em>11 repositories</em></h2>
+      <h2 class="fade-up" data-lang="ko"><em>11개 저장소</em>에 걸친 개발 활동</h2>
+      <p class="section-desc fade-up" data-lang="en">
+        1,175 commits, 199 pull requests, and a 95.2% issue closure rate — reflecting structured, sustained development output throughout
+        the year.
+      </p>
+      <p class="section-desc fade-up" data-lang="ko">
+        1,175 커밋, 199 풀 리퀘스트, 95.2% 이슈 종료율 — 연중 구조화되고 지속적인 개발 산출물을 보여줍니다.
+      </p>
+
+      <div class="oss-grid stagger">
+        <div class="oss-metric">
+          <div class="oss-val">1,175</div>
+          <div class="oss-name"><span class="i18n-en">Commits</span><span class="i18n-ko">커밋</span></div>
+        </div>
+        <div class="oss-metric">
+          <div class="oss-val">199</div>
+          <div class="oss-name"><span class="i18n-en">Pull Requests</span><span class="i18n-ko">풀 리퀘스트</span></div>
+        </div>
+        <div class="oss-metric">
+          <div class="oss-val">104</div>
+          <div class="oss-name"><span class="i18n-en">Issues</span><span class="i18n-ko">이슈</span></div>
+        </div>
+        <div class="oss-metric">
+          <div class="oss-val">89.9%</div>
+          <div class="oss-name"><span class="i18n-en">PR Merge Rate</span><span class="i18n-ko">PR 머지율</span></div>
+        </div>
+        <div class="oss-metric">
+          <div class="oss-val">95.2%</div>
+          <div class="oss-name"><span class="i18n-en">Issue Closure</span><span class="i18n-ko">이슈 종료율</span></div>
+        </div>
+        <div class="oss-metric">
+          <div class="oss-val">9</div>
+          <div class="oss-name"><span class="i18n-en">Contributors</span><span class="i18n-ko">기여자</span></div>
+        </div>
+      </div>
+
+      <!--
+      <div class="subsection-title fade-up">
+        <span class="i18n-en">Monthly Commits (2025)</span><span class="i18n-ko">월간 커밋 (2025)</span>
+      </div>
+      <div class="oss-bar-section fade-up" id="oss-monthly-commits">
+        <div class="oss-bar-item">
+          <div class="oss-bar-label"><span>Jan</span><span>100</span></div>
+          <div class="oss-track"><div class="oss-fill" style="background: var(--accent)" data-width="41.8"></div></div>
+        </div>
+        <div class="oss-bar-item">
+          <div class="oss-bar-label"><span>Feb</span><span>54</span></div>
+          <div class="oss-track"><div class="oss-fill" style="background: var(--accent)" data-width="22.6"></div></div>
+        </div>
+        <div class="oss-bar-item">
+          <div class="oss-bar-label"><span>Mar</span><span>17</span></div>
+          <div class="oss-track"><div class="oss-fill" style="background: var(--accent)" data-width="7.1"></div></div>
+        </div>
+        <div class="oss-bar-item">
+          <div class="oss-bar-label"><span>Apr</span><span>36</span></div>
+          <div class="oss-track"><div class="oss-fill" style="background: var(--accent)" data-width="15.1"></div></div>
+        </div>
+        <div class="oss-bar-item">
+          <div class="oss-bar-label"><span>May</span><span>110</span></div>
+          <div class="oss-track"><div class="oss-fill" style="background: var(--accent)" data-width="46.0"></div></div>
+        </div>
+        <div class="oss-bar-item">
+          <div class="oss-bar-label"><span>Jun</span><span>95</span></div>
+          <div class="oss-track"><div class="oss-fill" style="background: var(--accent)" data-width="39.7"></div></div>
+        </div>
+        <div class="oss-bar-item">
+          <div class="oss-bar-label"><span>Jul</span><span>170</span></div>
+          <div class="oss-track"><div class="oss-fill" style="background: var(--accent)" data-width="71.1"></div></div>
+        </div>
+        <div class="oss-bar-item">
+          <div class="oss-bar-label"><span>Aug</span><span>210</span></div>
+          <div class="oss-track"><div class="oss-fill" style="background: var(--accent)" data-width="87.9"></div></div>
+        </div>
+        <div class="oss-bar-item">
+          <div class="oss-bar-label"><span>Sep</span><span>239</span></div>
+          <div class="oss-track"><div class="oss-fill" style="background: var(--accent)" data-width="100.0"></div></div>
+        </div>
+        <div class="oss-bar-item">
+          <div class="oss-bar-label"><span>Oct</span><span>38</span></div>
+          <div class="oss-track"><div class="oss-fill" style="background: var(--accent)" data-width="15.9"></div></div>
+        </div>
+        <div class="oss-bar-item">
+          <div class="oss-bar-label"><span>Nov</span><span>15</span></div>
+          <div class="oss-track"><div class="oss-fill" style="background: var(--accent)" data-width="6.3"></div></div>
+        </div>
+        <div class="oss-bar-item">
+          <div class="oss-bar-label"><span>Dec</span><span>91</span></div>
+          <div class="oss-track"><div class="oss-fill" style="background: var(--accent)" data-width="38.1"></div></div>
+        </div>
+        <p class="note" data-lang="en">Values reflect monthly commit counts from the slide 100 table.</p>
+        <p class="note" data-lang="ko">슬라이드 100 표의 월간 커밋 수를 반영했습니다.</p>
+      </div>
+-->
+
+      <div class="subsection-title fade-up">
+        <span class="i18n-en">Monthly Commits Trend (Line)</span><span class="i18n-ko">월간 커밋 추이 (라인)</span>
+      </div>
+      <div class="oss-line-chart fade-up" aria-label="Monthly commits line chart">
+        <svg viewBox="0 0 600 220" role="img" aria-labelledby="oss-line-title">
+          <title id="oss-line-title">Monthly commits trend (2025)</title>
+          <defs>
+            <linearGradient id="ossLineGradient" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#19c2c2" stop-opacity="0.45" />
+              <stop offset="100%" stop-color="#19c2c2" stop-opacity="0.02" />
+            </linearGradient>
+          </defs>
+          <line class="oss-line-grid" x1="40" y1="20.0" x2="580" y2="20.0" />
+          <line class="oss-line-grid" x1="40" y1="52.0" x2="580" y2="52.0" />
+          <line class="oss-line-grid" x1="40" y1="84.0" x2="580" y2="84.0" />
+          <line class="oss-line-grid" x1="40" y1="116.0" x2="580" y2="116.0" />
+          <line class="oss-line-grid" x1="40" y1="148.0" x2="580" y2="148.0" />
+          <line class="oss-line-grid" x1="40" y1="180.0" x2="580" y2="180.0" />
+          <text class="oss-line-label" x="32" y="23.0" text-anchor="end">239</text>
+          <text class="oss-line-label" x="32" y="55.0" text-anchor="end">191</text>
+          <text class="oss-line-label" x="32" y="87.0" text-anchor="end">143</text>
+          <text class="oss-line-label" x="32" y="119.0" text-anchor="end">96</text>
+          <text class="oss-line-label" x="32" y="151.0" text-anchor="end">48</text>
+          <text class="oss-line-label" x="32" y="183.0" text-anchor="end">0</text>
+          <line class="oss-line-axis" x1="40" y1="180" x2="580" y2="180" />
+          <path
+            class="oss-line-area"
+            d="M 40.0,180.0 L 40.0,113.1 L 89.1,143.8 L 138.2,168.6 L 187.3,155.9 L 236.4,106.4 L 285.5,116.4 L 334.5,66.2 L 383.6,39.4 L 432.7,20.0 L 481.8,154.6 L 530.9,170.0 L 580.0,119.1 L 580.0,180.0 Z"
+          />
+          <path
+            class="oss-line-path"
+            d="M 40.0,113.1 L 89.1,143.8 L 138.2,168.6 L 187.3,155.9 L 236.4,106.4 L 285.5,116.4 L 334.5,66.2 L 383.6,39.4 L 432.7,20.0 L 481.8,154.6 L 530.9,170.0 L 580.0,119.1"
+          />
+          <circle class="oss-line-point" cx="40.0" cy="113.1" r="3.5" />
+          <circle class="oss-line-point" cx="89.1" cy="143.8" r="3.5" />
+          <circle class="oss-line-point" cx="138.2" cy="168.6" r="3.5" />
+          <circle class="oss-line-point" cx="187.3" cy="155.9" r="3.5" />
+          <circle class="oss-line-point" cx="236.4" cy="106.4" r="3.5" />
+          <circle class="oss-line-point" cx="285.5" cy="116.4" r="3.5" />
+          <circle class="oss-line-point" cx="334.5" cy="66.2" r="3.5" />
+          <circle class="oss-line-point" cx="383.6" cy="39.4" r="3.5" />
+          <circle class="oss-line-point" cx="432.7" cy="20.0" r="3.5" />
+          <circle class="oss-line-point" cx="481.8" cy="154.6" r="3.5" />
+          <circle class="oss-line-point" cx="530.9" cy="170.0" r="3.5" />
+          <circle class="oss-line-point" cx="580.0" cy="119.1" r="3.5" />
+          <text class="oss-line-label" x="40.0" y="202" text-anchor="middle">Jan</text>
+          <text class="oss-line-label" x="89.1" y="202" text-anchor="middle">Feb</text>
+          <text class="oss-line-label" x="138.2" y="202" text-anchor="middle">Mar</text>
+          <text class="oss-line-label" x="187.3" y="202" text-anchor="middle">Apr</text>
+          <text class="oss-line-label" x="236.4" y="202" text-anchor="middle">May</text>
+          <text class="oss-line-label" x="285.5" y="202" text-anchor="middle">Jun</text>
+          <text class="oss-line-label" x="334.5" y="202" text-anchor="middle">Jul</text>
+          <text class="oss-line-label" x="383.6" y="202" text-anchor="middle">Aug</text>
+          <text class="oss-line-label" x="432.7" y="202" text-anchor="middle">Sep</text>
+          <text class="oss-line-label" x="481.8" y="202" text-anchor="middle">Oct</text>
+          <text class="oss-line-label" x="530.9" y="202" text-anchor="middle">Nov</text>
+          <text class="oss-line-label" x="580.0" y="202" text-anchor="middle">Dec</text>
+        </svg>
+      </div>
+
+      <div class="oss-bar-section fade-up">
+        <div class="subsection-title">
+          <span class="i18n-en">Commit Distribution by Repository</span><span class="i18n-ko">저장소별 커밋 분포</span>
+        </div>
+        <div class="oss-bar-item">
+          <div class="oss-bar-label"><span>Main Platform (Core)</span><span>652 — 55.5%</span></div>
+          <div class="oss-track"><div class="oss-fill" style="background: var(--accent)" data-width="55.5"></div></div>
+        </div>
+        <div class="oss-bar-item">
+          <div class="oss-bar-label"><span>Next-Gen Service (BE)</span><span>151 — 12.9%</span></div>
+          <div class="oss-track"><div class="oss-fill" style="background: var(--blue)" data-width="12.9"></div></div>
+        </div>
+        <div class="oss-bar-item">
+          <div class="oss-bar-label"><span>Next-Gen Service (FE)</span><span>149 — 12.7%</span></div>
+          <div class="oss-track"><div class="oss-fill" style="background: var(--purple)" data-width="12.7"></div></div>
+        </div>
+        <div class="oss-bar-item">
+          <div class="oss-bar-label"><span>Hackathon</span><span>87 — 7.4%</span></div>
+          <div class="oss-track"><div class="oss-fill" style="background: var(--amber)" data-width="7.4"></div></div>
+        </div>
+        <div class="oss-bar-item">
+          <div class="oss-bar-label"><span>MosslandAI</span><span>85 — 7.2%</span></div>
+          <div class="oss-track"><div class="oss-fill" style="background: var(--coral)" data-width="7.2"></div></div>
+        </div>
+        <div class="oss-bar-item">
+          <div class="oss-bar-label"><span>Others</span><span>51 — 4.3%</span></div>
+          <div class="oss-track"><div class="oss-fill" style="background: var(--text3)" data-width="4.3"></div></div>
+        </div>
+      </div>
+
+      <!-- PR/Issue detail -->
+      <div class="subsection-title fade-up"><span class="i18n-en">Collaboration Health</span><span class="i18n-ko">협업 건강도</span></div>
+      <div class="pr-stats stagger">
+        <div class="pr-stat">
+          <div class="pr-val" style="color: var(--accent)">179</div>
+          <div class="pr-label"><span class="i18n-en">PRs Merged</span><span class="i18n-ko">PR 머지</span></div>
+        </div>
+        <div class="pr-stat">
+          <div class="pr-val" style="color: var(--amber)">14</div>
+          <div class="pr-label"><span class="i18n-en">PRs Open</span><span class="i18n-ko">PR 오픈</span></div>
+        </div>
+        <div class="pr-stat">
+          <div class="pr-val" style="color: var(--text3)">6</div>
+          <div class="pr-label"><span class="i18n-en">Closed w/o Merge</span><span class="i18n-ko">머지 없이 종료</span></div>
+        </div>
+        <div class="pr-stat">
+          <div class="pr-val" style="color: var(--accent)">99</div>
+          <div class="pr-label"><span class="i18n-en">Issues Closed</span><span class="i18n-ko">이슈 종료</span></div>
+        </div>
+        <div class="pr-stat">
+          <div class="pr-val" style="color: var(--text)">3</div>
+          <div class="pr-label"><span class="i18n-en">Releases</span><span class="i18n-ko">릴리스</span></div>
+        </div>
+        <div class="pr-stat">
+          <div class="pr-val" style="color: var(--text)">11</div>
+          <div class="pr-label"><span class="i18n-en">Active Repos</span><span class="i18n-ko">활성 저장소</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 2026 OUTLOOK ===== -->
+    <hr class="section-divider" />
+    <section class="section nav-target" id="outlook">
+      <div class="section-label fade-up" data-num="09"><span class="i18n-en">2026 Outlook</span><span class="i18n-ko">2026 전망</span></div>
+      <h2 class="fade-up" data-lang="en">What's next for <em>Mossland</em></h2>
+      <h2 class="fade-up" data-lang="ko"><em>모스랜드</em>의 다음 단계</h2>
+      <p class="section-desc fade-up" data-lang="en">
+        Sustained growth, deeper AI integration, and global expansion — all built on the solid ERC-20 foundation established in 2025.
+      </p>
+      <p class="section-desc fade-up" data-lang="ko">
+        지속적 성장, 심화된 AI 통합, 글로벌 확장 — 2025년에 확립된 ERC-20 인프라 위에서 추진합니다.
+      </p>
+
+      <div class="outlook-items stagger">
+        <div class="outlook-item">
+          <h4>🌐 <span class="i18n-en">Network Stabilization</span><span class="i18n-ko">네트워크 안정화</span></h4>
+          <p data-lang="en">
+            Post ERC-20 migration stabilization. Normalized exchange deposits and withdrawals across all four exchanges. Expanded pathways
+            to global exchange listings for broader market access and international liquidity.
+          </p>
+          <p data-lang="ko">
+            ERC-20 마이그레이션 이후 안정화. 4개 거래소 전체의 입출금 정상화. 해외 거래소 상장을 통한 글로벌 시장 접근성 및 국제 유동성 확대
+            경로 구축.
+          </p>
+        </div>
+        <div class="outlook-item">
+          <h4>🤖 <span class="i18n-en">Platform Expansion</span><span class="i18n-ko">플랫폼 확장</span></h4>
+          <p data-lang="en">
+            Expand MAIT's DAO AI capabilities beyond proposal drafting into full governance intelligence. Strengthen Agora's platform
+            maturity with enhanced analytics. Scale AI-integrated services across the ecosystem.
+          </p>
+          <p data-lang="ko">
+            MAIT의 DAO AI 역량을 제안서 초안 작성 너머 거버넌스 인텔리전스로 확장. 향상된 분석 기능으로 Agora 플랫폼 성숙도 강화. 생태계
+            전반에 AI 통합 서비스 확대.
+          </p>
+        </div>
+        <div class="outlook-item">
+          <h4>🔬 <span class="i18n-en">Continued Research</span><span class="i18n-ko">지속적 연구</span></h4>
+          <p data-lang="en">
+            Advance AI × blockchain convergence research with focus on practical applications. Enhance metaverse technology capabilities
+            through digital twin expansion. Track and analyze global technology and regulatory trends.
+          </p>
+          <p data-lang="ko">
+            실용적 적용에 초점을 맞춘 AI × 블록체인 융합 연구 심화. 디지털 트윈 확장을 통한 메타버스 기술 역량 강화. 글로벌 기술 및 규제
+            트렌드 추적·분석.
+          </p>
+        </div>
+        <div class="outlook-item">
+          <h4>🤝 <span class="i18n-en">Community Growth</span><span class="i18n-ko">커뮤니티 성장</span></h4>
+          <p data-lang="en">
+            Transparent communication and broader participation mechanisms. Ecosystem expansion through community-led initiatives and
+            developer outreach. Strengthen relationships with emerging builder communities.
+          </p>
+          <p data-lang="ko">
+            투명한 소통과 보다 폭넓은 참여 메커니즘. 커뮤니티 주도 이니셔티브와 개발자 아웃리치를 통한 생태계 확장. 신진 빌더 커뮤니티와의
+            관계 강화.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="footer-logo">MOSSLAND</div>
+      <p>
+        2025 Q4 Report — <span class="i18n-en">Published January 30, 2026</span><span class="i18n-ko">2026년 1월 30일 발행</span> — Mossland
+        Team
+      </p>
+      <p style="margin-top: 0.3rem">
+        <span class="i18n-en"
+          >This report is provided for informational purposes only and must not be used as a basis for investment decisions.</span
+        ><span class="i18n-ko">본 보고서는 정보 제공 목적으로만 제공되며, 투자 결정의 근거로 사용되어서는 안 됩니다.</span>
+      </p>
+    </footer>
+
+    <script>
+      // === Scroll animations ===
+      const obs = new IntersectionObserver(
+        (e) => {
+          e.forEach((el) => {
+            if (el.isIntersecting) el.target.classList.add("visible");
+          });
+        },
+        { threshold: 0.08, rootMargin: "0px 0px -40px 0px" },
+      );
+      document.querySelectorAll(".fade-up,.stagger").forEach((el) => obs.observe(el));
+
+      // === Nav scroll ===
+      const nav = document.getElementById("nav");
+      window.addEventListener("scroll", () => nav.classList.toggle("scrolled", scrollY > 50));
+
+      // === Active nav link ===
+      const navLinks = document.querySelectorAll(".nav-center a, .mobile-nav a");
+      function updateQuarterNavLinks() {
+        document.querySelectorAll("[data-nav]").forEach((a) => {
+          const base = a.dataset.nav;
+          a.setAttribute("href", "#" + (isKo ? base + "-ko" : base));
+        });
+      }
+      function getNavTargets() {
+        return document.querySelectorAll(isKo ? ".nav-target, .nav-target-ko" : ".nav-target, .nav-target-en");
+      }
+      function centerActiveNavLink() {
+        const navCenter = document.querySelector(".nav-center");
+        if (!navCenter) return;
+        const active = navCenter.querySelector("a.active");
+        if (!active) return;
+        const offset = active.offsetLeft - (navCenter.clientWidth / 2 - active.clientWidth / 2);
+        navCenter.scrollTo({ left: Math.max(0, offset), behavior: "smooth" });
+      }
+      function updateActiveNav() {
+        const navH = nav.offsetHeight;
+        const secs = [...getNavTargets()].filter((el) => el.offsetParent !== null);
+        let cur = secs.length ? secs[0].id : "";
+        secs.forEach((s) => {
+          if (s.getBoundingClientRect().top - navH <= 24) cur = s.id;
+        });
+        navLinks.forEach((a) => {
+          a.classList.toggle("active", a.getAttribute("href") === "#" + cur);
+        });
+        requestAnimationFrame(centerActiveNavLink);
+      }
+      window.addEventListener("scroll", updateActiveNav, { passive: true });
+      window.addEventListener("resize", updateActiveNav);
+      document.addEventListener("DOMContentLoaded", updateActiveNav);
+
+      // === Counter animation ===
+      const cObs = new IntersectionObserver(
+        (e) => {
+          e.forEach((el) => {
+            if (el.isIntersecting) {
+              const t = parseFloat(el.target.dataset.target),
+                dec = t % 1 !== 0,
+                dur = 1400,
+                st = performance.now();
+              function u(now) {
+                const p = Math.min((now - st) / dur, 1),
+                  e = 1 - Math.pow(1 - p, 3),
+                  c = t * e;
+                el.target.textContent = dec ? c.toFixed(2) : Math.floor(c).toLocaleString();
+                if (p < 1) requestAnimationFrame(u);
+              }
+              requestAnimationFrame(u);
+              cObs.unobserve(el.target);
+            }
+          });
+        },
+        { threshold: 0.5 },
+      );
+      document.querySelectorAll(".counter").forEach((el) => cObs.observe(el));
+
+      // === Bar animations ===
+      const bObs = new IntersectionObserver(
+        (e) => {
+          e.forEach((el) => {
+            if (el.isIntersecting) {
+              el.target.style.width = el.target.dataset.width + "%";
+              bObs.unobserve(el.target);
+            }
+          });
+        },
+        { threshold: 0.2 },
+      );
+      document.querySelectorAll("[data-width]").forEach((el) => {
+        el.style.width = "0%";
+        bObs.observe(el);
+      });
+
+      // === Language toggle ===
+      const langBtn = document.getElementById("langBtn");
+      let isKo = false;
+      updateQuarterNavLinks();
+      updateActiveNav();
+      langBtn.addEventListener("click", () => {
+        isKo = !isKo;
+        document.body.classList.toggle("ko", isKo);
+        langBtn.textContent = isKo ? "English" : "한국어";
+        langBtn.classList.toggle("active", isKo);
+        updateQuarterNavLinks();
+        updateActiveNav();
+      });
+
+      // === Mobile menu ===
+      const mBtn = document.getElementById("mobileMenuBtn");
+      const mNav = document.getElementById("mobileNav");
+      mBtn.addEventListener("click", () => mNav.classList.toggle("open"));
+      mNav.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => mNav.classList.remove("open")));
+      document.addEventListener("click", (e) => {
+        if (!mNav.contains(e.target) && !mBtn.contains(e.target)) mNav.classList.remove("open");
+      });
+    </script>
+  </body>
+</html>

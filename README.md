@@ -115,6 +115,7 @@ Korean
 
 ## Materials
 - 2026 [MOSSLAND Research Report: Physical AI & Agentic Expansion (Research Preview)](2026-01-research/physical-ai-agentic-expansion-research.md)
+- 2025 [MOSSLAND: Progress Report for the Fourth Quarter of 2025 and Announcements](https://mossland.github.io/Disclosure-and-Materials/disclosures/2025-q4/)
 - 2025 [MOSSLAND: Digital Twins and Blockchain](https://static.moss.land/docs/digital_twins_and_blockchain_2025-12-02.pdf)
 - 2025 [MOSSLAND: Progress Report for the Third Quarter of 2025 and Announcements](https://static.moss.land/docs/mossland_q3_report_2025-10-17.pdf)
 - 2025 [MOSSLAND: Progress Report for the Second Quarter of 2025 and Announcements](https://static.moss.land/docs/mossland_q2_report_2025-07-11.pdf)

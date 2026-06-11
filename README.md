@@ -18,6 +18,7 @@ Virtual Reality, Augmented Reality, Non-fungible token 기반의 엔터테인먼
 - [projects](https://github.com/mossland/Projects)
 
 ## Disclosure
+- June 11, 2026 [Final Judgment Result to the January 29, 2024 Notice of Litigation Commencement (KOREAN)](disclosures/2026/2026-06-11_final-judgment-result_to_2024-01-29_litigation-disclosure.md)
 - April 21, 2026 [Mossland Joins R&D Consortium as Co-Research and International-Standardization Partner (Proposal Stage)](disclosures/2026/2026-04-21_ax-sprint-consortium-participation_en.pdf)
 - February 7, 2026 [Follow-up Judgment Result to the January 29, 2024 Notice of Litigation Commencement (KOREAN)](disclosures/2026/2026-02-07_follow-up-judgment-result_to_2024-01-29_litigation-disclosure.md)
 - December 11, 2025 [Mosscoin Luniverse MOC Burn Completed](https://medium.com/mossland-blog/luniverse-moss-coin-moc-burn-completion-notice-5cff58637bdc)
@@ -67,6 +68,7 @@ Virtual Reality, Augmented Reality, Non-fungible token 기반의 엔터테인먼
 - February 5, 2020 [Mosland, The Hunters 'iF Design Award Winner](http://s3.ap-northeast-2.amazonaws.com/dunamuplatform-druid-disclosure-coolprod/disclosure-160_MOC_01.pdf)
 
 Korean
+- 2026년 6월 11일 [2024-01-29 「소송 등의 제기」 공시 후속 최종 판결 결과 공시](disclosures/2026/2026-06-11_final-judgment-result_to_2024-01-29_litigation-disclosure.md)
 - 2026년 4월 21일 [R&D 컨소시엄 공동연구·국제표준화 협력기관 참여 (신청 단계)](disclosures/2026/2026-04-21_ax-sprint-consortium-participation.pdf)
 - 2026년 2월 7일 [2024-01-29 「소송 등의 제기」 공시 후속 판결 결과 공시](disclosures/2026/2026-02-07_follow-up-judgment-result_to_2024-01-29_litigation-disclosure.md)
 - 2025년 12월 11일 [모스코인, Luniverse MOC 소각 완료](https://medium.com/mossland-blog/luniverse-%EB%AA%A8%EC%8A%A4%EC%BD%94%EC%9D%B8-moc-%EC%86%8C%EA%B0%81-%EC%99%84%EB%A3%8C-%EA%B3%B5%EC%8B%9C-9fa735a38fa4)

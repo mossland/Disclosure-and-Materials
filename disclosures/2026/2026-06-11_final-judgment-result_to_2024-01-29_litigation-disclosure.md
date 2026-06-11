@@ -37,7 +37,7 @@
 
 ### 관련 공시
 
-* [2026-02-07 「소송 등의 제기」 공시 후속 판결 결과 공시](./2026/2026-02-07_follow-up-judgment-result_to_2024-01-29_litigation-disclosure.md)
+* [2026-02-07 「소송 등의 제기」 공시 후속 판결 결과 공시](./2026-02-07_follow-up-judgment-result_to_2024-01-29_litigation-disclosure.md)
 
 
 **모스랜드**

@@ -6,16 +6,16 @@
 This repository aims to provide the disclosure documents and technical data (material) of the Mossland project. You can get the latest news about the Mossland project. The purpose of this repository is to accurately and transparently share the progress of the Mossland project with Moss Coin holders.
 
 ## What is Mossland?
-Mossland is a blockchain-based metaverse project connecting real and virtual worlds. Mossland has been continuously releasing practical use cases of entertainment services based on virtual reality, augmented reality, and non-fungible tokens(NFTs). Mossland's metaverse features NFTs and entertainment services that reflect the real world and pursues an integrated economic system through Moss Coin(MOC).
+Mossland is a blockchain project that began as a metaverse connecting the real and virtual worlds and has grown into infrastructure for the AI civilization. Building on its virtual reality, augmented reality, and NFT-based entertainment roots, Mossland now develops agentic AI governance, AI-driven media, and Physical AI services — all coordinated on-chain through Moss Coin(MOC), which ties the ecosystem into an integrated economic system.
 
-모스랜드(Mossland)는 현실과 가상 세계를 잇는 블록체인 기반 메타버스 프로젝트입니다.
-Virtual Reality, Augmented Reality, Non-fungible token 기반의 엔터테인먼트 서비스를 지속적으로 출시하며 실사용 사례들을 만들어 가고 있습니다. 모스랜드 메타버스는 현실이 반영된 디지털 NFT 자산과 엔터테인먼트 서비스를 특징으로 하며, 모스코인(MOC)으로 통합된 경제 순환 구조를 추구합니다. 
+모스랜드(Mossland)는 현실과 가상 세계를 잇는 메타버스에서 출발해, 이제는 AI 문명을 위한 인프라(Infrastructure for the AI Civilization)로 확장하고 있는 블록체인 프로젝트입니다.
+VR·AR·NFT 기반 엔터테인먼트 서비스로 쌓아 온 실사용 경험을 토대로, 현재는 에이전트 기반 AI 거버넌스, AI 미디어, 피지컬 AI(Physical AI) 서비스를 개발하고 있습니다. 이 모든 서비스는 모스코인(MOC)을 통해 하나의 통합된 경제 순환 구조로 연결됩니다.
 
 - [moss.land](https://www.moss.land/)
-- [twitter](https://twitter.com/theMossland)
-- [blog](https://medium.com/mossland-blog)
-- [github](https://github.com/mossland)
-- [projects](https://github.com/mossland/Projects)
+- [X (Twitter)](https://twitter.com/theMossland)
+- [GitHub](https://github.com/mossland)
+- [Medium Blog](https://medium.com/mossland-blog)
+- [Projects](https://github.com/mossland/Projects)
 
 ## Disclosure
 - June 11, 2026 [Final Judgment Result to the January 29, 2024 Notice of Litigation Commencement (KOREAN)](disclosures/2026/2026-06-11_final-judgment-result_to_2024-01-29_litigation-disclosure.md)
@@ -35,11 +35,11 @@ Virtual Reality, Augmented Reality, Non-fungible token 기반의 엔터테인먼
 - November 27, 2023 [Mosscoin Listed on Korean Exchange BITHUMB (KOREAN)](https://medium.com/mossland-blog/moc-no-1-%EA%B0%80%EC%83%81%EC%9E%90%EC%82%B0-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EB%B9%97%EC%8D%B8-bithumb-%EC%83%81%EC%9E%A5-60827bf49b44)
 - August 24, 2023 [Wrapped MOC (WMOC) Listed on Global Exchange LATOKEN](https://medium.com/mossland-blog/wmoc-%EA%B8%80%EB%A1%9C%EB%B2%8C-%EA%B1%B0%EB%9E%98%EC%86%8C-latoken-%EC%83%81%EC%9E%A5-e66610f7af24)
 - August 7, 2023 [Mossland Launches Swap Service for Wrapped MOC (WMOC)](https://swap.moss.land)
-- June 26, 2023 [Mossland Updates Opensource Metaverse Platform (KOREAN)](https://github.com/mossland/mossverse/blob/main/MosslandMetaverse_ko_20230626.pdf)
-- May 25, 2023 [Mosland announces Open-source Developer Support Program](https://github.com/mossland/MosslandDeveloperSupportProgram)
+- June 26, 2023 [Mossland Updates Opensource Metaverse Platform (KOREAN)](https://github.com/MosslandOpenDevs/mossverse/blob/main/MosslandMetaverse_ko_20230626.pdf)
+- May 25, 2023 [Mosland announces Open-source Developer Support Program](https://github.com/MosslandOpenDevs/MosslandDeveloperSupportProgram)
 - February 13, 2023 [Application for Mosland Partner Realty Refection Inc.](https://static.moss.land/disclosure/2023-02-13.pdf)
 - January 9, 2023 [Mossland Launches Disclosure Website](https://disclosure.moss.land/)
-- October 10, 2022 [Mossland Launches Opensource Metaverse Platform (Beta)](https://github.com/mossland/mossverse)
+- October 10, 2022 [Mossland Launches Opensource Metaverse Platform (Beta)](https://github.com/MosslandOpenDevs/mossverse)
 - August 5, 2022 [Mossland launches CyberTHUG DAO voting solution](https://portal.thecyberthug.com/)
 - June 15, 2022 [Mossland, CyberTHUG commercial video "WONSTEIN - CyberTHUG (feat. ShinGu)" released](https://www.youtube.com/watch?v=Glp0rbleqIk)
 - March 16, 2022 [Mossland releases beta release of NFT game "CyberTHUG Gecko Club"](https://cyberthuggeckoclub.notion.site/CyberTHUG-Gecko-Club-Guidebook-2f5cb5a1b23d4257b75552d3190fdf76)
@@ -85,11 +85,11 @@ Korean
 - 2023년 11월 27일 [모스코인, 한국 거래소 빗썸(Bithumb) 상장](https://medium.com/mossland-blog/moc-no-1-%EA%B0%80%EC%83%81%EC%9E%90%EC%82%B0-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EB%B9%97%EC%8D%B8-bithumb-%EC%83%81%EC%9E%A5-60827bf49b44)
 - 2023년 8월 24일 [Wrapped MOC(WMOC), 글로벌 거래소 LATOKEN 상장](https://medium.com/mossland-blog/wmoc-%EA%B8%80%EB%A1%9C%EB%B2%8C-%EA%B1%B0%EB%9E%98%EC%86%8C-latoken-%EC%83%81%EC%9E%A5-e66610f7af24)
 - 2023년 8월 7일 [모스랜드, Wrapped MOC(WMOC) 스왑 베타 서비스 오픈](https://swap.moss.land)
-- 2023년 6월 26일 [모스랜드, 오픈소스 메타버스 플랫폼 업데이트](https://github.com/mossland/mossverse/blob/main/MosslandMetaverse_ko_20230626.pdf)
-- 2023년 5월 25일 [모스랜드, 오픈소스 프로젝트 활성화를 위한 개발자 지원 프로그램 공개](https://github.com/mossland/MosslandDeveloperSupportProgram)
+- 2023년 6월 26일 [모스랜드, 오픈소스 메타버스 플랫폼 업데이트](https://github.com/MosslandOpenDevs/mossverse/blob/main/MosslandMetaverse_ko_20230626.pdf)
+- 2023년 5월 25일 [모스랜드, 오픈소스 프로젝트 활성화를 위한 개발자 지원 프로그램 공개](https://github.com/MosslandOpenDevs/MosslandDeveloperSupportProgram)
 - 2023년 2월 13일 [모스랜드 파트너사 리얼리티리플렉션 주식회사에 대한 신청 등의 제기](https://static.moss.land/disclosure/2023-02-13.pdf)
 - 2023년 1월 9일 [모스랜드, 공시 강화를 위한 모스코인 공시 사이트 공개](https://disclosure.moss.land/)
-- 2022년 10월 10일 [모스랜드, 오픈소스 메타버스 플랫폼 베타 출시](https://github.com/mossland/mossverse)
+- 2022년 10월 10일 [모스랜드, 오픈소스 메타버스 플랫폼 베타 출시](https://github.com/MosslandOpenDevs/mossverse)
 - 2022년 8월 5일 [모스랜드, CyberTHUG DAO 투표 솔루션 출시](https://portal.thecyberthug.com/)
 - 2022년 6월 15일 [모스랜드, CyberTHUG 광고 영상 "원슈타인(WONSTEIN) - CyberTHUG (feat. 신구 선생님)" 공개](https://www.youtube.com/watch?v=Glp0rbleqIk)
 - 2022년 3월 16일 [모스랜드, NFT 게임 "CyberTHUG Gecko Club" 베타 출시](https://cyberthuggeckoclub.notion.site/CyberTHUG-Gecko-Club-Guidebook-2f5cb5a1b23d4257b75552d3190fdf76)
@@ -138,8 +138,8 @@ Korean
 - 2023 [MOSSLAND WHITE PAPER 3.0 (KOREAN)](https://s3.ap-northeast-2.amazonaws.com/moss.land/whitepaper/Mossland+Whitepaper+KOR+2023-08-08.pdf)
 - 2023 [MOSSLAND WHITE PAPER 3.0 (ENGLISH)](https://s3.ap-northeast-2.amazonaws.com/moss.land/whitepaper/Mossland+Whitepaper+ENG+2023-08-08.pdf)
 - 2023 [MOSSLAND, Project Roadmap 2023-2024 (KOREAN)](https://s3.ap-northeast-2.amazonaws.com/static.moss.land/docs/mossland_roadmap_2023.pdf)
-- 2022 [MOSSLAND DAO Governance Model (Research Purpose)](https://github.com/mossland/MossDAO)
-- 2021 [MOSSLAND Metaverse integrated with Mosscoin (KOREAN)](https://github.com/mossland/mossverse/blob/main/%EB%AA%A8%EC%8A%A4%EB%9E%9C%EB%93%9C%20%EB%AA%A8%EC%8A%A4%EC%BD%94%EC%9D%B8%EC%9C%BC%EB%A1%9C%20%ED%86%B5%ED%95%A9%EB%90%9C%20%EB%A9%94%ED%83%80%EB%B2%84%EC%8A%A4%202021-09-09.pdf)
+- 2022 [MOSSLAND DAO Governance Model (Research Purpose)](https://github.com/MosslandOpenDevs/MossDAO)
+- 2021 [MOSSLAND Metaverse integrated with Mosscoin (KOREAN)](https://github.com/MosslandOpenDevs/mossverse/blob/main/%EB%AA%A8%EC%8A%A4%EB%9E%9C%EB%93%9C%20%EB%AA%A8%EC%8A%A4%EC%BD%94%EC%9D%B8%EC%9C%BC%EB%A1%9C%20%ED%86%B5%ED%95%A9%EB%90%9C%20%EB%A9%94%ED%83%80%EB%B2%84%EC%8A%A4%202021-09-09.pdf)
 - 2021 [MOSSLAND, Sports Metaverse and NFT (KOREAN)](https://github.com/mossland/Disclosure-and-Materials/tree/main/2021.07.15)
 - 2020 [UDC 2020, Introduction Video of Mossland](https://www.youtube.com/watch?v=O_OqmwvwtXE)
 - 2020 [MOSSLAND, Mosscoin](http://static.moss.land/disclosure/2020_03.pdf)

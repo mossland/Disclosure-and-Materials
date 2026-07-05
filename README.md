@@ -1,4 +1,4 @@
-![Disclosure-and-Materials](https://user-images.githubusercontent.com/109493423/196602292-0d21e422-288e-4883-af02-56eac3cbf652.png)
+![Disclosure & Materials](assets/header.png)
 # Disclosure-and-Materials
 
 모스랜드 프로젝트의 공시(Disclosure) 문서와 기술 자료(Material)가 공개되는 Repository 입니다. 가장 최신의 모스랜드 프로젝트 소식을 접하실 수 있으며 모스코인 홀더 분들에게 모스랜드 프로젝트의 진행 상황을 정확하고 투명하게 공유하는데 목적이 있습니다.

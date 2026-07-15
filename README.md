@@ -4,6 +4,8 @@
 모스랜드 프로젝트의 공시(Disclosure) 문서와 기술 자료(Material)가 공개되는 Repository 입니다. 가장 최신의 모스랜드 프로젝트 소식을 접하실 수 있으며 모스코인 홀더 분들에게 모스랜드 프로젝트의 진행 상황을 정확하고 투명하게 공유하는데 목적이 있습니다.
 
 This repository aims to provide the disclosure documents and technical data (material) of the Mossland project. You can get the latest news about the Mossland project. The purpose of this repository is to accurately and transparently share the progress of the Mossland project with Moss Coin holders.
+> Historical links are preserved for transparency.
+> Some services are no longer active. There is currently no official token swap portal.
 
 ## What is Mossland?
 Mossland is a blockchain project that began as a metaverse connecting the real and virtual worlds and has grown into infrastructure for the AI civilization. Building on its virtual reality, augmented reality, and NFT-based entertainment roots, Mossland now develops agentic AI governance, AI-driven media, and Physical AI services — all coordinated on-chain through Moss Coin(MOC), which ties the ecosystem into an integrated economic system.
@@ -34,7 +36,7 @@ VR·AR·NFT 기반 엔터테인먼트 서비스로 쌓아 온 실사용 경험�
 - January 29, 2024 [Notice of Litigation Commencement (KOREAN)](https://static.moss.land/disclosure/2024-01-29.pdf)
 - November 27, 2023 [Mosscoin Listed on Korean Exchange BITHUMB (KOREAN)](https://medium.com/mossland-blog/moc-no-1-%EA%B0%80%EC%83%81%EC%9E%90%EC%82%B0-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EB%B9%97%EC%8D%B8-bithumb-%EC%83%81%EC%9E%A5-60827bf49b44)
 - August 24, 2023 [Wrapped MOC (WMOC) Listed on Global Exchange LATOKEN](https://medium.com/mossland-blog/wmoc-%EA%B8%80%EB%A1%9C%EB%B2%8C-%EA%B1%B0%EB%9E%98%EC%86%8C-latoken-%EC%83%81%EC%9E%A5-e66610f7af24)
-- August 7, 2023 [Mossland Launches Swap Service for Wrapped MOC (WMOC)](https://swap.moss.land)
+- August 7, 2023 ~~[Mossland Launches Swap Service for Wrapped MOC (WMOC)](https://swap.moss.land)~~ *(Historical service — no longer active)*
 - June 26, 2023 [Mossland Updates Opensource Metaverse Platform (KOREAN)](https://github.com/MosslandOpenDevs/mossverse/blob/main/MosslandMetaverse_ko_20230626.pdf)
 - May 25, 2023 [Mosland announces Open-source Developer Support Program](https://github.com/MosslandOpenDevs/MosslandDeveloperSupportProgram)
 - February 13, 2023 [Application for Mosland Partner Realty Refection Inc.](https://static.moss.land/disclosure/2023-02-13.pdf)

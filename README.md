@@ -86,7 +86,7 @@ Korean
 - 2024년 1월 29일 [소송 등의 제기](https://static.moss.land/disclosure/2024-01-29.pdf)
 - 2023년 11월 27일 [모스코인, 한국 거래소 빗썸(Bithumb) 상장](https://medium.com/mossland-blog/moc-no-1-%EA%B0%80%EC%83%81%EC%9E%90%EC%82%B0-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EB%B9%97%EC%8D%B8-bithumb-%EC%83%81%EC%9E%A5-60827bf49b44)
 - 2023년 8월 24일 [Wrapped MOC(WMOC), 글로벌 거래소 LATOKEN 상장](https://medium.com/mossland-blog/wmoc-%EA%B8%80%EB%A1%9C%EB%B2%8C-%EA%B1%B0%EB%9E%98%EC%86%8C-latoken-%EC%83%81%EC%9E%A5-e66610f7af24)
-- 2023년 8월 7일 [모스랜드, Wrapped MOC(WMOC) 스왑 베타 서비스 오픈](https://swap.moss.land)
+- 2023년 8월 7일 ~~[모스랜드, Wrapped MOC(WMOC) 스왑 베타 서비스 오픈](https://swap.moss.land)~~
 - 2023년 6월 26일 [모스랜드, 오픈소스 메타버스 플랫폼 업데이트](https://github.com/MosslandOpenDevs/mossverse/blob/main/MosslandMetaverse_ko_20230626.pdf)
 - 2023년 5월 25일 [모스랜드, 오픈소스 프로젝트 활성화를 위한 개발자 지원 프로그램 공개](https://github.com/MosslandOpenDevs/MosslandDeveloperSupportProgram)
 - 2023년 2월 13일 [모스랜드 파트너사 리얼리티리플렉션 주식회사에 대한 신청 등의 제기](https://static.moss.land/disclosure/2023-02-13.pdf)

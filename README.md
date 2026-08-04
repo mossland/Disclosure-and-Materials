@@ -20,6 +20,7 @@ VR·AR·NFT 기반 엔터테인먼트 서비스로 쌓아 온 실사용 경험�
 - [Projects](https://github.com/mossland/Projects)
 
 ## Disclosure
+- August 4, 2026 [Korea MOLIT AX Sprint R&D Consortium — Project Selection and Agreement Execution (Follow-up to the April 21, 2026 Disclosure)](disclosures/2026/2026-08-04_ax-sprint-selection-and-agreement-follow-up_en.pdf)
 - June 11, 2026 [Final Judgment Result to the January 29, 2024 Notice of Litigation Commencement (KOREAN)](disclosures/2026/2026-06-11_final-judgment-result_to_2024-01-29_litigation-disclosure.md)
 - April 21, 2026 [Mossland Joins R&D Consortium as Co-Research and International-Standardization Partner (Proposal Stage)](disclosures/2026/2026-04-21_ax-sprint-consortium-participation_en.pdf)
 - February 7, 2026 [Follow-up Judgment Result to the January 29, 2024 Notice of Litigation Commencement (KOREAN)](disclosures/2026/2026-02-07_follow-up-judgment-result_to_2024-01-29_litigation-disclosure.md)
@@ -70,6 +71,7 @@ VR·AR·NFT 기반 엔터테인먼트 서비스로 쌓아 온 실사용 경험�
 - February 5, 2020 [Mosland, The Hunters 'iF Design Award Winner](http://s3.ap-northeast-2.amazonaws.com/dunamuplatform-druid-disclosure-coolprod/disclosure-160_MOC_01.pdf)
 
 Korean
+- 2026년 8월 4일 [국토교통부 AX Sprint R&D 컨소시엄 과제 선정·협약 체결 후속 공시 (2026-04-21 공시 후속)](disclosures/2026/2026-08-04_ax-sprint-selection-and-agreement-follow-up.pdf)
 - 2026년 6월 11일 [2024-01-29 「소송 등의 제기」 공시 후속 최종 판결 결과 공시](disclosures/2026/2026-06-11_final-judgment-result_to_2024-01-29_litigation-disclosure.md)
 - 2026년 4월 21일 [R&D 컨소시엄 공동연구·국제표준화 협력기관 참여 (신청 단계)](disclosures/2026/2026-04-21_ax-sprint-consortium-participation.pdf)
 - 2026년 2월 7일 [2024-01-29 「소송 등의 제기」 공시 후속 판결 결과 공시](disclosures/2026/2026-02-07_follow-up-judgment-result_to_2024-01-29_litigation-disclosure.md)

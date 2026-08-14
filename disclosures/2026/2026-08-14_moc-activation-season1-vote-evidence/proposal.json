@@ -1,0 +1,30 @@
+{
+  "proposalId": "6a4decb73697e1a9d307e327",
+  "title": "MOC Activation Season 1 — 자가지갑 참여 전환 (90일 파일럿)",
+  "status": "closed",
+  "choices": [
+    "For",
+    "Against",
+    "Abstain"
+  ],
+  "startAt": "2026-07-08T07:57:30.269Z",
+  "endAt": "2026-08-07T07:57:30.269Z",
+  "updatedAt": "2026-07-08T06:22:47.604Z",
+  "contentHash": "sha256:490acdbc00a6e7303e1682dd9c00cd648c9fe90962429dff59f67d1d88c9ce78",
+  "contentHashVersion": "v1",
+  "url": "https://agora.moss.land/proposals/6a4decb73697e1a9d307e327",
+  "tags": [
+    "Project"
+  ],
+  "body": "Passport의 자가지갑 활성화(출금 비용 보전·가스리스 인증·위임·Exit Pass)는 **이미 운영 중**입니다.\n본 안건은 그 운영을 공개 원칙으로 묶고, \"Season 1\"이라는 90일 파일럿으로 DAO가 공식 채택(비준)할지 결정합니다.\n\n> **본 안건은 캠페인 시작 '허가'가 아닙니다** — 활성화 지원은 이미 돌아가고 있습니다.\n> 또한 전체 MOC 보유자의 완성된 민의를 주장하지 않습니다. 지금 Agora에서 서명 가능한 자가지갑 MOC의 작은 첫 결정이며, **참여율은 작게 시작해 시즌 동안 제안을 거듭할수록 커지는 것**이 목적입니다.\n\n## 비준하는 4가지 원칙\n\n1. **출금 비용 보전만** — MOC 직접 지급은 자가지갑 이전 시 출금 비용 상당액 보전으로만. 투표·보유·매수 보상 없음.\n2. **참여 지표 표시** — 투표 결과 화면에 **참여 MOC(가중 합계)와 참여 인원**을 표기한다. 총공급·Passport 활성 MOC·voting power 대비 **참여율(%)은 각 데이터 연동이 완료되는 대로 같은 화면에 단계적으로 추가**한다.\n3. **구속 투표 = 자가지갑만** — 거래소 보관 MOC는 비구속 시그널·설문으로만.\n4. **지표 공개** — 인증·위임·참여·보전 집계를 Passport Transparency에 상시 공개, 시즌 요약은 월간 공시로.\n\n## 진행 방식 (투표 통과를 기다리지 않음)\n\n- 활성화 퍼널은 **지금 그대로 운영**합니다 — 투표 결과와 무관하게 사람 돕는 걸 멈추지 않습니다.\n- 투표권은 **승인 시점 스냅샷**의 자가지갑 MOC 기준입니다. 그래서 본 안건은 원칙을 먼저 비준하도록 **짧게(약 30일)** 엽니다. 승인 이후 새로 활성화된 지갑은 스냅샷 밖이라 **다음 제안부터** 표를 얻습니다.\n- 참여율 상승은 본 안건이 아니라 **제안을 거듭하며** 나타나고, Transparency로 추적합니다.\n- 투표 개시 전, Agora 결과 화면에 **참여 MOC와 참여 인원 표기를 배포**합니다. 총공급·활성 MOC 대비 참여율(%)은 데이터 연동이 끝나는 대로 같은 화면에 추가합니다.\n- baseline·시즌 요약 지표(인증·위임·참여·보전 집계)는 **Passport Transparency에서 공개**하고, Agora 결과 화면은 **투표별 참여 수치**를 담당합니다.\n\n## 투표\n\n**Mossland DAO는 위 4가지 원칙을 비준하고, MOC Activation Season 1을 90일 공식 파일럿으로 채택하는 것을 승인합니까?**\n\n- **For** — 비준하고 공식 채택한다.\n- **Against** — 공식 채택하지 않는다. (활성화 운영 자체는 유지될 수 있으나 DAO 공식 시즌으로 삼지 않는다.)\n- **Abstain** — 찬반 유보. (참여율엔 포함, 찬성으로 계산 안 함.)",
+  "authorWalletAddress": "0x1d67e2261517066d34dba693576285ea4e59c464",
+  "createdAt": "2026-07-08T06:22:47.604Z",
+  "voting": {
+    "chainId": 1,
+    "mocContractAddress": "0x8bbfe65e31b348cd823c62e02ad8c19a84dd0dab",
+    "snapshotBlock": 25486030,
+    "minimumMocRequired": "0",
+    "votingPowerRule": "1 MOC = 1 vote (delegated power; raw balance if you never delegated)",
+    "eligibilitySource": "onchain_votes_snapshot_or_balance"
+  }
+}

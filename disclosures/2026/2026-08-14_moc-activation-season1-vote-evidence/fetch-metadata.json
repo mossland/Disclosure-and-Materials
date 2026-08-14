@@ -1,0 +1,8 @@
+{
+  "fetchedAt": "2026-08-14T06:34:28Z",
+  "sources": {
+    "proposal.json": "https://agora.moss.land/api/governance/proposals/6a4decb73697e1a9d307e327",
+    "votes.json": "https://agora.moss.land/api/proposal-votes/6a4decb73697e1a9d307e327",
+    "transparency.json": "https://passport.moss.land/api/transparency"
+  }
+}

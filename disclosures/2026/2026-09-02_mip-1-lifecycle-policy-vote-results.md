@@ -7,7 +7,7 @@
 * 2026년 8월 19일부터 9월 2일까지 Agora에서 진행된 「MIP-1: 공개 서비스·저장소 생명주기 정책」 안건이 **찬성 100%로 가결**되었습니다.
 * 이에 따라 안건의 **4개 조항이 비준**되고, **부속서 A의 최초 분류가 적용**되었습니다. 모든 공개 서비스(`*.moss.land`)와 배포에 연결된 공개 저장소는 Core / Beta / Lab / Archive 중 하나의 상태를 links.moss.land와 저장소 README에 표시합니다.
 * 참여 규모는 **108,988.96676301 MOC / 2명**으로, Season 1 안건(2026-08-07 가결)과 동일한 두 지갑이 참여했습니다. Season 1 공시가 기록한 baseline 대비 참여율 변화는 없습니다.
-* **이행 현황(본 공시 시점):** links.moss.land registry에 상태 필드 반영 완료(2026-09-02, registry v1.1.0 — 17개 서비스, Beta 8 · Lab 7 · Archive 2 · Core 0). 각 저장소 README 상태 표시는 가결 후 14일 이내(2026-09-16)에 완료합니다.
+* **이행 현황(2026-09-02 갱신):** links.moss.land registry에 상태 필드 반영 완료(registry v1.1.0 — 17개 서비스, Beta 8 · Lab 7 · Archive 2 · Core 0). 배포 연결 저장소 README 상태 표시도 같은 날 완료 — 20개 저장소(§6). 예외 1건: `mossland-media-kr`는 이미 GitHub archived(읽기 전용) 저장소라 registry 기록으로 갈음합니다.
 * 결과 JSON, 전체 투표 서명 export, Passport Transparency 스냅샷, 반영된 registry 사본, SHA-256 해시가 본 공시와 **같은 커밋**에 [증빙 폴더](./2026-09-02_mip-1-lifecycle-policy-vote-evidence/)로 포함되어 있습니다.
 
 ### 1. 안건 개요
@@ -93,8 +93,8 @@ registry 외 항목(제3자 마켓, 도메인 밖 채널, 데이터 산출물)�
 | 의무 (안건 본문) | 기한 | 현황 |
 | --- | --- | --- |
 | links.moss.land에 상태 필드 반영 · 최초 분류 적용 | 가결 후 14일 (2026-09-16) | **완료** — 2026-09-02, [MosslandOpenDevs/links PR #22](https://github.com/MosslandOpenDevs/links/pull/22) 병합(커밋 `e11f1c9`), registry v1.1.0 공개 |
-| 각 저장소 README에 상태 표시 | 가결 후 14일 (2026-09-16) | **진행 중** — 본 공시 시점 links 저장소 README 반영, 나머지 배포 연결 저장소는 순차 반영 |
-| 결과 처리: 공시 1건 + Agora 포럼 답글 | — | 본 공시 + [토론 스레드](https://agora.moss.land/forum/6a8512ad8be190cf5d2ebcd5) 답글 |
+| 각 저장소 README에 상태 표시 | 가결 후 14일 (2026-09-16) | **완료** (2026-09-02) — 20개 저장소: links · Disclosure-and-Materials · mossland-website-2026 (moss.land) · moc-passport · Agora_backend · Agora_frontend · Agora (공개) · mossverse-wa-infra · mossverse-wa-services · mossverse-wa-map · alpha · signalmap · mossland-signal · agentic-orchestrator (ao) · Algora · bridge-2026 · pixel-agent-lab (monitor) · mossland-city · mossland-npc · mossland-recipe. 예외: `mossland-media-kr` (Archive)는 GitHub archived 저장소라 쓰기가 막혀 있어 registry 사유("repository archived")로 갈음 |
+| 결과 처리: 공시 1건 + Agora 포럼 답글 | — | **완료** — 본 공시(2026-09-02 병합) + [토론 스레드](https://agora.moss.land/forum/6a8512ad8be190cf5d2ebcd5) 답글(2026-09-02 13:54 KST) · disclosure.moss.land 목록 반영 |
 | registry 월 1회 검토 · 상태 변경 근거 기록 · 분기 리포트 기재 | 상시 | 다음 검토는 2026년 9월 중 (`lifecycleReviewedAt` 갱신), 결과는 2026 Q3 리포트에 기재 |
 
 ### 7. 증빙 (Evidence)
@@ -131,7 +131,7 @@ The proposal ["MIP-1: 공개 서비스·저장소 생명주기 정책"](https://
 * **Results:** For 108,988.96676301 MOC (2 voters; one is the proposer's wallet) / Against 0 / Abstain 0 — the same two wallets and the same weight as the Season 1 vote, so the participation baseline recorded on 2026-08-14 is unchanged.
 * **Effect:** Four articles are ratified — every public `*.moss.land` service and deployment-linked public repository displays one of four lifecycle states (Core / Beta / Lab / Archive) on links.moss.land and in its README; Core requires a named owner and second owner with deploy and recovery rights; a service without a second owner is shown as Lab or below unless an exception is recorded; the links.moss.land registry is the single source of truth, reviewed monthly and reported quarterly. Annex A's initial classification is applied with the vote.
 * **Initial classification (registry v1.1.0, live 2026-09-02):** Beta 8 (moss.land, disclosure, links, agora, passport — Annex A Core candidates published as Beta until a second owner is designated; wa, alpha, signalmap), Lab 7 (ao, bridge, monitor, city, npc, recipe, signal), Archive 2 (media, algora), Core 0. Archive is not deletion; domains, data and repositories are preserved.
-* **Implementation:** the links.moss.land status field is live ([MosslandOpenDevs/links#22](https://github.com/MosslandOpenDevs/links/pull/22), commit `e11f1c9`); repository README status lines are being added within the 14-day window (by 2026-09-16).
+* **Implementation:** the links.moss.land status field is live ([MosslandOpenDevs/links#22](https://github.com/MosslandOpenDevs/links/pull/22), commit `e11f1c9`), and the README status line is in place in 20 deployment-linked repositories (2026-09-02). The one exception, `mossland-media-kr`, is already an archived (read-only) GitHub repository and is covered by its registry record.
 * **Evidence:** the proposal record, the full signed-vote export, a Passport Transparency snapshot, the published registry, and their SHA-256 hashes are committed [alongside this disclosure](./2026-09-02_mip-1-lifecycle-policy-vote-evidence/); the GitHub commit timestamp attests the collection time.
 
 **모스랜드**

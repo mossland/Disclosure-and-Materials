@@ -1,0 +1,10 @@
+{
+  "fetchedAt": "2026-09-02T04:43:59Z",
+  "sources": {
+    "proposal.json": "https://agora.moss.land/api/governance/proposals/6a85129f8be190cf5d2ebcc1",
+    "votes.json": "https://agora.moss.land/api/proposal-votes/6a85129f8be190cf5d2ebcc1",
+    "transparency.json": "https://passport.moss.land/api/transparency",
+    "ecosystem-registry.json": "https://links.moss.land/ecosystem-registry.json"
+  },
+  "notes": "ecosystem-registry.json is the live links.moss.land registry (version 1.1.0) after MosslandOpenDevs/links PR #22 merged at 2026-09-02T04:40:17Z (commit e11f1c9) — the external evidence MIP-1 names for the status field."
+}

@@ -83,7 +83,7 @@ Archive는 삭제가 아닙니다. 도메인·데이터·저장소 기록은 보
 | | signalmap | 부속서 A Beta, Core 지향 — 승격 조건(담당자·부담당자 지정, 배포·복구 권한)을 registry에 기록 |
 | **Lab** (7) | ao · bridge · monitor · city · npc · recipe | 부속서 A Lab |
 | | signal | 부속서 A 미기재 — 안건 게시(8/19) 후 등록(8/21)된 서비스로, owner 결정에 따라 Lab |
-| **Archive** (2) | media · algora | 부속서 A Archive. media 기능은 SignalMap으로 흡수(2026-08-21, DNS 삭제) · 기록 보존. algora는 Passport 적격 대상에서 제외 |
+| **Archive** (2) | media · algora | 부속서 A Archive. media 기능은 SignalMap으로 흡수(2026-08-21, DNS 삭제) · 기록 보존. algora는 Passport 적격 대상에서 제외하고, 주간·월간 자동 보고 생성을 2026-09-02에 정지(마지막 자동 보고: 2026년 8월 월간) — 공개된 보고는 기록으로 보존, 정정만 가능. 사유는 registry v1.1.1에 기록 |
 | **Core** (0) | — | 조항 2·3에 따라 부담당자 없는 Core는 게시하지 않음 |
 
 registry 외 항목(제3자 마켓, 도메인 밖 채널, 데이터 산출물)은 MIP-1의 적용 범위 밖으로 상태를 갖지 않습니다.
@@ -130,7 +130,7 @@ The proposal ["MIP-1: 공개 서비스·저장소 생명주기 정책"](https://
 
 * **Results:** For 108,988.96676301 MOC (2 voters; one is the proposer's wallet) / Against 0 / Abstain 0 — the same two wallets and the same weight as the Season 1 vote, so the participation baseline recorded on 2026-08-14 is unchanged.
 * **Effect:** Four articles are ratified — every public `*.moss.land` service and deployment-linked public repository displays one of four lifecycle states (Core / Beta / Lab / Archive) on links.moss.land and in its README; Core requires a named owner and second owner with deploy and recovery rights; a service without a second owner is shown as Lab or below unless an exception is recorded; the links.moss.land registry is the single source of truth, reviewed monthly and reported quarterly. Annex A's initial classification is applied with the vote.
-* **Initial classification (registry v1.1.0, live 2026-09-02):** Beta 8 (moss.land, disclosure, links, agora, passport — Annex A Core candidates published as Beta until a second owner is designated; wa, alpha, signalmap), Lab 7 (ao, bridge, monitor, city, npc, recipe, signal), Archive 2 (media, algora), Core 0. Archive is not deletion; domains, data and repositories are preserved.
+* **Initial classification (registry v1.1.0, live 2026-09-02):** Beta 8 (moss.land, disclosure, links, agora, passport — Annex A Core candidates published as Beta until a second owner is designated; wa, alpha, signalmap), Lab 7 (ao, bridge, monitor, city, npc, recipe, signal), Archive 2 (media, algora), Core 0. Archive is not deletion; domains, data and repositories are preserved. Algora's scheduled report generation was stopped the same day (last scheduled report: Monthly August 2026), recorded in registry v1.1.1.
 * **Implementation:** the links.moss.land status field is live ([MosslandOpenDevs/links#22](https://github.com/MosslandOpenDevs/links/pull/22), commit `e11f1c9`), and the README status line is in place in 20 deployment-linked repositories (2026-09-02). The one exception, `mossland-media-kr`, is already an archived (read-only) GitHub repository and is covered by its registry record.
 * **Evidence:** the proposal record, the full signed-vote export, a Passport Transparency snapshot, the published registry, and their SHA-256 hashes are committed [alongside this disclosure](./2026-09-02_mip-1-lifecycle-policy-vote-evidence/); the GitHub commit timestamp attests the collection time.
 

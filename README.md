@@ -1,6 +1,8 @@
 ![Disclosure & Materials](assets/header.png)
 # Disclosure-and-Materials
 
+> **Status of this repository:** **`Lifecycle: Beta`** (운영 중, 변동 가능) — per [MIP-1](https://agora.moss.land/proposals/6a85129f8be190cf5d2ebcc1), ratified 2026-09-02, and the [links.moss.land registry](https://links.moss.land/ecosystem-registry.json) entry `disclosure`. MIP-1 Annex A Core candidate, published as Beta per Annex A's own rule: second maintainer not yet designated (Art. 3 exception, recorded here). Promote to core once maintainer and secondMaintainer are both named individuals with deploy and recovery rights.
+
 모스랜드 프로젝트의 공시(Disclosure) 문서와 기술 자료(Material)가 공개되는 Repository 입니다. 가장 최신의 모스랜드 프로젝트 소식을 접하실 수 있으며 모스코인 홀더 분들에게 모스랜드 프로젝트의 진행 상황을 정확하고 투명하게 공유하는데 목적이 있습니다.
 
 This repository aims to provide the disclosure documents and technical data (material) of the Mossland project. You can get the latest news about the Mossland project. The purpose of this repository is to accurately and transparently share the progress of the Mossland project with Moss Coin holders.
@@ -20,6 +22,7 @@ VR·AR·NFT 기반 엔터테인먼트 서비스로 쌓아 온 실사용 경험�
 - [Projects](https://github.com/mossland/Projects)
 
 ## Disclosure
+- September 2, 2026 [MIP-1 Public Service & Repository Lifecycle Policy — DAO Vote Results and Policy Adoption (with signed-vote evidence)](disclosures/2026/2026-09-02_mip-1-lifecycle-policy-vote-results.md)
 - August 14, 2026 [MOC Activation Season 1 (90-Day Pilot) DAO Vote Results & Season Adoption — with signed-vote evidence](disclosures/2026/2026-08-14_moc-activation-season1-vote-results.md)
 - August 4, 2026 [Korea MOLIT AX Sprint R&D Consortium — Project Selection and Agreement Execution (Follow-up to the April 21, 2026 Disclosure)](disclosures/2026/2026-08-04_ax-sprint-selection-and-agreement-follow-up_en.pdf)
 - June 11, 2026 [Final Judgment Result to the January 29, 2024 Notice of Litigation Commencement (KOREAN)](disclosures/2026/2026-06-11_final-judgment-result_to_2024-01-29_litigation-disclosure.md)
@@ -72,6 +75,7 @@ VR·AR·NFT 기반 엔터테인먼트 서비스로 쌓아 온 실사용 경험�
 - February 5, 2020 [Mosland, The Hunters 'iF Design Award Winner](https://web.archive.org/web/20240401043204/http://s3.ap-northeast-2.amazonaws.com/dunamuplatform-druid-disclosure-coolprod/disclosure-160_MOC_01.pdf)
 
 Korean
+- 2026년 9월 2일 [MIP-1 공개 서비스·저장소 생명주기 정책 DAO 투표 결과 및 정책 채택 공시 — 서명 투표 증빙 포함](disclosures/2026/2026-09-02_mip-1-lifecycle-policy-vote-results.md)
 - 2026년 8월 14일 [MOC Activation Season 1 (90일 파일럿) DAO 투표 결과 및 시즌 채택 공시 — 서명 투표 증빙 포함](disclosures/2026/2026-08-14_moc-activation-season1-vote-results.md)
 - 2026년 8월 4일 [국토교통부 AX Sprint R&D 컨소시엄 과제 선정·협약 체결 후속 공시 (2026-04-21 공시 후속)](disclosures/2026/2026-08-04_ax-sprint-selection-and-agreement-follow-up.pdf)
 - 2026년 6월 11일 [2024-01-29 「소송 등의 제기」 공시 후속 최종 판결 결과 공시](disclosures/2026/2026-06-11_final-judgment-result_to_2024-01-29_litigation-disclosure.md)

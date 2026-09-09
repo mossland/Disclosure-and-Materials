@@ -1,0 +1,13 @@
+{
+  "fetchedAtUtc": "2026-09-08T13:23:20Z",
+  "sources": {
+    "transparency.json": "https://passport.moss.land/api/transparency",
+    "wall.json": "https://passport.moss.land/api/wall",
+    "connect-stats.json": "https://passport.moss.land/api/connect/stats",
+    "governance-aggregates.json": "https://passport.moss.land/api/governance-pack/aggregates",
+    "season1-votes.json": "https://agora.moss.land/api/proposal-votes/6a4decb73697e1a9d307e327",
+    "mip1-votes.json": "https://agora.moss.land/api/proposal-votes/6a85129f8be190cf5d2ebcc1",
+    "mip1-proposal.json": "https://agora.moss.land/api/governance/proposals/6a85129f8be190cf5d2ebcc1"
+  },
+  "note": "Day 30 보고(2026-09-08)의 증빙. 모든 엔드포인트는 인증 없이 조회 가능한 공개 API다."
+}

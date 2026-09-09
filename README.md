@@ -22,6 +22,7 @@ VR·AR·NFT 기반 엔터테인먼트 서비스로 쌓아 온 실사용 경험�
 - [Projects](https://github.com/mossland/Projects)
 
 ## Disclosure
+- September 8, 2026 [MOC Activation Season 1 (90-Day Pilot) — Day 30 Report (with Passport and on-chain delegation evidence)](disclosures/2026/2026-09-08_moc-activation-season1-day30.md)
 - September 2, 2026 [MIP-1 Public Service & Repository Lifecycle Policy — DAO Vote Results and Policy Adoption (with signed-vote evidence)](disclosures/2026/2026-09-02_mip-1-lifecycle-policy-vote-results.md)
 - August 14, 2026 [MOC Activation Season 1 (90-Day Pilot) DAO Vote Results & Season Adoption — with signed-vote evidence](disclosures/2026/2026-08-14_moc-activation-season1-vote-results.md)
 - August 4, 2026 [Korea MOLIT AX Sprint R&D Consortium — Project Selection and Agreement Execution (Follow-up to the April 21, 2026 Disclosure)](disclosures/2026/2026-08-04_ax-sprint-selection-and-agreement-follow-up_en.pdf)
@@ -75,6 +76,7 @@ VR·AR·NFT 기반 엔터테인먼트 서비스로 쌓아 온 실사용 경험�
 - February 5, 2020 [Mosland, The Hunters 'iF Design Award Winner](https://web.archive.org/web/20240401043204/http://s3.ap-northeast-2.amazonaws.com/dunamuplatform-druid-disclosure-coolprod/disclosure-160_MOC_01.pdf)
 
 Korean
+- 2026년 9월 8일 [MOC Activation Season 1 (90일 파일럿) — Day 30 보고 (Passport·온체인 위임 증빙 포함)](disclosures/2026/2026-09-08_moc-activation-season1-day30.md)
 - 2026년 9월 2일 [MIP-1 공개 서비스·저장소 생명주기 정책 DAO 투표 결과 및 정책 채택 공시 — 서명 투표 증빙 포함](disclosures/2026/2026-09-02_mip-1-lifecycle-policy-vote-results.md)
 - 2026년 8월 14일 [MOC Activation Season 1 (90일 파일럿) DAO 투표 결과 및 시즌 채택 공시 — 서명 투표 증빙 포함](disclosures/2026/2026-08-14_moc-activation-season1-vote-results.md)
 - 2026년 8월 4일 [국토교통부 AX Sprint R&D 컨소시엄 과제 선정·협약 체결 후속 공시 (2026-04-21 공시 후속)](disclosures/2026/2026-08-04_ax-sprint-selection-and-agreement-follow-up.pdf)

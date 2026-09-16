@@ -96,7 +96,7 @@ Q2 리포트 §13.1의 완료 조건 「버전이 표기된 확정 문서의 공
 | 버전이 표기된 확정 문서의 공개 URL | 2026-09-30 (Q3 종료) | **완료** — 본 문서(병합 시각). 공개 URL은 README 공시 목록에 등재 |
 | 첫 적용 사례 | Q3 내 실제 재단 발행물 1건에 적용 | 예정 — 발행 후 링크 추가 |
 | Q3 리포트 §B 적용 | Q3 리포트 발행 시 | 예정 |
-| 운영 중인 서비스의 간단한 AI 안내 | 기존 수정 작업에서 순차 반영 | 예정 — TRACKING 등록 대상 아님(의무에서 제외한 항목). 기존 표시를 확인하고 부족한 부분만 보완 |
+| 운영 중인 서비스의 간단한 AI 안내 | 기존 수정 작업에서 순차 반영 | 예정 — 기존 표시를 확인하고 부족한 부분만 보완. 별도 일괄 적용 기한은 두지 않음 |
 | Q1·Q2 리포트 §B 갱신 안내 (문구 1줄, 수치 무변경) | 정책 발행 +30일 | 예정 |
 
 이 문서의 자체 표시도 적용 사례가 될 수 있지만, 문서 공개와 전 서비스 적용은 별개의 결과입니다. 완료한 항목만 실제 날짜와 링크로 갱신합니다.
@@ -178,7 +178,7 @@ This is a voluntary labelling and review standard; it does not exclude, replace 
 
 ### 9–11. Implementation, reusable notices and records
 
-Implementation status: the versioned policy is published with this merge; application to one actual Foundation publication and the Q3 §B update follow within Q3; the dated note is added to the existing §B of the Q1 and Q2 reports within 30 days of publication; and simple service notices are added during normal maintenance. Only confirmed items are marked complete, with actual dates and links. This policy’s own notice can be an application, but policy publication and adoption across services are separate results.
+Implementation status: the versioned policy is published with this merge; application to one actual Foundation publication follows within Q3; the Q3 §B update is made when that report is published; the dated note is added to the existing §B of the Q1 and Q2 reports within 30 days of publication; and simple service notices are added during normal maintenance, with no separate deadline for applying them across all services. Only confirmed items are marked complete, with actual dates and links. This policy’s own notice can be an application, but policy publication and adoption across services are separate results.
 
 After actual human review, use `Authoring: AI-assisted · human-reviewed · policy link`, `Authoring: AI-translated · human-reviewed · source and policy links`, or `Authoring: human-written · policy link`. Drafts say `human review pending before publication`. Image/video labels are `AI-generated image` / `AI-generated video`. Quarterly §1 can say: `This is an AI-assisted report; its authoring and review process is explained in §B.` §B retains the five steps and marker rule, explains translation actually used and links the policy, representative applications and significant corrections, without mandatory counts. The same commit that publishes this policy links it from the README disclosure index and registers its follow-up items — the first application and the Q3 §B update — in the existing TRACKING list, where their status and links are maintained. No new ledger, evidence folder or hash list is mandatory, and no unverified preservation claim is made. Related Q1/Q2 reports, MIP-1 and TRACKING links are listed in §11 above.
 

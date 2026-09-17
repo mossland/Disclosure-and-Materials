@@ -2,7 +2,7 @@
 
 **작성일: 2026-09-16** · **버전: v1.0** · **발행·시행일: 본 문서를 포함한 커밋의 병합 시각**
 
-> 본 정책은 이 문서를 포함한 커밋이 기본 브랜치에 병합된 시각에 발행·시행됩니다. 작성 시각과 발행 시각은 다를 수 있으며, 발행일은 병합 기록으로 확정합니다. 정책 URL과 파일명은 개정 후에도 바꾸지 않으며(파일명의 `-v1.0`은 최초 발행 시점의 이름), 현재 버전과 개정일은 이 헤더에 표시합니다. 한국어와 영어의 해석에 차이가 있으면 한국어판을 기준으로 합니다.
+> 본 정책은 이 문서를 포함한 커밋이 기본 브랜치에 병합된 시각에 발행·시행됩니다. 작성 시각과 발행 시각은 다를 수 있으며, 발행일은 병합 기록으로 확정합니다. 정책 URL과 파일명은 개정 후에도 바꾸지 않으며(파일명의 날짜는 최초 작성일이고, 파일명에는 버전을 넣지 않습니다), 현재 버전과 개정일은 이 헤더에 표시합니다. 한국어와 영어의 해석에 차이가 있으면 한국어판을 기준으로 합니다.
 
 ### 핵심 요약
 
@@ -128,7 +128,7 @@ Q2 리포트 §13.1의 완료 조건 「버전이 표기된 확정 문서의 공
 
 **Written: 2026-09-16 · Version: v1.0 · Published and effective: the merge time of the commit containing this document**
 
-This policy takes effect when the commit containing it is merged into the default branch; the merge record fixes the publication date. The policy URL and file name stay fixed across revisions; the current version and revision date are shown in this header. The Korean text governs where interpretations differ.
+This policy takes effect when the commit containing it is merged into the default branch; the merge record fixes the publication date. The policy URL and file name stay fixed across revisions (the date in the file name is the original authoring date, and the file name carries no version); the current version and revision date are shown in this header. The Korean text governs where interpretations differ.
 
 ### Summary and 1. Purpose and scope
 

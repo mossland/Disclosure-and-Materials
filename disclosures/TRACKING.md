@@ -33,9 +33,9 @@
 | 4 | AX Sprint 실증 마일스톤 공시 | [2026-08-04](2026/2026-08-04_ax-sprint-selection-and-agreement-follow-up.pdf) | 실증 착수 인지 | `MosslandOpenDevs` | 트리거 +14일 | 대기 (트리거 미발생) |
 | 5 | MIP-1 생명주기 월 1회 검토 결과 | [2026-09-02](2026/2026-09-02_mip-1-lifecycle-policy-vote-results.md) 제4조 | 매월 | `MosslandOpenDevs` | 매월 말일 | 진행 중 |
 | 6 | 참여율(%) 화면 표시 — 데이터 연동 완료 시 공시 | [2026-08-14](2026/2026-08-14_moc-activation-season1-vote-results.md) 원칙 2 | 집계 API가 검증 MOC 합계를 반환 | `MosslandOpenDevs` | 트리거 +14일 | 대기 (미구현) |
-| 7 | AI 표시 정책 첫 적용 사례 — 재단 발행물 1건에 §4 표시 적용 + 링크 공개 | [2026-09-23](2026/2026-09-23_ai-content-labelling-policy-v1.0.md) §9 | 정책 발행(병합) | `MosslandOpenDevs` | **2026-09-30** (Q3 종료) | 예정 |
-| 8 | Q3 리포트 §B를 확정 정책 기준으로 갱신 | [2026-09-23](2026/2026-09-23_ai-content-labelling-policy-v1.0.md) §5·§9 | Q3 리포트 발행 | `MosslandOpenDevs` | 트리거 당일 | 대기 (트리거 미발생) |
-| 9 | Q1·Q2 리포트 §B에 확정판 발행 갱신 안내 추가 (문구 1줄, 수치 무변경) | [2026-09-23](2026/2026-09-23_ai-content-labelling-policy-v1.0.md) §5 | 정책 발행(병합) | `MosslandOpenDevs` | 정책 발행 +30일 | 예정 |
+| 7 | AI 표시 정책 첫 적용 사례 — 재단 발행물 1건에 §4 표시 적용 + 링크 공개 | [2026-09-16](2026/2026-09-16_ai-content-labelling-policy.md) §9 | 정책 발행(병합) | `MosslandOpenDevs` | **2026-09-30** (Q3 종료) | 예정 |
+| 8 | Q3 리포트 §B를 확정 정책 기준으로 갱신 | [2026-09-16](2026/2026-09-16_ai-content-labelling-policy.md) §5·§9 | Q3 리포트 발행 | `MosslandOpenDevs` | 트리거 당일 | 대기 (트리거 미발생) |
+| 9 | Q1·Q2 리포트 §B에 확정판 발행 갱신 안내 추가 (문구 1줄, 수치 무변경) | [2026-09-16](2026/2026-09-16_ai-content-labelling-policy.md) §5 | 정책 발행(병합) | `MosslandOpenDevs` | 정책 발행(병합)일 +30일 | 예정 — 기한 날짜는 병합 후 확정 |
 
 ## 이행 완료 (Closed)
 

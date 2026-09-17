@@ -18,7 +18,7 @@
 | 구분 | 대상 | 적용 방식 |
 | --- | --- | --- |
 | 재단 발행물 | Medium KO/EN, 공시 md/PDF, 분기 리포트, X, 공식 웹사이트 카피, GitHub README·문서, Agora 재단 안건·포럼 글 | 발행물에 작성 방식을 표시하고 담당자가 검토 |
-| 제품 출력 | AO·BRIDGE·Signal·Signal Map·Alpha·NPC·City·Recipe·Agora AI Brief 등 운영 서비스의 자동 산출 | 서비스 안내, 대화 화면 안내, 필요한 이미지 표시 |
+| 제품 출력 | AO·BRIDGE·Signal·Signal Map·Alpha·NPC·City·Recipe·Agora(AI 요약·이해 지원 기능) 등 운영 서비스의 자동 산출 | 서비스 안내, 대화 화면 안내, 필요한 이미지 표시 |
 | 기존 기록·재표시 | Archive 서비스, Monitor 등 다른 서비스의 산출을 다시 보여주는 화면 | 아래 §5의 기존 기록 원칙 적용 |
 
 재단 내부 문서는 대상이 아닙니다. 사람이 입력한 레지스트리·증빙 데이터와 AI가 아닌 코드로 만든 차트·OG 이미지는 그 이유만으로 AI 생성물로 분류하지 않습니다. 서비스 목록은 현재 운영 상태에 맞춰 갱신하되, 새 분류 체계를 만들지는 않습니다.
@@ -63,7 +63,7 @@ API·RSS·llms.txt·MCP에는 기존 설명이나 문서에 AI 사용 여부를 
 ### 5. 기존 기록과 예외
 
 - 시행 전 발행물을 일괄 재작성하거나 다시 올리지 않습니다. 기존 표시의 오류는 §7에 따라 정정합니다.
-- Q1·Q2 리포트 본문은 당시 기록으로 보존합니다. 두 리포트 §B가 「확정판 발행 후 본 부록을 갱신한다」고 예고했으므로, 정책 발행 후 30일 이내에 각 §B의 마지막 문장에 갱신일·정책 링크와 ‘확정 정책은 2026 Q2에 발행되지 못해 Q3로 이월되었다’는 사실, ‘이후 발행물은 확정 정책 적용’이라는 안내를 더합니다(수치·절차가 바뀌지 않는 표현 정합성 갱신이며, 리포트를 재발행하지는 않습니다). Q2는 자체 규정에 따라 v1.3 개정으로 기록하고, Q1은 §B에 갱신일이 표기된 문장을 더합니다. 담당은 `MosslandOpenDevs`입니다. Q3부터 새 기준을 적용합니다.
+- Q1·Q2 리포트 본문은 당시 기록으로 보존합니다. 두 리포트 §B가 확정 정책 발행 후 부록을 갱신하겠다고 예고했으므로(Q1 §B 「확정 정책이 2026 Q2 발행되면 본 부록도 함께 갱신됩니다」, Q2 §B 「확정판 발행(§13) 후 그 기준으로 갱신합니다」), 정책 발행 후 30일 이내에 각 §B의 그 예고 문장 바로 뒤에 갱신일·정책 링크와 ‘확정 정책은 2026 Q2에 발행되지 못해 Q3로 이월되었다’는 사실, ‘이후 발행물은 확정 정책 적용’이라는 안내를 더합니다(수치·절차가 바뀌지 않는 표현 정합성 갱신이며, 리포트를 재발행하지는 않습니다). Q2는 자체 규정에 따라 v1.3 개정으로 기록하고, Q1은 §B에 갱신일이 표기된 문장을 더합니다. 담당은 `MosslandOpenDevs`입니다. Q3부터 새 기준을 적용합니다.
 - Archive 서비스는 이 정책을 이유로 재배포하지 않습니다. 기존 레지스트리 설명이나 안내 페이지에 AI 산출을 포함한 기록임을 알릴 수 있습니다. Monitor 등 재표시 화면은 원본의 출처와 AI 표시를 함께 보여주는 것을 원칙으로 합니다.
 - 코드의 AI 사용은 기존 커밋·PR의 AI 사용 표기나 `Co-Authored-By` 기록으로 갈음할 수 있습니다. README·문서 본문에는 독자가 볼 수 있는 작성 방식 표시를 둡니다.
 - 시뮬레이션·목업 수치의 라벨은 AI 생성 표시와 별개로 유지합니다. AI 표시가 실제 관측 데이터라는 뜻은 아닙니다.
@@ -89,11 +89,11 @@ API·RSS·llms.txt·MCP에는 기존 설명이나 문서에 AI 사용 여부를 
 
 ### 9. 이행 현황
 
-Q2 리포트 §13.1의 완료 조건 「버전이 표기된 확정 문서의 공개 URL + 재단 발행물 적용 사례」에 대한 이행 현황입니다. **완료**로 적은 항목은 실제 URL·병합 기록으로 확인한 것이며, 나머지는 예정입니다. 갱신할 때는 이 표를 제자리에서 고치고 `(YYYY-MM-DD 갱신)`을 남깁니다.
+Q2 리포트 §13.1의 완료 증거 「버전이 표기된 확정 문서의 공개 URL + 재단 발행물 적용 사례」에 대한 이행 현황입니다. **완료**로 적은 항목은 실제 URL·병합 기록으로 확인한 것이며, 나머지는 예정입니다. 갱신할 때는 이 표를 제자리에서 고치고 `(YYYY-MM-DD 갱신)`을 남깁니다.
 
 | 항목 | 목표 | 현재 상태 |
 | --- | --- | --- |
-| 버전이 표기된 확정 문서의 공개 URL | 2026-09-30 (Q3 종료) | **완료** — 본 문서(병합 시각). 공개 URL은 README 공시 목록에 등재 |
+| 버전이 표기된 확정 문서의 공개 URL | 2026-09-30 (Q3 종료) | **완료** — 본 문서. 병합 후 병합일·커밋·공개 URL을 이 칸에 갱신. 공개 URL은 README 공시 목록에 등재 |
 | 첫 적용 사례 | Q3 내 실제 재단 발행물 1건에 적용 | 예정 — 발행 후 링크 추가 |
 | Q3 리포트 §B 적용 | Q3 리포트 발행 시 | 예정 |
 | 운영 중인 서비스의 간단한 AI 안내 | 기존 수정 작업에서 순차 반영 | 예정 — 기존 표시를 확인하고 부족한 부분만 보완. 별도 일괄 적용 기한은 두지 않음 |
@@ -113,7 +113,7 @@ Q2 리포트 §13.1의 완료 조건 「버전이 표기된 확정 문서의 공
 
 분기 리포트 §B에는 §3의 기존 5단계와 마커 규칙, 실제 사용한 번역 방식, 정책 링크를 적습니다. 적용 건수를 세는 대신 대표 사례와 주요 정정 링크를 붙이면 됩니다.
 
-본 정책을 발행하는 커밋에서 README 공시 목록에 정책 URL을 연결하고, TRACKING 목록에 첫 적용 사례와 Q3 리포트 §B 갱신을 등록합니다. 이후 이행 상태와 링크는 TRACKING에서 갱신합니다. 새 대장·증빙 폴더·해시 목록을 의무로 만들지 않습니다. 실제 보존·확인하지 않은 증빙을 포함했다고 쓰지 않습니다.
+본 정책을 발행하는 커밋에서 README 공시 목록에 정책 URL을 연결하고, TRACKING 목록에 첫 적용 사례, Q3 리포트 §B 갱신, Q1·Q2 리포트 §B 갱신 안내를 등록합니다. 이후 이행 상태와 링크는 TRACKING에서 갱신합니다. 새 대장·증빙 폴더·해시 목록을 의무로 만들지 않습니다. 실제 보존·확인하지 않은 증빙을 포함했다고 쓰지 않습니다.
 
 ### 11. 관련 기록
 
@@ -135,7 +135,7 @@ This policy takes effect when the commit containing it is merged into the defaul
 
 The policy turns the February draft's principles of **transparent disclosure, safety first and responsible operation** into simple labelling and review rules. It addresses the operating standard left incomplete in Q2 and carried into Q3. Completion is reported after the public policy and a real application are confirmed.
 
-Foundation publications include Medium KO/EN, disclosure md/PDF, quarterly reports, X, website copy, GitHub READMEs/docs and Foundation posts on Agora. They carry an authoring notice and human review. Automatic outputs from services such as AO, BRIDGE, Signal, Signal Map, Alpha, NPC, City, Recipe and the Agora AI Brief use service notices and, where relevant, chat or image notices. Archive and redisplay surfaces follow §5. Internal documents are excluded. Human-entered registry/evidence data and non-AI, code-generated charts or OG images are not classified as AI-generated merely because they are automated. Update the service list as operations change.
+Foundation publications include Medium KO/EN, disclosure md/PDF, quarterly reports, X, website copy, GitHub READMEs/docs and Foundation posts on Agora. They carry an authoring notice and human review. Automatic outputs from services such as AO, BRIDGE, Signal, Signal Map, Alpha, NPC, City, Recipe and Agora's AI summarisation feature use service notices and, where relevant, chat or image notices. Archive and redisplay surfaces follow §5. Internal documents are excluded. Human-entered registry/evidence data and non-AI, code-generated charts or OG images are not classified as AI-generated merely because they are automated. Update the service list as operations change. Earlier references to an 'AI use policy' or 'AI content labelling policy' mean this policy; no new classification scheme is created.
 
 ### 2. Categories
 
@@ -157,13 +157,13 @@ Quarterly reports retain the Q2 §B process: (1) automated metadata collection (
 
 Articles, READMEs/docs and Foundation Agora posts carry an AI-assisted or AI-translated line and policy link at the end where applicable. Disclosure md/PDF carries the applicable human-written, AI-assisted or AI-translated line above the signature or on the last page. Quarterly reports carry §B and a short notice in §1.
 
-AI images/videos need **one visible label**, in the caption, accompanying post or the artefact itself. On X, label AI-assisted/translated posts and AI images/videos; a short announcement linking to a source with its own notice may omit the text label. Name the model if known. Alt descriptions, in-image watermarks and file metadata are optional additions; platform metadata stripping alone does not require re-uploading.
+AI images/videos need **one visible label**, in the caption, accompanying post or the artefact itself. On X, label AI-assisted/translated posts and AI images/videos; a short announcement linking to a source with its own notice may omit the text label. The model name may be added if known. Alt descriptions, in-image watermarks and file metadata are optional additions; platform metadata stripping alone does not require re-uploading.
 
-Automatic-output services display: `This service includes AI-generated content. Some content may not have been reviewed by a person. For reference only.` Place it somewhere users can find, such as the footer or introduction. Chat displays `You are talking with an AI` at the top or before the first reply. The official website links the policy; the disclosure dashboard briefly identifies sections showing AI-system output. API/RSS/llms.txt/MCP can explain AI use in existing descriptions or documentation, without new response fields or format changes. Distinguish source data from AI interpretation.
+Automatic-output services display: `This service includes AI-generated content. Some content may not have been reviewed by a person. For reference only.` Place it somewhere users can find, such as the footer or introduction. Chat displays `You are talking with an AI` at the top or before the first reply. The official website and the disclosure dashboard link the policy and briefly describe the sections that show AI-experiment output (footer or the relevant section). API/RSS/llms.txt/MCP can explain AI use in existing descriptions or documentation, without new response fields or format changes. Distinguish source data from AI interpretation.
 
 ### 5. Existing records and exceptions
 
-Do not rewrite or re-upload earlier publications wholesale; correct inaccurate labels under §7. Preserve Q1/Q2 reports as historical records. Within 30 days of publication, add to the final sentence of each §B in the Q1 and Q2 reports a dated note, the policy link, the fact that the final policy was not published in Q2 and was carried into Q3, and a line explaining that subsequent publications follow the final policy — a wording-consistency update that changes no figure or procedure; the reports are not re-issued. Q2 records this as a v1.3 revision under its own versioning rule; Q1 adds a dated note to §B. Owner: `MosslandOpenDevs`. Apply the new standard from Q3.
+Do not rewrite or re-upload earlier publications wholesale; correct inaccurate labels under §7. Preserve Q1/Q2 reports as historical records. Within 30 days of publication, add, immediately after the update notice in each §B of the Q1 and Q2 reports, a dated note, the policy link, the fact that the final policy was not published in Q2 and was carried into Q3, and a line explaining that subsequent publications follow the final policy — a wording-consistency update that changes no figure or procedure; the reports are not re-issued. Q2 records this as a v1.3 revision under its own versioning rule; Q1 adds a dated note to §B. Owner: `MosslandOpenDevs`. Apply the new standard from Q3.
 
 Do not redeploy Archive services solely for this policy; existing registry descriptions or information pages can note that the archive contains AI output. Redisplay surfaces such as Monitor should show the original source and AI notice together. Code can use existing commit/PR AI-use notes or `Co-Authored-By`; READMEs/docs need a reader-visible authoring line. Keep simulation/mock-data labels separate from AI labels: an AI label does not mean a figure is observed data. Do not publish deceptive synthetic content that could be mistaken for real people or events. Explain other necessary exceptions briefly in existing publication records.
 
@@ -179,9 +179,9 @@ This is a voluntary labelling and review standard; it does not exclude, replace 
 
 ### 9–11. Implementation, reusable notices and records
 
-Implementation status: the versioned policy is published with this merge; application to one actual Foundation publication follows within Q3; the Q3 §B update is made when that report is published; the dated note is added to the existing §B of the Q1 and Q2 reports within 30 days of publication; and simple service notices are added during normal maintenance, with no separate deadline for applying them across all services. Only confirmed items are marked complete, with actual dates and links. This policy’s own notice can be an application, but policy publication and adoption across services are separate results.
+Implementation status: the versioned policy is published with this merge (the merge date, commit and public URL are added to the §9 table after merging); application to one actual Foundation publication follows within Q3; the Q3 §B update is made when that report is published; the dated note is added to the existing §B of the Q1 and Q2 reports within 30 days of publication; and simple service notices are added during normal maintenance, with no separate deadline for applying them across all services. Only confirmed items are marked complete, with actual dates and links. Update the status table in place and mark it (updated YYYY-MM-DD). This policy’s own notice can be an application, but policy publication and adoption across services are separate results.
 
-After actual human review, use `Authoring: AI-assisted · human-reviewed · policy link`, `Authoring: AI-translated · human-reviewed · source and policy links`, or `Authoring: human-written · policy link`. Drafts say `human review pending before publication`. Image/video labels are `AI-generated image` / `AI-generated video`. Quarterly §1 can say: `This is an AI-assisted report; its authoring and review process is explained in §B.` §B retains the five steps and marker rule, explains translation actually used and links the policy, representative applications and significant corrections, without mandatory counts. The same commit that publishes this policy links it from the README disclosure index and registers its follow-up items — the first application and the Q3 §B update — in the existing TRACKING list, where their status and links are maintained. No new ledger, evidence folder or hash list is mandatory, and no unverified preservation claim is made. Related links — the 2026-02-09 draft post on Medium (Korean), the Q1/Q2 reports, MIP-1 and TRACKING — are listed in §11 above.
+After actual human review, use `Authoring: AI-assisted · human-reviewed · policy link`, `Authoring: AI-translated · human-reviewed · source and policy links`, or `Authoring: human-written · policy link`. Drafts say `human review pending before publication`. Image/video labels are `AI-generated image` / `AI-generated video`. Quarterly §1 can say: `This is an AI-assisted report; its authoring and review process is explained in §B.` §B retains the five steps and marker rule, explains translation actually used and links the policy, representative applications and significant corrections, without mandatory counts. The same commit that publishes this policy links it from the README disclosure index and registers its follow-up items — the first application, the Q3 §B update and the dated Q1/Q2 §B note — in the existing TRACKING list, where their status and links are maintained. No new ledger, evidence folder or hash list is mandatory, and no unverified preservation claim is made. Related links — the 2026-02-09 draft post on Medium (Korean), the Q1/Q2 reports, MIP-1 and TRACKING — are listed in §11 above.
 
 ---
 

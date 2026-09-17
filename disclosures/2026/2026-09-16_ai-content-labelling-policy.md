@@ -1,6 +1,6 @@
 ## AI 생성 콘텐츠 표시 정책 v1.0
 
-**작성일: 2026-09-16** · **버전: v1.0** · **발행·시행일: 본 문서를 포함한 커밋의 병합 시각**
+**작성일: 2026-09-16** · **버전: v1.0** · **발행·시행일: 2026-09-17 12:59 KST (병합 커밋 `50036b7`)**
 
 > 본 정책은 이 문서를 포함한 커밋이 기본 브랜치에 병합된 시각에 발행·시행됩니다. 작성 시각과 발행 시각은 다를 수 있으며, 발행일은 병합 기록으로 확정합니다. 정책 URL과 파일명은 개정 후에도 바꾸지 않으며(파일명의 날짜는 최초 작성일이고, 파일명에는 버전을 넣지 않습니다), 현재 버전과 개정일은 이 헤더에 표시합니다. 한국어와 영어의 해석에 차이가 있으면 한국어판을 기준으로 합니다.
 
@@ -93,11 +93,11 @@ Q2 리포트 §13.1의 완료 증거 「버전이 표기된 확정 문서의 공
 
 | 항목 | 목표 | 현재 상태 |
 | --- | --- | --- |
-| 버전이 표기된 확정 문서의 공개 URL | 2026-09-30 (Q3 종료) | **완료** — 본 문서. 병합 후 병합일·커밋·공개 URL을 이 칸에 갱신. 공개 URL은 README 공시 목록에 등재 |
+| 버전이 표기된 확정 문서의 공개 URL | 2026-09-30 (Q3 종료) | **완료** — 2026-09-17 12:59 KST 병합 ([PR #15](https://github.com/mossland/Disclosure-and-Materials/pull/15), 커밋 `50036b7`). 공개 URL: [disclosures/2026/2026-09-16_ai-content-labelling-policy.md](https://github.com/mossland/Disclosure-and-Materials/blob/main/disclosures/2026/2026-09-16_ai-content-labelling-policy.md) · README 공시 목록 등재 (2026-09-17 갱신) |
 | 첫 적용 사례 | Q3 내 실제 재단 발행물 1건에 적용 | 예정 — 발행 후 링크 추가 |
 | Q3 리포트 §B 적용 | Q3 리포트 발행 시 | 예정 |
 | 운영 중인 서비스의 간단한 AI 안내 | 기존 수정 작업에서 순차 반영 | 예정 — 기존 표시를 확인하고 부족한 부분만 보완. 별도 일괄 적용 기한은 두지 않음 |
-| Q1·Q2 리포트 §B 갱신 안내 (문구 1줄, 수치 무변경) | 정책 발행 +30일 | 예정 |
+| Q1·Q2 리포트 §B 갱신 안내 (문구 1줄, 수치 무변경) | 정책 발행 +30일 = 2026-10-17 | 예정 (2026-09-17 갱신) |
 
 이 문서의 자체 표시도 적용 사례가 될 수 있지만, 문서 공개와 전 서비스 적용은 별개의 결과입니다. 완료한 항목만 실제 날짜와 링크로 갱신합니다.
 
@@ -127,7 +127,7 @@ Q2 리포트 §13.1의 완료 증거 「버전이 표기된 확정 문서의 공
 
 ## English — AI-Generated Content Labelling Policy v1.0
 
-**Written: 2026-09-16 · Version: v1.0 · Published and effective: the merge time of the commit containing this document**
+**Written: 2026-09-16 · Version: v1.0 · Published and effective: 2026-09-17 12:59 KST (merge commit `50036b7`)**
 
 This policy takes effect when the commit containing it is merged into the default branch; the merge record fixes the publication date. The policy URL and file name stay fixed across revisions (the date in the file name is the original authoring date, and the file name carries no version); the current version and revision date are shown in this header. The Korean text governs where interpretations differ.
 
@@ -179,7 +179,7 @@ This is a voluntary labelling and review standard; it does not exclude, replace 
 
 ### 9–11. Implementation, reusable notices and records
 
-Implementation status: the versioned policy is published with this merge (the merge date, commit and public URL are added to the §9 table after merging); application to one actual Foundation publication follows within Q3; the Q3 §B update is made when that report is published; the dated note is added to the existing §B of the Q1 and Q2 reports within 30 days of publication; and simple service notices are added during normal maintenance, with no separate deadline for applying them across all services. Only confirmed items are marked complete, with actual dates and links. Update the status table in place and mark it (updated YYYY-MM-DD). This policy’s own notice can be an application, but policy publication and adoption across services are separate results.
+Implementation status: the versioned policy was published on 2026-09-17 12:59 KST (merge commit `50036b7`; see the §9 table); application to one actual Foundation publication follows within Q3; the Q3 §B update is made when that report is published; the dated note is added to the existing §B of the Q1 and Q2 reports within 30 days of publication; and simple service notices are added during normal maintenance, with no separate deadline for applying them across all services. Only confirmed items are marked complete, with actual dates and links. Update the status table in place and mark it (updated YYYY-MM-DD). This policy’s own notice can be an application, but policy publication and adoption across services are separate results.
 
 After actual human review, use `Authoring: AI-assisted · human-reviewed · policy link`, `Authoring: AI-translated · human-reviewed · source and policy links`, or `Authoring: human-written · policy link`. Drafts say `human review pending before publication`. Image/video labels are `AI-generated image` / `AI-generated video`. Quarterly §1 can say: `This is an AI-assisted report; its authoring and review process is explained in §B.` §B retains the five steps and marker rule, explains translation actually used and links the policy, representative applications and significant corrections, without mandatory counts. The same commit that publishes this policy links it from the README disclosure index and registers its follow-up items — the first application, the Q3 §B update and the dated Q1/Q2 §B note — in the existing TRACKING list, where their status and links are maintained. No new ledger, evidence folder or hash list is mandatory, and no unverified preservation claim is made. Related links — the 2026-02-09 draft post on Medium (Korean), the Q1/Q2 reports, MIP-1 and TRACKING — are listed in §11 above.
 

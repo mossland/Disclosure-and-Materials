@@ -35,13 +35,13 @@
 | 6 | 참여율(%) 화면 표시 — 데이터 연동 완료 시 공시 | [2026-08-14](2026/2026-08-14_moc-activation-season1-vote-results.md) 원칙 2 | 집계 API가 검증 MOC 합계를 반환 | `MosslandOpenDevs` | 트리거 +14일 | 대기 (미구현) |
 | 7 | AI 표시 정책 첫 적용 사례 — 재단 발행물 1건에 §4 표시 적용 + 링크 공개 | [2026-09-16](2026/2026-09-16_ai-content-labelling-policy.md) §9 | 정책 발행(병합) | `MosslandOpenDevs` | **2026-09-30** (Q3 종료) | 예정 — 트리거 발생: 정책 발행 2026-09-17 (PR #15 병합) |
 | 8 | Q3 리포트 §B를 확정 정책 기준으로 갱신 | [2026-09-16](2026/2026-09-16_ai-content-labelling-policy.md) §5·§9 | Q3 리포트 발행 | `MosslandOpenDevs` | 트리거 당일 | 대기 (트리거 미발생) |
-| 9 | Q1·Q2 리포트 §B에 확정판 발행 갱신 안내 추가 (문구 1줄, 수치 무변경) | [2026-09-16](2026/2026-09-16_ai-content-labelling-policy.md) §5 | 정책 발행(병합) | `MosslandOpenDevs` | 정책 발행(병합)일 +30일 = **2026-10-17** | 예정 — 트리거 발생: 정책 발행 2026-09-17 (PR #15 병합) |
 
 ## 이행 완료 (Closed)
 
 | # | 예고 항목 | 예고한 공시 | 기한 | 이행 | 비고 |
 |---|---|---|---|---|---|
 | 0 | **Day 30 보고** (공시 1건 + Agora 포럼 답글) | [2026-08-14](2026/2026-08-14_moc-activation-season1-vote-results.md) §5 | **2026-09-06** | 공시 [2026-09-08 Day 30 보고](2026/2026-09-08_moc-activation-season1-day30.md) — 2026-09-09 03:54 UTC 병합 · 포럼 답글 [스레드](https://agora.moss.land/forum/6a4decc73697e1a9d307e33a) — 2026-09-09 12:54 KST 게시 | **기한 3일 초과.** 이 목록이 없어 기한이 기억에만 의존했다 — 본 문서를 만든 계기다. 약속은 공시와 답글 한 쌍이었고, 둘 다 확인된 뒤에 닫았다 |
+| 9 | Q1·Q2 리포트 §B에 확정판 발행 갱신 안내 추가 (문구 1줄, 수치 무변경) | [2026-09-16](2026/2026-09-16_ai-content-labelling-policy.md) §5 | **2026-10-17** (정책 발행 2026-09-17 +30일) | [Q1 리포트 §B](https://mossland.github.io/Disclosure-and-Materials/disclosures/2026-q1/#appB) · [Q2 리포트 v1.3 §B·§D](https://mossland.github.io/Disclosure-and-Materials/disclosures/2026-q2/#appB) — 2026-09-17 10:03 UTC 병합 ([PR #17](https://github.com/mossland/Disclosure-and-Materials/pull/17), 커밋 `e535a10`) | 기한 30일 전 이행. Q1은 §B 갱신 문단(KO/EN) 추가, Q2는 v1.3 개정으로 기록(§D 이력). 수치·절차 무변경. 정책 §9 표 동시 갱신 |
 
 ## 운용
 

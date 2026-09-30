@@ -22,6 +22,8 @@ VR·AR·NFT 기반 엔터테인먼트 서비스로 쌓아 온 실사용 경험�
 - [Projects](https://github.com/mossland/Projects)
 
 ## Disclosure
+- September 30, 2026 [MIP-1 Lifecycle Monthly Review — September 2026](disclosures/2026/2026-09-30_lifecycle-monthly-review.md)
+- September 30, 2026 [Observable Agent Decision Cases — Definition Fixed and 2026 Q3 Count (with evidence)](disclosures/2026/2026-09-30_agent-decision-cases-definition-q3.md)
 - September 16, 2026 [AI-Generated Content Labelling Policy v1.0 — labelling and human-review standard for Foundation publications and service outputs](disclosures/2026/2026-09-16_ai-content-labelling-policy.md)
 - September 8, 2026 [MOC Activation Season 1 (90-Day Pilot) — Day 30 Report (with Passport and on-chain delegation evidence)](disclosures/2026/2026-09-08_moc-activation-season1-day30.md)
 - September 2, 2026 [MIP-1 Public Service & Repository Lifecycle Policy — DAO Vote Results and Policy Adoption (with signed-vote evidence)](disclosures/2026/2026-09-02_mip-1-lifecycle-policy-vote-results.md)
@@ -77,6 +79,8 @@ VR·AR·NFT 기반 엔터테인먼트 서비스로 쌓아 온 실사용 경험�
 - February 5, 2020 [Mosland, The Hunters 'iF Design Award Winner](https://web.archive.org/web/20240401043204/http://s3.ap-northeast-2.amazonaws.com/dunamuplatform-druid-disclosure-coolprod/disclosure-160_MOC_01.pdf)
 
 Korean
+- 2026년 9월 30일 [MIP-1 생명주기 월 1회 검토 결과 — 2026년 9월](disclosures/2026/2026-09-30_lifecycle-monthly-review.md)
+- 2026년 9월 30일 [관찰 가능한 에이전트 결정 사례 — 집계 정의 고정과 2026 Q3 집계 (증빙 포함)](disclosures/2026/2026-09-30_agent-decision-cases-definition-q3.md)
 - 2026년 9월 16일 [AI 생성 콘텐츠 표시 정책 v1.0 — 재단 발행물·서비스 산출 표시 및 사람 검토 기준](disclosures/2026/2026-09-16_ai-content-labelling-policy.md)
 - 2026년 9월 8일 [MOC Activation Season 1 (90일 파일럿) — Day 30 보고 (Passport·온체인 위임 증빙 포함)](disclosures/2026/2026-09-08_moc-activation-season1-day30.md)
 - 2026년 9월 2일 [MIP-1 공개 서비스·저장소 생명주기 정책 DAO 투표 결과 및 정책 채택 공시 — 서명 투표 증빙 포함](disclosures/2026/2026-09-02_mip-1-lifecycle-policy-vote-results.md)

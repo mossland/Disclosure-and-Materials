@@ -1,0 +1,131 @@
+{
+ "observed_at_utc": "2026-09-26T09:59:55Z",
+ "window": [
+  "2026-07-01T00:00:00Z",
+  "2026-10-01T00:00:00Z"
+ ],
+ "definition_date_utc": "2026-09-18T00:00:00Z",
+ "limit": 5000,
+ "responses": {
+  "algora_sessions": {
+   "url": "https://algora.moss.land/api/agora/sessions?status=completed",
+   "sha256": "0ed4ed36fd4fdc537b0631398a6e9152ce56512ba7d0f47d545c8bc1db5cb704",
+   "bytes": 2607097
+  },
+  "algora_dp": {
+   "url": "https://algora.moss.land/api/governance-os/documents?type=DP&limit=5000",
+   "sha256": "b6fc54a7cc0e662867b859aeca1ddf58dd9442d5c91557b011bba95b95a5033b",
+   "bytes": 4460795
+  },
+  "algora_proposals": {
+   "url": "https://algora.moss.land/api/proposals?limit=5000",
+   "sha256": "976187544de9124f272146ded384cc6223d62f77875b86b01d998523b45b90e3",
+   "bytes": 1573122
+  },
+  "algora_outcomes": {
+   "url": "https://algora.moss.land/api/outcomes",
+   "sha256": "c106387e8ea6f8fedd30c69407b4833a5398934920f90d1b32ad8f8fa3ce350c",
+   "bytes": 15
+  },
+  "algora_prop_stats": {
+   "url": "https://disclosure.moss.land/api/algora/proposals/stats",
+   "sha256": "f5acb1f066a198763a4a44eae4bd05ddf5654f532f08adbc4de8795cb2ef5a2a",
+   "bytes": 197
+  },
+  "bridge_proposals": {
+   "url": "https://bridge.moss.land/api/proposals",
+   "sha256": "de4c62759c079b9326bb4cd85b608620140beb969b2078b97cc0b702ee15af6f",
+   "bytes": 3384054
+  },
+  "bridge_stats": {
+   "url": "https://bridge.moss.land/api/stats",
+   "sha256": "732c97f3b97450ddbcba63627808a3865afab6bcd8437c6539ef31e258703d7b",
+   "bytes": 1290
+  },
+  "bridge_outcomes": {
+   "url": "https://bridge.moss.land/api/outcomes",
+   "sha256": "730509ef3f0505fdca916a4e19645d5fa9ac2643c63f33bcb800e0dd101ae5b2",
+   "bytes": 25
+  },
+  "ao_pipeline": {
+   "url": "https://disclosure.moss.land/api/ao/pipeline",
+   "sha256": "bf37f1899ee73eb837f1cc60b792a088029374c9a0fa6b0ea059beac6cd6446b",
+   "bytes": 468
+  },
+  "ao_plans": {
+   "url": "https://disclosure.moss.land/api/ao/plans",
+   "sha256": "aca0ca9128e606a2e85bb9e7b6c585f43c5050e2feef162cbf9f8837b3bc6c3b",
+   "bytes": 179984
+  }
+ },
+ "completeness_checks": {
+  "dp_received_vs_total": [
+   1358,
+   1358,
+   true
+  ],
+  "algora_proposals_received_vs_stats_total": [
+   954,
+   954,
+   true
+  ],
+  "bridge_real_vs_stats": [
+   21,
+   21,
+   true
+  ],
+  "bridge_synthetic_vs_stats": [
+   143,
+   143,
+   true
+  ]
+ },
+ "summary": {
+  "observed_at_utc": "2026-09-26T09:59:55Z",
+  "decision_cases_executed_verified": 0,
+  "l2_sources": {
+   "algora_outcomes": [],
+   "bridge_outcomes_count": 0,
+   "bridge_totalProofs": 0
+  },
+  "deliberation_concluded_total": 354,
+  "algora": 336,
+  "ao": 0,
+  "bridge": 18,
+  "after_definition_date": 165,
+  "before_definition_date": 189,
+  "algora_proposal_status": {
+   "passed": 269,
+   "voting": 67
+  },
+  "bridge_status": {
+   "active": 1,
+   "expired": 17
+  },
+  "human_participation_any": 0,
+  "algora_votes_system_total": 0,
+  "ao_pipeline_plans": 96,
+  "completeness_checks": {
+   "dp_received_vs_total": [
+    1358,
+    1358,
+    true
+   ],
+   "algora_proposals_received_vs_stats_total": [
+    954,
+    954,
+    true
+   ],
+   "bridge_real_vs_stats": [
+    21,
+    21,
+    true
+   ],
+   "bridge_synthetic_vs_stats": [
+    143,
+    143,
+    true
+   ]
+  }
+ }
+}

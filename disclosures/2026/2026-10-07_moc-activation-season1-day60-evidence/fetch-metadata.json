@@ -1,0 +1,147 @@
+{
+  "fetchedAtUtc": "2026-10-07T00:19:31Z",
+  "sources": {
+    "transparency.json": "https://passport.moss.land/api/transparency",
+    "wall.json": "https://passport.moss.land/api/wall",
+    "connect-stats.json": "https://passport.moss.land/api/connect/stats",
+    "governance-aggregates.json": "https://passport.moss.land/api/governance-pack/aggregates",
+    "season1-votes.json": "https://agora.moss.land/api/proposal-votes/6a4decb73697e1a9d307e327",
+    "mip1-votes.json": "https://agora.moss.land/api/proposal-votes/6a85129f8be190cf5d2ebcc1",
+    "mip1-proposal.json": "https://agora.moss.land/api/governance/proposals/6a85129f8be190cf5d2ebcc1"
+  },
+  "currentRequests": [
+    {
+      "file": "transparency.json",
+      "startedAtUtc": "2026-10-07T00:19:31Z",
+      "completedAtUtc": "2026-10-07T00:19:31Z",
+      "status": 200,
+      "bytes": 1696,
+      "sha256": "f2794b60c553cbcda1fbf801ce4f346f0aed4a5169b2fb24b7eb446c521a8e18"
+    },
+    {
+      "file": "connect-stats.json",
+      "startedAtUtc": "2026-10-07T00:19:32Z",
+      "completedAtUtc": "2026-10-07T00:19:32Z",
+      "status": 200,
+      "bytes": 112,
+      "sha256": "962da8f6da1e148978cc06f4522f1732ce16f395915fd6558bc495bcffbebd3e"
+    },
+    {
+      "file": "governance-aggregates.json",
+      "startedAtUtc": "2026-10-07T00:19:33Z",
+      "completedAtUtc": "2026-10-07T00:19:34Z",
+      "status": 200,
+      "bytes": 399,
+      "sha256": "f6c08ea4d9e9bbbcc30eb05e4c653a8b799a62307f912ab4afced943f78bca6f"
+    },
+    {
+      "file": "wall.json",
+      "startedAtUtc": "2026-10-07T00:19:35Z",
+      "completedAtUtc": "2026-10-07T00:19:35Z",
+      "status": 200,
+      "bytes": 20625,
+      "sha256": "173d4817be4c45147d684f473acf3c2486d3653ae51a7a2466d2e4db3789c3cf"
+    },
+    {
+      "file": "season1-votes.json",
+      "startedAtUtc": "2026-10-07T00:19:36Z",
+      "completedAtUtc": "2026-10-07T00:19:36Z",
+      "status": 200,
+      "bytes": 1682,
+      "sha256": "01a5bdfdd171c78f591b759c0a2946ca7571e913fd652ca940976858adf663e5"
+    },
+    {
+      "file": "mip1-votes.json",
+      "startedAtUtc": "2026-10-07T00:19:37Z",
+      "completedAtUtc": "2026-10-07T00:19:37Z",
+      "status": 200,
+      "bytes": 1680,
+      "sha256": "75aba3d37116db9b01e417d9dcdac3377f55a0e78d0022b7c416c5c18e56c447"
+    },
+    {
+      "file": "mip1-proposal.json",
+      "startedAtUtc": "2026-10-07T00:19:38Z",
+      "completedAtUtc": "2026-10-07T00:19:38Z",
+      "status": 200,
+      "bytes": 5308,
+      "sha256": "04bf2e0a3f49161dc8219352e821f9c3077d94532e456344d1a86fc58bae4b68"
+    }
+  ],
+  "septemberSnapshot": {
+    "fetchedAtUtc": "2026-09-30T23:50:38Z",
+    "note": "Passport 9월(UTC) 당월 카운터의 경계 전 마지막 관측. 수집 시각과 수집 시점 해시는 재단 기록이며 독립적인 시각 증명이 아니다.",
+    "sources": {
+      "transparency-2026-09-30.json": "https://passport.moss.land/api/transparency",
+      "connect-stats-2026-09-30.json": "https://passport.moss.land/api/connect/stats"
+    },
+    "sha256AtCapture": {
+      "transparency-2026-09-30.json": "a59955b11a4f415be98b08d76b8ece72b913af3c7928cedd87547049e2482597",
+      "connect-stats-2026-09-30.json": "c99f809139a124e9f86d399c740770c532be110a9078fa4a4702be7ec76e4cf1"
+    }
+  },
+  "proposalInventoryCheck": {
+    "note": "공개 목록을 page.last=true까지 읽은 판정용 요약. 응답 본문은 작성자 정보 때문에 이 증빙 폴더에 포함하지 않았다. 아래 값은 그 조회 결과를 집계한 것이며 투표 export와 구분한다.",
+    "pages": [
+      {
+        "url": "https://agora.moss.land/api/governance/proposals?page=0",
+        "startedAtUtc": "2026-10-07T00:19:39Z",
+        "completedAtUtc": "2026-10-07T00:19:39Z",
+        "status": 200,
+        "sha256": "a5bb1963958d7a92d7660a98cbeda873d6233d4e4b48043255d4e2bb1464acd6",
+        "returnedCount": 20,
+        "page": {
+          "number": 0,
+          "size": 20,
+          "totalElements": 42,
+          "last": false
+        }
+      },
+      {
+        "url": "https://agora.moss.land/api/governance/proposals?page=1",
+        "startedAtUtc": "2026-10-07T00:19:40Z",
+        "completedAtUtc": "2026-10-07T00:19:40Z",
+        "status": 200,
+        "sha256": "0a578363713835ee425240aa2908c4ef91b0e6cfd37d68b00a8254ed9557db32",
+        "returnedCount": 20,
+        "page": {
+          "number": 1,
+          "size": 20,
+          "totalElements": 42,
+          "last": false
+        }
+      },
+      {
+        "url": "https://agora.moss.land/api/governance/proposals?page=2",
+        "startedAtUtc": "2026-10-07T00:19:41Z",
+        "completedAtUtc": "2026-10-07T00:19:42Z",
+        "status": 200,
+        "sha256": "811b82b8993c262bd1472ee4c7975c44bcc0457155e1493a2ed29cf1f63e8c6c",
+        "returnedCount": 2,
+        "page": {
+          "number": 2,
+          "size": 20,
+          "totalElements": 42,
+          "last": true
+        }
+      }
+    ],
+    "uniqueProposals": 42,
+    "proposalsStartedSinceDay30": 0,
+    "day30DateUtc": "2026-09-08",
+    "proposalsStartedIn2026": [
+      {
+        "proposalId": "6a85129f8be190cf5d2ebcc1",
+        "startAt": "2026-08-19T02:19:25.363Z",
+        "endAt": "2026-09-02T02:19:25.363Z",
+        "status": "closed"
+      },
+      {
+        "proposalId": "6a4decb73697e1a9d307e327",
+        "startAt": "2026-07-08T07:57:30.269Z",
+        "endAt": "2026-08-07T07:57:30.269Z",
+        "status": "closed"
+      }
+    ]
+  },
+  "note": "Day 60 보고의 실제 관측일은 2026-10-07(시즌 61일차)이다. 예정일 2026-10-06의 스냅샷으로 소급하지 않는다. 모든 원본 URL은 인증 없는 공개 GET이다. 수집 시각은 수집자 기록이고, 커밋/병합 기록은 자료가 그때까지 존재했음을 뒷받침할 뿐 정확한 수집 시각 자체를 증명하지 않는다."
+}

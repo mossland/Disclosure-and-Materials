@@ -1,7 +1,13 @@
 # 증빙 자료 — MOC Activation Season 1 DAO 투표 (2026-08-14 공시)
 
 본 폴더는 [2026-08-14 MOC Activation Season 1 DAO 투표 결과 공시](../2026-08-14_moc-activation-season1-vote-results.md)의 증빙입니다.
-공시 문서와 **같은 커밋**에 포함되어, GitHub 커밋 타임스탬프가 수집 시점의 무결성을 뒷받침합니다.
+원본 증빙은 최초 공시와 **같은 커밋**에 포함되었습니다. 수집 시각은 `fetch-metadata.json`에 남긴 수집자의 기록입니다. SHA-256은 보존 파일이 기록된 해시와 일치하는지 확인하는 데 사용합니다. 원본 증빙을 포함한 GitHub의 최초 병합 기록은 해당 내용이 그 병합 시점까지 존재했음을 뒷받침하지만, 해시나 커밋·병합 기록만으로 정확한 API 수집 시각을 독립적으로 증명할 수는 없습니다.
+
+The original evidence was committed alongside the initial disclosure. Collection times are recorded by the collector in `fetch-metadata.json`. SHA-256 checks whether the preserved files match the recorded hashes. GitHub's original merge record containing the evidence supports that the contents existed by that merge time; neither hashes nor commit or merge records independently establish the exact API collection time.
+
+> **설명 보완:** 종전의 “수집 시점의 무결성을 뒷받침”한다는 표현을 파일 무결성 확인과 수집 시각 입증으로 구분했습니다. 원본 JSON과 해시는 유지합니다. 적용 시점은 [이 문서의 변경 이력](https://github.com/mossland/Disclosure-and-Materials/commits/main/disclosures/2026/2026-08-14_moc-activation-season1-vote-evidence/README.md)에서 확인할 수 있습니다.
+>
+> **Clarification:** The former wording about supporting the integrity of collection time is clarified to distinguish file integrity from proof of collection time. Raw JSON and hashes are retained. See the [document history](https://github.com/mossland/Disclosure-and-Materials/commits/main/disclosures/2026/2026-08-14_moc-activation-season1-vote-evidence/README.md) for when this clarification is applied.
 
 | 파일 | 내용 | 출처 |
 | --- | --- | --- |

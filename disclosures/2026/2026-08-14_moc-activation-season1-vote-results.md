@@ -2,6 +2,10 @@
 
 **작성일: 2026-08-14**
 
+> **정정 내역:** 종전의 “GitHub 커밋 타임스탬프가 수집 시점을 증명”한다는 표현의 입증 범위를 정정했습니다. 최초 작성일·원본 JSON·해시·관측값은 유지합니다. 적용 시점은 [이 문서의 변경 이력](https://github.com/mossland/Disclosure-and-Materials/commits/main/disclosures/2026/2026-08-14_moc-activation-season1-vote-results.md)에서 확인할 수 있습니다.
+>
+> **Correction note:** The former claim that a GitHub commit timestamp proves collection time is corrected to state its evidentiary limits. The original document date, raw JSON, hashes and observed values are retained. See the [document history](https://github.com/mossland/Disclosure-and-Materials/commits/main/disclosures/2026/2026-08-14_moc-activation-season1-vote-results.md) for when this correction is applied.
+
 ### 핵심 요약
 
 * 2026년 7월 8일부터 8월 7일까지 Agora에서 진행된 「MOC Activation Season 1 — 자가지갑 참여 전환 (90일 파일럿)」 안건이 **찬성 100%로 가결**되었습니다.
@@ -72,7 +76,7 @@
 
 ### 6. 증빙 (Evidence)
 
-본 공시와 같은 커밋에 포함된 [증빙 폴더](./2026-08-14_moc-activation-season1-vote-evidence/)의 파일과 SHA-256 해시입니다. GitHub 커밋 타임스탬프가 수집 시점을 증명합니다.
+본 공시와 같은 커밋에 포함된 [증빙 폴더](./2026-08-14_moc-activation-season1-vote-evidence/)의 파일과 SHA-256 해시입니다. 수집 시각은 `fetch-metadata.json`에 남긴 수집자의 기록입니다. SHA-256은 보존 파일이 기록된 해시와 일치하는지 확인하는 데 사용합니다. 원본 증빙을 포함한 GitHub의 최초 병합 기록은 해당 내용이 그 병합 시점까지 존재했음을 뒷받침하지만, 해시나 커밋·병합 기록만으로 정확한 API 수집 시각을 독립적으로 증명할 수는 없습니다.
 
 | 파일 | 내용 | SHA-256 |
 | --- | --- | --- |
@@ -102,7 +106,7 @@ The proposal ["MOC Activation Season 1"](https://agora.moss.land/proposals/6a4de
 * **Effect:** The four principles are ratified (compensation limited to withdrawal-fee reimbursement; participation metrics displayed; binding votes from self-custody wallets only; metrics published on Passport Transparency), and Season 1 is adopted as an official 90-day pilot: **2026-08-07 → 2026-11-05**.
 * **Context:** Participation equals 0.0218% of total supply and 34.60% of Passport-verified holder balances — deliberately recorded as the season's baseline. As the proposal itself states, this vote does not claim a completed mandate of all MOC holders; participation is expected to grow proposal by proposal.
 * **Reporting:** Day-30 (~2026-09-06), Day-60 (~2026-10-06), and final reports will each be published as one disclosure + one Agora forum reply, in this repository.
-* **Evidence:** The vote-result JSON, the full signed-vote export, a Passport Transparency snapshot, and their SHA-256 hashes are committed [alongside this disclosure](./2026-08-14_moc-activation-season1-vote-evidence/); the GitHub commit timestamp attests the collection time.
+* **Evidence:** The vote-result JSON, the full signed-vote export, a Passport Transparency snapshot, and their SHA-256 hashes are committed [alongside this disclosure](./2026-08-14_moc-activation-season1-vote-evidence/). Collection times are recorded by the collector in `fetch-metadata.json`. SHA-256 checks whether the preserved files match the recorded hashes. GitHub's original merge record containing the evidence supports that the contents existed by that merge time; neither hashes nor commit or merge records independently establish the exact API collection time.
 
 **모스랜드**
 **Mossland**

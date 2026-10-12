@@ -2,12 +2,16 @@
 
 **작성일: 2026-09-02**
 
+> **정정 내역:** README 상태 표시의 브랜치별 반영 시점과 수집 시각에 관한 증빙 설명을 정정했습니다. 종전의 단일 완료일 표기에 일부 저장소의 `master`(9/2)·배포 브랜치(9/13) 반영 이력을 보완합니다. 최초 작성일·투표 결과·원본 JSON·해시·관측값은 유지합니다. 적용 시점은 [이 문서의 변경 이력](https://github.com/mossland/Disclosure-and-Materials/commits/main/disclosures/2026/2026-09-02_mip-1-lifecycle-policy-vote-results.md)에서 확인할 수 있습니다.
+>
+> **Correction note:** README label dates are clarified by branch, and the evidence description of collection time is corrected. The former single completion date is supplemented with one repository's September 2 `master` update and September 13 deployment-branch update. The original document date, voting results, raw JSON, hashes and observed values are retained. See the [document history](https://github.com/mossland/Disclosure-and-Materials/commits/main/disclosures/2026/2026-09-02_mip-1-lifecycle-policy-vote-results.md) for when this correction is applied.
+
 ### 핵심 요약
 
 * 2026년 8월 19일부터 9월 2일까지 Agora에서 진행된 「MIP-1: 공개 서비스·저장소 생명주기 정책」 안건이 **찬성 100%로 가결**되었습니다.
 * 이에 따라 안건의 **4개 조항이 비준**되고, **부속서 A의 최초 분류가 적용**되었습니다. 모든 공개 서비스(`*.moss.land`)와 배포에 연결된 공개 저장소는 Core / Beta / Lab / Archive 중 하나의 상태를 links.moss.land와 저장소 README에 표시합니다.
 * 참여 규모는 **108,988.96676301 MOC / 2명**으로, Season 1 안건(2026-08-07 가결)과 동일한 두 지갑이 참여했습니다. Season 1 공시가 기록한 baseline 대비 참여율 변화는 없습니다.
-* **이행 현황(2026-09-02 갱신):** links.moss.land registry에 상태 필드 반영 완료(registry v1.1.0 — 17개 서비스, Beta 8 · Lab 7 · Archive 2 · Core 0). 배포 연결 저장소 README 상태 표시도 같은 날 완료 — 20개 저장소(§6). 예외 1건: `mossland-media-kr`는 이미 GitHub archived(읽기 전용) 저장소라 registry 기록으로 갈음합니다.
+* **이행 현황(브랜치별 반영 시점 보완):** links.moss.land registry에 상태 필드 반영 완료(registry v1.1.0 — 17개 서비스, Beta 8 · Lab 7 · Archive 2 · Core 0). 배포 연결 저장소 README 상태 표시는 2026-09-16 기한 안에 이행됐으며, 일부는 배포 브랜치에 2026-09-13 반영됐습니다 — 종전 집계 20개 저장소(§6의 브랜치별 이력 참조). 예외 1건: `mossland-media-kr`는 이미 GitHub archived(읽기 전용) 저장소라 registry 기록으로 갈음합니다.
 * 결과 JSON, 전체 투표 서명 export, Passport Transparency 스냅샷, 반영된 registry 사본, SHA-256 해시가 본 공시와 **같은 커밋**에 [증빙 폴더](./2026-09-02_mip-1-lifecycle-policy-vote-evidence/)로 포함되어 있습니다.
 
 ### 1. 안건 개요
@@ -93,13 +97,15 @@ registry 외 항목(제3자 마켓, 도메인 밖 채널, 데이터 산출물)�
 | 의무 (안건 본문) | 기한 | 현황 |
 | --- | --- | --- |
 | links.moss.land에 상태 필드 반영 · 최초 분류 적용 | 가결 후 14일 (2026-09-16) | **완료** — 2026-09-02, [MosslandOpenDevs/links PR #22](https://github.com/MosslandOpenDevs/links/pull/22) 병합(커밋 `e11f1c9`), registry v1.1.0 공개 |
-| 각 저장소 README에 상태 표시 | 가결 후 14일 (2026-09-16) | **완료** (2026-09-02) — 20개 저장소: links · Disclosure-and-Materials · mossland-website-2026 (moss.land) · moc-passport · Agora_backend · Agora_frontend · Agora (공개) · mossverse-wa-infra · mossverse-wa-services · mossverse-wa-map · alpha · signalmap · mossland-signal · agentic-orchestrator (ao) · Algora · bridge-2026 · pixel-agent-lab (monitor) · mossland-city · mossland-npc · mossland-recipe. 예외: `mossland-media-kr` (Archive)는 GitHub archived 저장소라 쓰기가 막혀 있어 registry 사유("repository archived")로 갈음 |
+| 각 저장소 README에 상태 표시 | 가결 후 14일 (2026-09-16) | **완료** (2026-09-16 기한 안; 일부 배포 브랜치 반영은 2026-09-13) — 종전 집계 20개 저장소: links · Disclosure-and-Materials · mossland-website-2026 (moss.land) · moc-passport · Agora_backend · Agora_frontend · Agora (공개) · mossverse-wa-infra · mossverse-wa-services · mossverse-wa-map · alpha · signalmap · mossland-signal · agentic-orchestrator (ao) · Algora · bridge-2026 · pixel-agent-lab (monitor) · mossland-city · mossland-npc · mossland-recipe. 예외: `mossland-media-kr` (Archive)는 GitHub archived 저장소라 쓰기가 막혀 있어 registry 사유("repository archived")로 갈음 |
 | 결과 처리: 공시 1건 + Agora 포럼 답글 | — | **완료** — 본 공시(2026-09-02 병합) + [토론 스레드](https://agora.moss.land/forum/6a8512ad8be190cf5d2ebcd5) 답글(2026-09-02 13:54 KST) · disclosure.moss.land 목록 반영 |
 | registry 월 1회 검토 · 상태 변경 근거 기록 · 분기 리포트 기재 | 상시 | 다음 검토는 2026년 9월 중 (`lifecycleReviewedAt` 갱신), 결과는 2026 Q3 리포트에 기재 |
 
+**브랜치별 반영 시점 보완:** `mossverse-wa-map`의 README 상태 표시는 [2026-09-02 PR #2](https://github.com/MosslandOpenDevs/mossverse-wa-map/pull/2)로 `master`에 병합됐고, 배포에 사용하는 `prod` 브랜치에는 [2026-09-13 커밋](https://github.com/MosslandOpenDevs/mossverse-wa-map/commit/c6ae7a6c3d7dc8d5f9d2469c7226ac89a11bbe02)에서 반영됐습니다([해당 `prod` 실행 기록](https://github.com/MosslandOpenDevs/mossverse-wa-map/actions/runs/34747958495)). 종전의 단일 완료일 표기에 브랜치별 이력을 보완합니다. 두 반영 모두 9/16 기한 안입니다. 종전 20개 집계와 목록은 유지하며, 전체가 외부에서 독립 검증 가능한 공개 저장소 집계라는 뜻은 아닙니다.
+
 ### 7. 증빙 (Evidence)
 
-본 공시와 같은 커밋에 포함된 [증빙 폴더](./2026-09-02_mip-1-lifecycle-policy-vote-evidence/)의 파일과 SHA-256 해시입니다. GitHub 커밋 타임스탬프가 수집 시점을 증명합니다.
+본 공시와 같은 커밋에 포함된 [증빙 폴더](./2026-09-02_mip-1-lifecycle-policy-vote-evidence/)의 파일과 SHA-256 해시입니다. 수집 시각은 `fetch-metadata.json`에 남긴 수집자의 기록입니다. SHA-256은 보존 파일이 기록된 해시와 일치하는지 확인하는 데 사용합니다. 원본 증빙을 포함한 GitHub의 최초 병합 기록은 해당 내용이 그 병합 시점까지 존재했음을 뒷받침하지만, 해시나 커밋·병합 기록만으로 정확한 API 수집 시각을 독립적으로 증명할 수는 없습니다.
 
 | 파일 | 내용 | SHA-256 |
 | --- | --- | --- |
@@ -131,8 +137,8 @@ The proposal ["MIP-1: 공개 서비스·저장소 생명주기 정책"](https://
 * **Results:** For 108,988.96676301 MOC (2 voters; one is the proposer's wallet) / Against 0 / Abstain 0 — the same two wallets and the same weight as the Season 1 vote, so the participation baseline recorded on 2026-08-14 is unchanged.
 * **Effect:** Four articles are ratified — every public `*.moss.land` service and deployment-linked public repository displays one of four lifecycle states (Core / Beta / Lab / Archive) on links.moss.land and in its README; Core requires a named owner and second owner with deploy and recovery rights; a service without a second owner is shown as Lab or below unless an exception is recorded; the links.moss.land registry is the single source of truth, reviewed monthly and reported quarterly. Annex A's initial classification is applied with the vote.
 * **Initial classification (registry v1.1.0, live 2026-09-02):** Beta 8 (moss.land, disclosure, links, agora, passport — Annex A Core candidates published as Beta until a second owner is designated; wa, alpha, signalmap), Lab 7 (ao, bridge, monitor, city, npc, recipe, signal), Archive 2 (media, algora), Core 0. Archive is not deletion; domains, data and repositories are preserved. Algora's scheduled report generation was stopped the same day (last scheduled report: Monthly August 2026), recorded in registry v1.1.1.
-* **Implementation:** the links.moss.land status field is live ([MosslandOpenDevs/links#22](https://github.com/MosslandOpenDevs/links/pull/22), commit `e11f1c9`), and the README status line is in place in 20 deployment-linked repositories (2026-09-02). The one exception, `mossland-media-kr`, is already an archived (read-only) GitHub repository and is covered by its registry record.
-* **Evidence:** the proposal record, the full signed-vote export, a Passport Transparency snapshot, the published registry, and their SHA-256 hashes are committed [alongside this disclosure](./2026-09-02_mip-1-lifecycle-policy-vote-evidence/); the GitHub commit timestamp attests the collection time.
+* **Implementation:** the links.moss.land status field is live ([MosslandOpenDevs/links#22](https://github.com/MosslandOpenDevs/links/pull/22), commit `e11f1c9`), and README status labels in the previously reported aggregate of 20 deployment-linked repositories were implemented within the 2026-09-16 deadline. For `mossverse-wa-map`, [PR #2](https://github.com/MosslandOpenDevs/mossverse-wa-map/pull/2) added the label to `master` on 2026-09-02; the deployment branch `prod` received it on [2026-09-13](https://github.com/MosslandOpenDevs/mossverse-wa-map/commit/c6ae7a6c3d7dc8d5f9d2469c7226ac89a11bbe02) ([recorded `prod` run](https://github.com/MosslandOpenDevs/mossverse-wa-map/actions/runs/34747958495)). These branch-specific dates are both within the deadline. The existing aggregate and list are retained; they are not a claim that all 20 repositories can be independently verified by outside readers. The one exception, `mossland-media-kr`, is already an archived (read-only) GitHub repository and is covered by its registry record.
+* **Evidence:** the proposal record, the full signed-vote export, a Passport Transparency snapshot, the published registry, and their SHA-256 hashes are committed [alongside this disclosure](./2026-09-02_mip-1-lifecycle-policy-vote-evidence/). Collection times are recorded by the collector in `fetch-metadata.json`. SHA-256 checks whether the preserved files match the recorded hashes. GitHub's original merge record containing the evidence supports that the contents existed by that merge time; neither hashes nor commit or merge records independently establish the exact API collection time.
 
 **모스랜드**
 **Mossland**

@@ -2,6 +2,10 @@
 
 **작성일: 2026-09-08** · **지표 관측 시각: 2026-09-08 13:23 UTC**
 
+> **정정 내역:** 종전의 “GitHub 커밋 타임스탬프가 수집 시점을 증명”한다는 표현의 입증 범위를 정정했습니다. 최초 작성일·원본 JSON·해시·관측값은 유지합니다. 적용 시점은 [이 문서의 변경 이력](https://github.com/mossland/Disclosure-and-Materials/commits/main/disclosures/2026/2026-09-08_moc-activation-season1-day30.md)에서 확인할 수 있습니다.
+>
+> **Correction note:** The former claim that a GitHub commit timestamp proves collection time is corrected to state its evidentiary limits. The original document date, raw JSON, hashes and observed values are retained. See the [document history](https://github.com/mossland/Disclosure-and-Materials/commits/main/disclosures/2026/2026-09-08_moc-activation-season1-day30.md) for when this correction is applied.
+
 > 발행일은 본 문서를 포함한 커밋이 이 저장소의 기본 브랜치에 병합된 시각입니다. 작성·관측 시각과 발행 시각이 다를 수 있으며, 본문은 관측 시각을 기준으로 씁니다.
 
 ### 핵심 요약
@@ -101,7 +105,7 @@ Day 30 보고의 기한은 두 곳에 명문화되어 있었습니다 — 2026-0
 
 ### 6. 증빙 (Evidence)
 
-본 공시와 같은 커밋에 포함된 [증빙 폴더](./2026-09-08_moc-activation-season1-day30-evidence/)의 파일과 SHA-256 해시입니다. GitHub 커밋 타임스탬프가 수집 시점을 증명합니다.
+본 공시와 같은 커밋에 포함된 [증빙 폴더](./2026-09-08_moc-activation-season1-day30-evidence/)의 파일과 SHA-256 해시입니다. 수집 시각은 `fetch-metadata.json`에 남긴 수집자의 기록입니다. SHA-256은 보존 파일이 기록된 해시와 일치하는지 확인하는 데 사용합니다. 원본 증빙을 포함한 GitHub의 최초 병합 기록은 해당 내용이 그 병합 시점까지 존재했음을 뒷받침하지만, 해시나 커밋·병합 기록만으로 정확한 API 수집 시각을 독립적으로 증명할 수는 없습니다.
 
 수집 시각·원본 URL·해시는 증빙 폴더의 `fetch-metadata.json`과 `SHA256SUMS.txt`에 있으며, 검증 방법은 같은 폴더의 `README.md`에 적었습니다.
 
@@ -125,4 +129,4 @@ The percentage-of-supply display promised by ratified Principle 2 is **still not
 
 Judgement on the remaining 58 days is deferred to the Day 60 report (on or around 2026-10-06) and the final report after the season closes, in this same format.
 
-All figures are backed by raw JSON and SHA-256 hashes committed alongside this document in the [evidence folder](./2026-09-08_moc-activation-season1-day30-evidence/).
+All figures are backed by raw JSON and SHA-256 hashes committed alongside this document in the [evidence folder](./2026-09-08_moc-activation-season1-day30-evidence/). Collection times are recorded by the collector in `fetch-metadata.json`. SHA-256 checks whether the preserved files match the recorded hashes. GitHub's original merge record containing the evidence supports that the contents existed by that merge time; neither hashes nor commit or merge records independently establish the exact API collection time.

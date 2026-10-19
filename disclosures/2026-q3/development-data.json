@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "dataset_id": "mossland-development-2026-q3-v1",
+  "period": {
+    "label": "2026 Q3",
+    "start_utc": "2026-07-01T00:00:00Z",
+    "end_exclusive_utc": "2026-10-01T00:00:00Z"
+  },
+  "population": {
+    "public": 57,
+    "private": 36,
+    "total": 93,
+    "namespaces": [
+      "mossland",
+      "MosslandOpenDevs",
+      "MosslandCore"
+    ],
+    "forks_included": false,
+    "archived_nonfork_included": true,
+    "mossland_user_private_included": false
+  },
+  "commits": {
+    "public": 1232,
+    "private": 2177,
+    "total": 3409
+  },
+  "pull_requests": {
+    "total": 477,
+    "unique_authors_excluding_bots": 4,
+    "external_prs": 5,
+    "public_repository_population": 57
+  },
+  "observed_at": {
+    "inventory_utc": "2026-10-01T08:27:34Z",
+    "commits_utc": "2026-10-01T08:28:58Z",
+    "pull_requests_utc": "2026-10-01T08:30:46Z"
+  },
+  "definitions": {
+    "commits": "Default-branch commits with author_date in the UTC quarter, including merges and bots. Deduplicate SHA globally; attribute shared public/private SHA to public. Counts use the frozen inventory and source snapshot, not current API results.",
+    "pull_requests": "PRs created_at in the UTC quarter across 57 public non-fork repositories; includes bot PRs. This is a manually frozen disclosure count, not an automated live PR pipeline.",
+    "unique_authors_excluding_bots": "Unique GitHub author accounts across the counted public PRs, excluding bots; accounts are not a count of people.",
+    "external_prs": "Counted public PRs by non-bot authors outside the frozen memberships of MosslandOpenDevs and MosslandCore and the mossland account. Private membership visibility limits public reproducibility.",
+    "privacy": "Private repositories are represented only by aggregate repository and commit counts. No private repository names, account identifiers, or source rows are published in this artifact.",
+    "rolling_reference": "The existing dashboard rolling statistics use a separate fixed repository list and GitHub rolling statistical windows. They do not share this quarterly population or date basis and must not be substituted for these Q3 values."
+  },
+  "provenance": {
+    "rules_version": "1.0",
+    "rules_sha256": "635f60ef3470d7b660bc28268ef441f8a1ca382a68c2dd4e01d3deb45b697475",
+    "collector_sha256": "c6dfa26ab0753a46d071b21a04ba07f4103524efff48984fe3dec9608207209f",
+    "source_artifacts": [
+      {
+        "id": "frozen-quarterly-commit-summary",
+        "sha256": "3a0db70a571910179d779337a7b3804cde8bc0394260ea41bcd6aa8ba1563a18"
+      },
+      {
+        "id": "frozen-quarterly-pr-summary",
+        "sha256": "bd0166817a613b2b30249790b0752411c9e50989822e4183eb6ecf640094e0ad"
+      }
+    ],
+    "verification": {
+      "public": "V1",
+      "private": "V3"
+    },
+    "artifact_hash": "SHA-256 of the exact UTF-8 bytes is supplied in development-data.json.sha256; source hashes above identify the frozen inputs."
+  },
+  "links": {
+    "self": "https://mossland.github.io/Disclosure-and-Materials/disclosures/2026-q3/development-data.json",
+    "report": "https://mossland.github.io/Disclosure-and-Materials/disclosures/2026-q3/"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "period": "2026-Q3",
+  "prepared_at_date_kst": "2026-10-16",
+  "network": "Ethereum Mainnet",
+  "chain_id": 1,
+  "decimals": 18,
+  "token_contract": "0x8bbfe65e31b348cd823c62e02ad8c19a84dd0dab",
+  "excluded_wallets": [
+    {
+      "label": "Published Foundation Wallet #1",
+      "address": "0xcda8f4d40dbeaecf7ee7221f9e9b35d565ca2ad2"
+    }
+  ],
+  "formula": "totalSupply(block) - balanceOf(published Foundation Wallet #1, block)",
+  "measure": "Amount outside the published Foundation wallet; not market free float or trading volume.",
+  "scope_basis": "One published Foundation wallet. Completeness of the Foundation wallet scope relies on the Foundation's written confirmation.",
+  "verification": "Single computation from preserved quarter-end inputs; AI re-query matched on 2026-10-08. No separate verifier or independent audit.",
+  "publication_timing": "Prepared for publication with the Q3 report after quarter-end; not public at quarter-end.",
+  "public_wallet_reference": "https://mossland.github.io/Disclosure-and-Materials/disclosures/2026-q2/#s2",
+  "preserved_input_note": "preserved_input_sha256 identifies the Foundation's preserved quarter-end capture file for each boundary. The capture files themselves are not published, so these hashes cannot be checked externally; the block values can be re-read from any archive RPC.",
+  "boundaries": [
+    {
+      "boundary": "B_UTC",
+      "block": 26093737,
+      "block_hash": "0xcd26204e996dceb606ccf0bc6f5bf8ea6747a471df8be73b5855f01624d5d743",
+      "block_time_utc": "2026-09-30T23:59:59Z",
+      "collected_at_utc": "2026-10-01T00:48:00Z",
+      "total_supply_wei": "500000000000000000000000000",
+      "excluded_wallet_balance_wei": "80371409240508665559425258",
+      "amount_outside_wallet_wei": "419628590759491334440574742",
+      "amount_outside_wallet_moc": "419628590.759491334440574742",
+      "amount_outside_wallet_moc_4dp": "419628590.7595",
+      "agreeing_rpc_count": 3,
+      "finalized_at_collection": true,
+      "preserved_input_sha256": "bde20a01a12f0738570f2266d72bfcb074c22d846713b6db3357fe4581d2a539"
+    },
+    {
+      "boundary": "B_KST",
+      "block": 26091051,
+      "block_hash": "0x7c9e4a5352eb524f27e3b37d22a6a43ead7c964e92b87dd608a079342f1e3926",
+      "block_time_utc": "2026-09-30T14:59:59Z",
+      "collected_at_utc": "2026-09-30T15:48:14Z",
+      "total_supply_wei": "500000000000000000000000000",
+      "excluded_wallet_balance_wei": "80371409240508665559425258",
+      "amount_outside_wallet_wei": "419628590759491334440574742",
+      "amount_outside_wallet_moc": "419628590.759491334440574742",
+      "amount_outside_wallet_moc_4dp": "419628590.7595",
+      "agreeing_rpc_count": 3,
+      "finalized_at_collection": true,
+      "preserved_input_sha256": "7e82638c9048aedcb7dca056381d6910358f9a9b0193cec0e2f6bd7dc0fc6009"
+    }
+  ]
+}

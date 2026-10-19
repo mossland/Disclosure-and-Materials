@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "observed_at_utc": "2026-10-15T23:43:50.111046+00:00",
+  "threshold_moc": "100",
+  "rule": "max(current MOC balance, current delegated voting power) >= 100 MOC",
+  "evaluation_time": "Latest-block on-chain values when creating a proposal; the two measures are not added together.",
+  "threshold_source": "Deployed source defines 100 MOC; the operating threshold was verified without an override.",
+  "insufficient_response_status": 403,
+  "unverifiable_onchain_response_status": 503,
+  "verification": "AI-assisted read-only inspection of the operating backend and five matching source-file hashes. No live proposal was submitted.",
+  "quarter_end_direct_observation": false,
+  "deployed_source_files_checked": 5,
+  "hash_match": true
+}

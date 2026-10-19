@@ -1,0 +1,182 @@
+{
+  "schemaVersion": "1.0",
+  "title": "실험 서비스 가동·정지 외부 판독 — 명시된 세 서비스",
+  "observationDateKst": "2026-10-16",
+  "scope": {
+    "services": [
+      "ao",
+      "algora",
+      "bridge"
+    ],
+    "selection": "Q2 목표 문장이 이름으로 명시한 세 서비스",
+    "result": "2026-10-16 명시된 세 서비스의 세부 처리·정지 지표 점검 완료",
+    "notEstablished": [
+      "다른 실험 서비스의 세부 처리 지표 충족 여부",
+      "이번 10월 관측만으로 Q3 분기말 상태 입증"
+    ],
+    "comparison": {
+      "q3StatusUrlDenominator": 16,
+      "currentReviewedServices": 3,
+      "sameTimeAndPopulation": false,
+      "note": "Q3의 처리 시각 4/16·24시간 처리량 1/16과 이번 세 서비스의 관측은 시점·경로·모집단이 달라 직접 비교하지 않음"
+    },
+    "scopeDecision": {
+      "dateKst": "2026-10-16",
+      "scope": "AO·Algora·BRIDGE의 추가 세부 처리 지표 점검",
+      "otherServices": "별도 운영 점검으로 관리",
+      "quarterEndAssessment": "Q3 완료 판정은 9월의 공개 경로와 Q2 원문 완료 증거에 근거(보고서 §1.2); 이 10월 관측을 분기말로 소급하지 않음"
+    }
+  },
+  "services": [
+    {
+      "id": "ao",
+      "sources": [
+        {
+          "url": "https://ao.moss.land/api/status",
+          "observedAt": "2026-10-15T23:44:09.684313+00:00",
+          "httpStatus": 200,
+          "originalResponseSha256": "f9edb0c30acef44172de745345f902534b134c0bdaaeafa169225e2b71d8db63"
+        }
+      ],
+      "interpretation": "현재 수집 저장량과 토론 시작량, 일부 원천의 마지막 수신 성공을 확인할 수 있음",
+      "fields": {
+        "status": "operational",
+        "timestamp": "2026-10-15T23:44:09.846773Z",
+        "stats": {
+          "signals_24h": 2078,
+          "debates_24h": 4,
+          "last_signal_at": "2026-10-15T23:35:06.971068Z"
+        },
+        "signal_feed": {
+          "status": "healthy",
+          "last_success_at": "2026-10-15T22:35:04.648352Z",
+          "source_watermark": "2026-10-15T20:55:16.000Z",
+          "watermark_age_hours": 2.8
+        }
+      },
+      "metrics": {
+        "stats.signals_24h": {
+          "unit": "저장한 신호 행",
+          "window": "서버 계산 시각 기준 직전 24시간",
+          "clock": "AO created_at",
+          "value": 2078
+        },
+        "stats.debates_24h": {
+          "unit": "시작한 토론",
+          "window": "서버 계산 시각 기준 직전 24시간",
+          "clock": "started_at",
+          "value": 4
+        },
+        "stats.last_signal_at": {
+          "meaning": "원천 기록 시각(collected_at)의 최댓값; AO 수집 완료 시각과 다름"
+        },
+        "components.signal_feed.last_success_at": {
+          "meaning": "SignalMap 수신 성공 시각; 모든 하위 작업의 성공 시각은 아님"
+        }
+      },
+      "limits": [
+        "registry의 /api/health만으로는 이 처리 지표를 읽을 수 없어 /api/status를 연결함",
+        "상위 operational은 DB 응답 수준이며 모든 구성요소의 정상 처리나 전체 처리 완료를 뜻하지 않음",
+        "24시간 값의 조회별 변동과 0을 정상·장애 판정으로 단정하지 않음"
+      ]
+    },
+    {
+      "id": "bridge",
+      "sources": [
+        {
+          "url": "https://bridge.moss.land/api/health",
+          "observedAt": "2026-10-15T23:44:09.872318+00:00",
+          "httpStatus": 200,
+          "originalResponseSha256": "ec502388c49afc1f4e723424d4a75f468464f42de34f082c7e64b0983e2e8cda"
+        },
+        {
+          "url": "https://bridge.moss.land/api/stats",
+          "observedAt": "2026-10-15T23:44:10.046942+00:00",
+          "httpStatus": 200,
+          "originalResponseSha256": "065cac39fc074cb515f0de9eb96184d212a77ccf098bb430e22bb1d8d8b45287"
+        }
+      ],
+      "interpretation": "최근 실제 관측 시각·수집 활성 여부·주기와 최근 24시간 저장 관측 행 수를 함께 확인할 수 있음",
+      "fields": {
+        "health": {
+          "status": "ok",
+          "service": "bridge",
+          "timestamp": "2026-10-15T23:44:10.020Z",
+          "lastProcessedAt": "2026-10-15T23:43:48.454Z",
+          "lastObservedSignalAt": "2026-10-15T23:43:48.454Z",
+          "collection": {
+            "enabled": true,
+            "intervalSeconds": 60,
+            "staleAfterSeconds": 180
+          }
+        },
+        "stats": {
+          "signals": {
+            "lastDay": 287
+          }
+        }
+      },
+      "metrics": {
+        "health.lastProcessedAt": {
+          "meaning": "마지막 실제 관측 시각; 값이 바뀌지 않아 저장을 생략한 관측도 반영 가능"
+        },
+        "stats.signals.lastDay": {
+          "unit": "저장한 관측 행(synthetic 제외)",
+          "window": "서버가 stats를 계산한 시각 기준 직전 24시간",
+          "windowEnd": null,
+          "windowEndNote": "응답에 계산 시각이 없고 캐시가 있으므로 health와 정확히 같은 집계 끝 시각으로 취급하지 않음",
+          "value": 287
+        }
+      },
+      "limits": [
+        "저장 행 수는 고유 사건 수나 총 폴링 성공수가 아님",
+        "health와 stats는 별도 요청·계산 시점이며 숫자가 같거나 같이 늘어야 하는 지표가 아님"
+      ]
+    },
+    {
+      "id": "algora",
+      "sources": [
+        {
+          "url": "https://algora.moss.land/api/health",
+          "observedAt": "2026-10-15T23:44:10.217092+00:00",
+          "httpStatus": 200,
+          "originalResponseSha256": "024873235ba834254045a9b4c560d823c52f2ea2aebd4a5152f7023ca123ee63"
+        }
+      ],
+      "interpretation": "능동 처리가 없는 읽기 전용 보존 상태와 정지 시각을 확인할 수 있음",
+      "fields": {
+        "status": "ok",
+        "service": "algora",
+        "timestamp": "2026-10-15T23:44:10.350Z",
+        "archived": true,
+        "lifecycle": "archive",
+        "pipeline": "none",
+        "stoppedAt": "2026-10-12T03:04:37Z",
+        "snapshotAt": "2026-10-12T03:00:31.405Z"
+      },
+      "metrics": {
+        "archived": {
+          "value": true
+        },
+        "pipeline": {
+          "value": "none"
+        },
+        "stoppedAt": {
+          "meaning": "실시간 앱 정지 시각"
+        },
+        "timestamp": {
+          "meaning": "응답 생성 시각; 작업 처리 시각이 아님"
+        }
+      },
+      "limits": [
+        "보존 상태를 현재 처리량 0으로 계산하지 않음",
+        "10월의 전환 상태이며 Q3 말 읽기 전용 전환 완료를 뜻하지 않음"
+      ]
+    }
+  ],
+  "evidenceLimits": [
+    "공개 GET에서 필요한 필드만 발췌한 관측 기록이며 원문 응답 전체를 제공하지 않음",
+    "원문 응답 해시는 보존한 관측의 식별 정보이며 독립적인 수집 시각 인증이 아님",
+    "현재 링크의 값은 관측 이후 달라질 수 있음"
+  ]
+}

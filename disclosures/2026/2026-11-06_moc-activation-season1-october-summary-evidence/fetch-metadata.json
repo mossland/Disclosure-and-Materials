@@ -1,0 +1,180 @@
+{
+  "disclosure": "2026-11-06_moc-activation-season1-october-summary.md",
+  "note": "모든 파일은 인증 없는 공개 GET 응답 원문입니다. 수집 시각은 수집자의 기록이며, 응답에 든 generatedAt·asOf·date 헤더 값과 구분합니다. 10월(UTC) 당월 카운터의 월 경계(2026-11-01T00:00:00Z) 직전 관측은 없습니다. 2026-10-14 파일은 재단의 10월 14일 점검 때 받은 응답으로, 경계 전 마지막으로 보존된 관측입니다.",
+  "sources": {
+    "transparency.json": "https://passport.moss.land/api/transparency",
+    "wall.json": "https://passport.moss.land/api/wall",
+    "connect-stats.json": "https://passport.moss.land/api/connect/stats",
+    "governance-aggregates.json": "https://passport.moss.land/api/governance-pack/aggregates",
+    "health.json": "https://passport.moss.land/api/health",
+    "transparency-2026-11-02.json": "https://passport.moss.land/api/transparency",
+    "wall-2026-11-02.json": "https://passport.moss.land/api/wall",
+    "connect-stats-2026-11-02.json": "https://passport.moss.land/api/connect/stats",
+    "governance-aggregates-2026-11-02.json": "https://passport.moss.land/api/governance-pack/aggregates",
+    "transparency-2026-10-14.json": "https://passport.moss.land/api/transparency",
+    "wall-2026-10-14.json": "https://passport.moss.land/api/wall",
+    "wall-before-1.json": "https://passport.moss.land/api/wall?before=1"
+  },
+  "observations": [
+    {
+      "id": "2026-10-14",
+      "role": "10월(UTC) 당월 카운터의 경계 전 마지막 보존 관측 (behavior.period 2026-10)",
+      "collectedAtUtc": "2026-10-14T04:54:32Z (transparency 응답 generatedAt 기준. 벽 응답은 같은 점검에서 받았고 자체 시각 필드가 없음. 수집자의 별도 요청 시각 기록 없음)",
+      "files": [
+        {
+          "file": "transparency-2026-10-14.json",
+          "bytes": 1698,
+          "sha256": "fd63a58a63ead9e0d1a48e511e97e9634418634c7ee70cd09e54ab3bf19e450f",
+          "generatedAt": "2026-10-14T04:54:32.120Z"
+        },
+        {
+          "file": "wall-2026-10-14.json",
+          "bytes": 30182,
+          "sha256": "28f9b9514d81570117283088a7cb96a8534020fc29fc3df01ebd4ec2daebed26",
+          "items": 27,
+          "nextCursor": null
+        }
+      ]
+    },
+    {
+      "id": "2026-11-02",
+      "role": "월 경계 뒤 첫 공개 관측 (behavior.period 2026-11)",
+      "collectedAtUtc": "2026-11-02T02:51:38Z (응답 date 헤더 Mon, 02 Nov 2026 02:51:38 GMT)",
+      "files": [
+        {
+          "file": "transparency-2026-11-02.json",
+          "bytes": 1696,
+          "sha256": "9bd879c2f7999cf1e93dc6c3c43735a5f6eea753da48269997803e74dd933f6d",
+          "generatedAt": "2026-11-02T02:51:38.126Z"
+        },
+        {
+          "file": "wall-2026-11-02.json",
+          "bytes": 30181,
+          "sha256": "4da9b3b44bd4ef6671d90e7720fd2a142ac20486d4889d8a38b421dc9c7a746a",
+          "items": 27,
+          "nextCursor": null
+        },
+        {
+          "file": "connect-stats-2026-11-02.json",
+          "bytes": 113,
+          "sha256": "d9d2bbbd39e1ea2052f9bb5a671900777c430510e94e3182bd4fd3e8c18b49be",
+          "asOf": "2026-11-02T02:51:38.320Z"
+        },
+        {
+          "file": "governance-aggregates-2026-11-02.json",
+          "bytes": 399,
+          "sha256": "ae9e25e2cd45afeaade5b0377fd05bb098aa250a74a9a50b685961c2e7cd1988",
+          "generatedAt": "2026-11-02T02:51:38.545Z"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-06",
+      "role": "시즌 종료일(2026-11-05) 다음 날의 관측 · 이 공시의 기준 관측",
+      "collectedAtUtc": "2026-11-06T01:25:53Z ~ 01:25:54Z",
+      "files": [
+        {
+          "file": "transparency.json",
+          "startedAtUtc": "2026-11-06T01:25:53.900858Z",
+          "completedAtUtc": "2026-11-06T01:25:54.079115Z",
+          "status": 200,
+          "bytes": 1696,
+          "sha256": "1c80c79708c7227f7e478f59d9c43201624048ecd1181128fc8ee19d014dc796",
+          "generatedAt": "2026-11-06T01:25:53.936Z"
+        },
+        {
+          "file": "wall.json",
+          "startedAtUtc": "2026-11-06T01:25:54.079979Z",
+          "completedAtUtc": "2026-11-06T01:25:54.147921Z",
+          "status": 200,
+          "bytes": 33862,
+          "sha256": "90f062363d85fc7def32986d5d2dcbcbeb5e906ad643d57dcc24522440288bf9",
+          "items": 30,
+          "nextCursor": 1,
+          "note": "limit 30과 항목 수가 같아 nextCursor가 1로 왔습니다. 이어서 ?before=1 조회는 items 0·nextCursor null이었고 wall-before-1.json으로 보존했습니다. 30건이 전부입니다"
+        },
+        {
+          "file": "wall-before-1.json",
+          "startedAtUtc": "2026-11-06T01:25:54.149480Z",
+          "completedAtUtc": "2026-11-06T01:25:54.207782Z",
+          "status": 200,
+          "bytes": 122,
+          "sha256": "4ac02ece467246e703ef0e6b45254222bf24038333b5656dfa1e46bf311d30e7",
+          "items": 0,
+          "nextCursor": null
+        },
+        {
+          "file": "connect-stats.json",
+          "startedAtUtc": "2026-11-06T01:25:54.209198Z",
+          "completedAtUtc": "2026-11-06T01:25:54.268609Z",
+          "status": 200,
+          "bytes": 114,
+          "sha256": "9ff1a1a89f78af8d40818c308ce67999d1ba833e65c92ab4250c9d2fe441aebd",
+          "asOf": "2026-11-06T01:25:54.263Z"
+        },
+        {
+          "file": "governance-aggregates.json",
+          "startedAtUtc": "2026-11-06T01:25:54.270552Z",
+          "completedAtUtc": "2026-11-06T01:25:54.435014Z",
+          "status": 200,
+          "bytes": 399,
+          "sha256": "3047fdeb6c266ecc4c72fc8142323522e0aa11de4d776d1c3374b5c8a98385e2",
+          "generatedAt": "2026-11-06T01:25:54.429Z"
+        },
+        {
+          "file": "health.json",
+          "startedAtUtc": "2026-11-06T01:25:54.436585Z",
+          "completedAtUtc": "2026-11-06T01:25:54.487263Z",
+          "status": 200,
+          "bytes": 85,
+          "sha256": "744aeec0e46656d09e284c196adba080dbaa8b6153f455434903c3bd787c0afa",
+          "timestamp": "2026-11-06T01:25:54.478Z"
+        }
+      ]
+    }
+  ],
+  "earlierObservations": {
+    "2026-10-07T00:19:31Z": "Day 60 보고 증빙 ../2026-10-07_moc-activation-season1-day60-evidence/transparency.json (인증 11 · 10월 체크인 0 · 스탬프 65 · 벽 19건)"
+  },
+  "monthBoundary": {
+    "octoberEndUtc": "2026-11-01T00:00:00Z",
+    "lastPreservedOctoberObservationUtc": "2026-10-14T04:54:32Z",
+    "firstPostBoundaryObservationUtc": "2026-11-02T02:51:38Z",
+    "lastUnpreservedOctoberCheckUtc": "2026-10-23T15:08Z (내부 기록, 응답 미보존)",
+    "noPreservedResponseBeforeBoundary": "약 17일 19시간(공개 응답 보존 없음) (2026-10-14T04:54:32Z ~ 2026-11-01T00:00:00Z)"
+  },
+  "seasonEnd": {
+    "seasonPeriod": "2026-08-07 ~ 2026-11-05",
+    "firstPreservedPostSeasonReadUtc": "2026-11-06T01:19:38Z (수집 도구의 벽 쪽 넘김 불완전 — 같은 쪽 반복 조회 — 으로 증빙 미포함, 당월·누적값은 기준 관측과 같음)",
+    "referenceObservationUtc": "2026-11-06T01:25:53Z",
+    "note": "시즌 종료일 당일에 보존된 관측은 없음. 시즌 종료 기준 시각의 정의와 종료 시점 값은 최종 보고에서 다룸"
+  },
+  "proposalInventoryCheck": {
+    "note": "2026-11-02 02:51 UTC 공개 안건 목록 첫 쪽(page=0)만 조회한 판정용 요약. 목록 응답 본문은 Day 60 증빙과 같이 이 폴더에 넣지 않았다. 첫 쪽 응답의 SHA-256은 Day 60 증빙 fetch-metadata.json에 기록된 page=0의 해시와 같다(Day 60 증빙에도 응답 본문은 없음).",
+    "page0": {
+      "url": "https://agora.moss.land/api/governance/proposals?page=0",
+      "observedAtUtc": "2026-11-02T02:51Z",
+      "status": 200,
+      "sha256": "a5bb1963958d7a92d7660a98cbeda873d6233d4e4b48043255d4e2bb1464acd6",
+      "returnedCount": 20,
+      "page": {
+        "number": 0,
+        "size": 20,
+        "totalElements": 42,
+        "last": false
+      },
+      "latestStartAt": "2026-08-19T02:19:25.363Z",
+      "day60Page0Sha256": "a5bb1963958d7a92d7660a98cbeda873d6233d4e4b48043255d4e2bb1464acd6"
+    },
+    "conclusion": "첫 쪽 응답의 totalElements 42는 Day 60 보고의 전수 확인(42건)과 같고, 첫 쪽 20건이 바이트 단위로 같아 10월 중 새 안건은 공개 목록에서 확인되지 않음. 2·3쪽은 11월 2일에 다시 읽지 않았다."
+  },
+  "unpreservedChecks": [
+    {
+      "atUtc": "2026-10-23T15:08Z",
+      "atKst": "2026-10-24 00:08",
+      "source": "재단 내부 기록(공개 GET 1회, 응답 미보존)",
+      "values": "behavior.period 2026-10 · checkinsThisMonth 15 · activationsThisMonth 0 · verifiedWallets 24 · stampsIssued 117 · wall 27건",
+      "use": "공시 §3의 보조 근거로만 인용. 증빙 파일 없음"
+    }
+  ]
+}

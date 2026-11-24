@@ -83,4 +83,4 @@ jq '[.items[] | select(.kind == "connect" and .period == "svc:wa")] | length' ..
 
 ---
 
-작성 방식: **AI 보조 · 발행 전 사람 검토 예정** · [AI 생성 콘텐츠 표시 정책 v1.0](../2026-09-16_ai-content-labelling-policy.md)
+작성 방식: **AI 보조 · 사람 검토** · [AI 생성 콘텐츠 표시 정책 v1.0](../2026-09-16_ai-content-labelling-policy.md)

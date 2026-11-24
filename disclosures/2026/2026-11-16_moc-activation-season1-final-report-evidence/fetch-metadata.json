@@ -1,0 +1,237 @@
+{
+  "disclosure": "2026-11-16_moc-activation-season1-final-report.md",
+  "note": "모든 원본 파일은 인증 없는 공개 GET 응답 원문입니다. 수집 시각은 수집자의 기록이며, 응답에 든 generatedAt·asOf·timestamp 값과 구분합니다. 보고 시점 관측은 시즌 종료 기준 시각(2026-11-05T15:00:00Z) 뒤의 관측으로, 보고 §4의 세 가지 확인(시즌 종료 전에 기록된 벽 항목의 유지, 공개 설정의 activation·exitPass, verifiedMocSum)에만 인용하며 시즌 표에 넣지 않습니다. 시즌 표의 8개 시점 원본은 earlierObservations의 ../ 경로에 있어 다시 넣지 않았고, 그 키는 각 증빙 fetch-metadata.json에 기록된 수집 시각입니다.",
+  "sources": {
+    "transparency.json": "https://passport.moss.land/api/transparency",
+    "wall.json": "https://passport.moss.land/api/wall",
+    "wall-before-265.json": "https://passport.moss.land/api/wall?before=265",
+    "connect-stats.json": "https://passport.moss.land/api/connect/stats",
+    "governance-aggregates.json": "https://passport.moss.land/api/governance-pack/aggregates",
+    "health.json": "https://passport.moss.land/api/health",
+    "polls.json": "https://passport.moss.land/api/polls"
+  },
+  "observations": [
+    {
+      "id": "2026-11-15T23:57Z",
+      "role": "보고 시점 관측(시즌 종료 뒤) — 보고 §4의 세 가지 확인에만 인용, 시즌 표에 넣지 않음",
+      "collectedAtUtc": "2026-11-15T23:57:00Z ~ 23:57:00Z",
+      "files": [
+        {
+          "file": "transparency.json",
+          "startedAtUtc": "2026-11-15T23:57:00.086330Z",
+          "completedAtUtc": "2026-11-15T23:57:00.346754Z",
+          "status": 200,
+          "bytes": 1696,
+          "sha256": "10c0e25f17b2c587ec6c0c771992ced1feca49b12db9886e9d75261a5fedb061",
+          "generatedAt": "2026-11-15T23:57:00.191Z"
+        },
+        {
+          "file": "wall.json",
+          "startedAtUtc": "2026-11-15T23:57:00.348382Z",
+          "completedAtUtc": "2026-11-15T23:57:00.430748Z",
+          "status": 200,
+          "bytes": 35294,
+          "sha256": "2ff74128b7479f713322aafc2ef282f87041dff6c362e71fbd62062522d07193",
+          "items": 30,
+          "nextCursor": 265
+        },
+        {
+          "file": "wall-before-265.json",
+          "startedAtUtc": "2026-11-15T23:57:00.433072Z",
+          "completedAtUtc": "2026-11-15T23:57:00.505524Z",
+          "status": 200,
+          "bytes": 4489,
+          "sha256": "7c1325f362ca43a3e5914c697129ef11586ab49ad401af39820d51084df15491",
+          "items": 5,
+          "nextCursor": null
+        },
+        {
+          "file": "connect-stats.json",
+          "startedAtUtc": "2026-11-15T23:57:00.507141Z",
+          "completedAtUtc": "2026-11-15T23:57:00.573130Z",
+          "status": 200,
+          "bytes": 114,
+          "sha256": "e53bcbb1d0c3ee2a2a01962535588e595909542fec7da81b3f9fe8951845fd88",
+          "asOf": "2026-11-15T23:57:00.559Z"
+        },
+        {
+          "file": "governance-aggregates.json",
+          "startedAtUtc": "2026-11-15T23:57:00.574641Z",
+          "completedAtUtc": "2026-11-15T23:57:00.751209Z",
+          "status": 200,
+          "bytes": 399,
+          "sha256": "e5fcd234d4f6184b1464e057c6ccfad24be452317d89aca0d9fb71d312316f62",
+          "generatedAt": "2026-11-15T23:57:00.737Z"
+        },
+        {
+          "file": "health.json",
+          "startedAtUtc": "2026-11-15T23:57:00.752300Z",
+          "completedAtUtc": "2026-11-15T23:57:00.805470Z",
+          "status": 200,
+          "bytes": 85,
+          "sha256": "b9eb7182fb7fccd6fe53c69944769dd441441e589ee911c841cb66d5412a7801",
+          "timestamp": "2026-11-15T23:57:00.787Z"
+        }
+      ]
+    },
+    {
+      "id": "polls",
+      "role": "공개 설문 목록 1회 조회(쿼리 없음) — 보고 §7 원칙 3의 비구속 시그널·설문 확인",
+      "collectedAtUtc": "2026-11-16T01:07:36Z",
+      "files": [
+        {
+          "file": "polls.json",
+          "startedAtUtc": "2026-11-16T01:07:36.131293Z",
+          "completedAtUtc": "2026-11-16T01:07:36.190577Z",
+          "status": 200,
+          "bytes": 12,
+          "sha256": "89afece36b29d421837cf2ce305a2e42739926bbf603d28fc1e1dcf56681af0c"
+        }
+      ]
+    }
+  ],
+  "reportTimeChecks": {
+    "verifiedMocSum": "두 안건 모두 null (governance-aggregates.json proposals[].verifiedMocSum)",
+    "wallItemsRecordedBeforeSeasonEnd": "2026-11-06 전체 목록 30건(../2026-11-06_moc-activation-season1-october-summary-evidence/wall.json)이 모두 같은 id·status로 있음",
+    "activationExitPassConfig": "2026-08-14 관측(../2026-08-14_moc-activation-season1-vote-evidence/transparency.json)과 같음(키를 정렬해 비교, 증빙 README의 jq -S 명령과 같음)",
+    "notCited": "보고 시점 관측의 시즌 종료 뒤 카운터·누적값·벽 항목·거래소 보관 추정치는 인용하지 않으며 시즌 지표로 세지 않음"
+  },
+  "earlierObservations": {
+    "2026-08-14T06:34:28Z": "../2026-08-14_moc-activation-season1-vote-evidence/transparency.json — 인증 10 · 8월 체크인 2 · 활성화 0(8월 1일부터의 진행값). 증빙에 스탬프·벽 응답 없음",
+    "2026-09-02T04:43:59Z": "../2026-09-02_mip-1-lifecycle-policy-vote-evidence/transparency.json — 인증 11. 증빙에 스탬프·벽 응답 없음",
+    "2026-09-08T13:23:20Z": "../2026-09-08_moc-activation-season1-day30-evidence/transparency.json · connect-stats.json · wall.json · governance-aggregates.json — Day 30, 인증 11 · 스탬프 65 · 벽 19건",
+    "2026-09-30T23:50:38Z": "../2026-10-07_moc-activation-season1-day60-evidence/transparency-2026-09-30.json · connect-stats-2026-09-30.json — 인증 11 · 9월 체크인 2 · 활성화 0(경계 약 9분 전) · 스탬프 65. 벽 응답은 증빙에 없음(같은 수집의 벽 원문이 Day 30 증빙 wall.json과 같다는 대조는 2026 Q3 보고서 §7.2)",
+    "2026-10-07T00:19:31Z": "../2026-10-07_moc-activation-season1-day60-evidence/transparency.json · connect-stats.json · wall.json · governance-aggregates.json — Day 60, 인증 11 · 스탬프 65 · 벽 19건",
+    "2026-10-14T04:54:32Z": "../2026-11-06_moc-activation-season1-october-summary-evidence/transparency-2026-10-14.json · wall-2026-10-14.json — 10월 마지막 보존 관측(시각은 transparency generatedAt 기준이며 수집자의 별도 요청 시각 기록 없음 — 10월 요약 증빙 fetch-metadata.json observations[0]), 인증 24 · 10월 체크인 15 · 활성화 0 · 벽 27건. 스탬프 응답 없음(unpreservedChecks)",
+    "2026-11-02T02:51:38Z": "../2026-11-06_moc-activation-season1-october-summary-evidence/transparency-2026-11-02.json · connect-stats-2026-11-02.json · wall-2026-11-02.json · governance-aggregates-2026-11-02.json — 시즌 종료 전 마지막 보존 관측(87일차), 인증 24 · 11월 체크인 0 · 활성화 0 · 스탬프 117 · 벽 27건",
+    "2026-11-06T01:25:53Z": "../2026-11-06_moc-activation-season1-october-summary-evidence/transparency.json · connect-stats.json · wall.json · wall-before-1.json · governance-aggregates.json · health.json — 시즌 종료 뒤 인용 관측 — 증빙에 넣은 첫 관측(시즌 표의 마지막 열, 같은 날 01:19:38Z 읽기는 증빙 미포함), 인증 26 · 11월 체크인 2 · 활성화 0 · 스탬프 126 · 벽 30건(공개 28 · 가림 2)"
+  },
+  "seasonEnd": {
+    "seasonPeriod": "2026-08-07 (비준일) ~ 2026-11-05",
+    "ratification": "2026-08-07 16:57 KST (Season 1 투표 종료, 2026-08-14 공시)",
+    "dayCount": "Day 30 보고의 일차 계산(2026-09-08 = 32일차)으로 2026-11-05 = 90일차",
+    "referenceTime": "2026-11-05 24:00 KST = 2026-11-05T15:00:00Z (90일차의 끝)",
+    "lastPreservedBeforeUtc": "2026-11-02T02:51:38Z (87일차, 기준 시각보다 약 3일 12시간 앞)",
+    "firstPreservedAfterUtc": "2026-11-06T01:19:38Z (기준 시각보다 약 10시간 20분 뒤) — 수집 도구의 벽 쪽 넘김이 불완전해(같은 쪽 반복 조회) 증빙에 넣지 않음, 당월·누적값은 citedAfterUtc 관측과 같음(10월 요약 증빙 fetch-metadata.json의 seasonEnd)",
+    "citedAfterUtc": "2026-11-06T01:25:53Z (기준 시각보다 약 10시간 26분 뒤) — 시즌 종료 뒤 증빙에 넣은 첫 관측, 시즌 표의 마지막 열",
+    "note": "시즌 종료 직전과 당일에 보존한 관측은 없음. 관측 공백은 수집 측의 사정이며 근본 원인이나 재발 방지 효과를 추정하지 않음",
+    "byAttribution": {
+      "unchangedBeforeAndAfter": "2026-11-02와 2026-11-06의 두 관측에서 각각 홀더 / 검증 홀더 3 / 3 · 위임 지갑 2(API 대조 2개 지갑 · 108,988.96676301 MOC) · Exit Pass·보전 지급 누적 각 1 · 인증 지갑 잔고 합 314,988.96676301 MOC · 11월 활성화 0. 두 관측의 값이 같아도 그 사이인 시즌 종료 시각의 값은 확인할 수 없음",
+      "attributedByWallCreatedAt": "2026-11-06에 남아 있던 전체 벽 등재 항목 30건(공개 28 · 가림 2)은 모두 기준 시각 전에 기록됐고, 그중 서비스 연결(Mossverse) 기록은 11건임. 조회 전에 삭제된 항목의 수는 이 목록으로 확인할 수 없음. 기록 시각을 보면 가장 늦은 항목은 2026-11-05T09:39Z, 새 3건은 2026-11-05 09:35~09:39 UTC의 Mossverse 연결임. 2026-11-02의 27건이 같은 id로 있음. 연결 수는 벽 연결 항목의 createdAt 기준이며(연결이 모두 벽에 기록된다는 대응은 추론), connectByService는 두 응답이 함께 공시 증빙에 있는 네 시점(2026-09-08·2026-10-07·2026-11-02·2026-11-06)에서 벽의 서비스별 연결 항목 수와 같았음",
+      "ranges": "2026-11-02와 2026-11-06에 각각 인증 지갑 24개와 26개, 누적 스탬프 117개와 126개, 11월 체크인 0건과 2건을 관측. 변동 시각이 공개 집계에 없어 시즌 종료 시점의 값이나 가능한 범위를 확정할 수 없음",
+      "caveat": "어느 경우든 두 관측 사이에 추가와 삭제가 상쇄됐을 가능성은 공개 집계로 배제할 수 없음. 거래소 보관 MOC는 계속 바뀌는 운영자 추정치여서 종료 시점 값으로 적지 않음"
+    }
+  },
+  "monthBoundary": {
+    "rule": "당월 카운터(behavior.checkinsThisMonth·activationsThisMonth)는 UTC 월 경계에서 초기화되며 behavior.period는 관측 시각의 UTC 월. 서로 다른 달을 누적 증감으로 비교하지 않음",
+    "monthlyCounters": {
+      "2026-08": "체크인 2 · 활성화 0 — 2026-08-14 06:34 UTC 진행값(8월 1일부터 세어 시즌 전 날짜 포함), 월말 관측 없음",
+      "2026-09": "체크인 2 · 활성화 0 — 2026-09-30 23:50 UTC, 경계 약 9분 전 마지막 관측값(최종 확정값 아님)",
+      "2026-10": "체크인 15 · 활성화 0 — 2026-10-14 04:54 UTC 마지막 보존 관측값. 체크인은 그 뒤 늘지 않았다는 추정(내부 기록에 의존해 공개 집계만으로 재현할 수 없음, 확정값 아님), 활성화는 그 뒤 공개 집계로 확인할 수 없음(10월 요약 §3)",
+      "2026-11 (시즌분)": "2026-11-02 02:51 UTC에 체크인 0건·활성화 0건, 2026-11-06 01:25 UTC에 체크인 2건·활성화 0건. 시즌 종료 시점의 두 카운터 값은 미확정"
+    },
+    "novemberSeasonPortionUtc": "2026-11-01T00:00:00Z ~ 2026-11-05T15:00:00Z",
+    "novemberCounterStart": "11월 당월 카운터는 2026-11-01T00:00:00Z(11월 1일 09:00 KST)부터 세므로 11월 1일 00:00 KST부터 09:00 KST 직전까지의 활동은 10월 카운터에 속함(10월 요약 §3의 범위)",
+    "decemberBoundaryUtc": "2026-12-01T00:00:00Z",
+    "decemberBoundary": "11월분은 최종 보고로 갈음하므로 12월 1일 월 경계 관측은 하지 않음. 11월 당월 카운터 가운데 시즌 종료 뒤 부분은 시즌 지표로 보고하지 않음",
+    "reportTimeCounter": "보고 시점 관측의 11월 당월 카운터는 시즌 종료 뒤 활동이 섞인 진행값이며 인용하지 않음"
+  },
+  "proposalInventoryCheck": {
+    "note": "2026-11-16T01:07:32Z 공개 안건 목록을 page.last=true까지 읽은 판정용 요약. 목록 응답 본문은 이 폴더에 넣지 않았다.",
+    "pages": [
+      {
+        "url": "https://agora.moss.land/api/governance/proposals?page=0",
+        "startedAtUtc": "2026-11-16T01:07:32Z",
+        "completedAtUtc": "2026-11-16T01:07:33Z",
+        "status": 200,
+        "sha256": "a5bb1963958d7a92d7660a98cbeda873d6233d4e4b48043255d4e2bb1464acd6",
+        "returnedCount": 20,
+        "page": {
+          "number": 0,
+          "size": 20,
+          "totalElements": 42,
+          "last": false
+        }
+      },
+      {
+        "url": "https://agora.moss.land/api/governance/proposals?page=1",
+        "startedAtUtc": "2026-11-16T01:07:34Z",
+        "completedAtUtc": "2026-11-16T01:07:34Z",
+        "status": 200,
+        "sha256": "0a578363713835ee425240aa2908c4ef91b0e6cfd37d68b00a8254ed9557db32",
+        "returnedCount": 20,
+        "page": {
+          "number": 1,
+          "size": 20,
+          "totalElements": 42,
+          "last": false
+        }
+      },
+      {
+        "url": "https://agora.moss.land/api/governance/proposals?page=2",
+        "startedAtUtc": "2026-11-16T01:07:35Z",
+        "completedAtUtc": "2026-11-16T01:07:36Z",
+        "status": 200,
+        "sha256": "811b82b8993c262bd1472ee4c7975c44bcc0457155e1493a2ed29cf1f63e8c6c",
+        "returnedCount": 2,
+        "page": {
+          "number": 2,
+          "size": 20,
+          "totalElements": 42,
+          "last": true
+        }
+      }
+    ],
+    "uniqueProposals": 42,
+    "seasonWindowUtc": "2026-08-07T07:57:30.269Z ~ 2026-11-05T15:00:00Z (Season 1 투표 종료 = 비준 ~ 시즌 종료 기준 시각)",
+    "votingOpenInSeasonWindow": [
+      {
+        "proposalId": "6a85129f8be190cf5d2ebcc1",
+        "startAt": "2026-08-19T02:19:25.363Z",
+        "endAt": "2026-09-02T02:19:25.363Z",
+        "status": "closed"
+      }
+    ],
+    "proposalsStartedAfterMip1BeforeSeasonEnd": 0,
+    "votingOpenAfter20260902BeforeSeasonEnd": 0,
+    "proposalsStartedAfterSeasonEnd": 0,
+    "proposalsStartedIn2026": [
+      {
+        "proposalId": "6a85129f8be190cf5d2ebcc1",
+        "startAt": "2026-08-19T02:19:25.363Z",
+        "endAt": "2026-09-02T02:19:25.363Z",
+        "status": "closed"
+      },
+      {
+        "proposalId": "6a4decb73697e1a9d307e327",
+        "startAt": "2026-07-08T07:57:30.269Z",
+        "endAt": "2026-08-07T07:57:30.269Z",
+        "status": "closed"
+      }
+    ],
+    "earlierChecks": "Day 60 증빙 fetch-metadata.json의 proposalInventoryCheck(2026-10-07, 3쪽 42건 전수) · 10월 요약 증빙 fetch-metadata.json의 proposalInventoryCheck(2026-11-02, 첫 쪽만, totalElements 42)",
+    "conclusion": "전체 42건을 끝 쪽까지 읽었고, 시즌 창과 투표 기간이 겹친 안건은 MIP-1 한 건이다. MIP-1(2026-08-19 시작) 뒤 시즌 종료 전에 시작한 안건은 없고, 2026-09-02 뒤 시즌 종료까지 투표가 열린 안건도 없다."
+  },
+  "pollsCheck": {
+    "url": "https://passport.moss.land/api/polls",
+    "observedAtUtc": "2026-11-16T01:07:36Z",
+    "status": 200,
+    "file": "polls.json",
+    "summary": "목록 0건(polls 빈 배열)",
+    "wallVoteAttestations": "2026-11-06T01:25:53Z 벽 전체 목록 30건(../2026-11-06_moc-activation-season1-october-summary-evidence/wall.json · wall-before-1.json)의 kind는 ownership·connect·wall_republish뿐이며 vote 항목은 0건",
+    "scope": "Passport 밖 채널(다른 커뮤니티·외부 설문)은 확인하지 않음"
+  },
+  "unpreservedChecks": [
+    {
+      "at": "2026-10-14 (재단의 10월 14일 점검)",
+      "source": "재단 내부 기록(응답 미보존)",
+      "values": "누적 스탬프 117",
+      "use": "보고 §3 시즌 표 각주 ² — 10월 요약 §2 각주 1에 같은 단서로 공개된 값. 증빙 파일 없음"
+    },
+    {
+      "atUtc": "2026-10-23T15:08Z",
+      "source": "10월 요약 증빙 fetch-metadata.json의 unpreservedChecks",
+      "use": "보고 §3 월별 표 10월 행의 체크인 추정(내부 기록에 의존해 공개 집계만으로 재현할 수 없음, 확정값 아님)은 10월 요약 §3을 따름. 이 보고가 새로 인용한 내부 기록은 없음. 증빙 파일 없음"
+    }
+  ]
+}
